@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 body {
-  font-family: "Quicksand", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #333333;
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #333333;
+
+    /* help from https://cssgradient.io/ */
+    background: rgb(151,143,205);
+    background: linear-gradient(90deg, rgba(151,143,205,1) 0%, rgba(204,135,185,1) 100%);
 }
