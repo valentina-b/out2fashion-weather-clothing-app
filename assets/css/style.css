@@ -38,6 +38,23 @@ body {
 }
 
 .img-city {
+    /* height: 70px;
+    width: 70px; */
+}
+
+#img-outfit {
+    max-height: 185px;
+}
+
+.feature-weather {
+    background-color: #FFF1EC;
+}
+
+.feature-clothes {
+    background-color: #EFECFF;
+}
+
+.square {
     height: 70px;
     width: 70px;
 }
