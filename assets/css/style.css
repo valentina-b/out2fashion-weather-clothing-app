@@ -32,3 +32,12 @@ body {
     background-color: #FFFCFB;
     height: 50vh;
 }
+
+#content-shortcuts {
+    width: 33%;
+}
+
+.img-city {
+    height: 70px;
+    width: 70px;
+}
