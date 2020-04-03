@@ -14,3 +14,21 @@ body {
     background: rgb(151,143,205);
     background: linear-gradient(90deg, rgba(151,143,205,1) 0%, rgba(204,135,185,1) 100%);
 }
+
+#navbar {
+    background-color: #FFFCFB;
+    height: 60px;
+}
+
+#header {
+    height: 50vh;
+}
+
+.header-content {
+    margin-top: 20vh;
+}
+
+#section-content {
+    background-color: #FFFCFB;
+    height: 50vh;
+}
