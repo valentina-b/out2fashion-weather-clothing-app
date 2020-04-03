@@ -70,5 +70,6 @@ footer{
 }
 
 .social-icons a img{
-    width: 25px;
+    height: 25px;
+    float: right;
 }
