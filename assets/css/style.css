@@ -30,7 +30,7 @@ body {
 
 #section-content {
     background-color: #FFFCFB;
-    height: 50vh;
+    height: 30vh;
 }
 
 #content-shortcuts {
@@ -61,4 +61,14 @@ body {
 
 .features {
     float: left;
+}
+
+footer{
+    height: 20vh;
+    background: rgb(151,143,205);
+    background: linear-gradient(90deg, rgba(151,143,205,1) 0%, rgba(204,135,185,1) 100%);
+}
+
+.social-icons a img{
+    width: 25px;
 }
