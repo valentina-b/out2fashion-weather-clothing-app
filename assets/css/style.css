@@ -19,6 +19,7 @@ body {
     background-color: #FFFCFB;
     height: 60px;
     border-bottom: 1px solid #978FCD;
+    padding: 0;
 }
 
 #navbarNav {
@@ -36,6 +37,15 @@ body {
     border: none;
     padding: 0;
     margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        margin-right: 25px;
+    }
+    .navbar-brand {
+        margin-left: 25px;
+    }
 }
 /* Navigation */
 
