@@ -65,6 +65,14 @@ body {
 .header-content {
     margin-top: 20vh;
 }
+
+#header-title {
+    font-family: "Quicksand", sans-serif;
+    font-size: 45px;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    color: #FFFCFB;
+}
 /* Header */
 
 
