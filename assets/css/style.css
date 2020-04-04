@@ -17,14 +17,18 @@ body {
 /* Navigation */
 #navbar {
     background-color: #FFFCFB;
-    height: 60px;
+
+    /* PROBLEMATIC JUMPING */
+    /* height: 60px; */
+    /* padding: 0; */
+    /* PROBLEMATIC JUMPING */
+
     border-bottom: 1px solid #978FCD;
-    padding: 0;
 }
 
 #navbarNav {
     text-transform: uppercase;
-    /* padding: 0; */
+    padding: 0;
     padding-right: 30px;
     background-color: #FFFCFB;
 }
