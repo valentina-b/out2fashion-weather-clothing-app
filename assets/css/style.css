@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
 
-/* html {
-  scroll-behavior: smooth;
-} */
-
 body {
     font-family: "Quicksand", sans-serif;
     font-size: 16px;
@@ -15,11 +11,21 @@ body {
     background: linear-gradient(90deg, rgba(151,143,205,1) 0%, rgba(204,135,185,1) 100%);
 }
 
+
+
+
+/* Navigation */
 #navbar {
     background-color: #FFFCFB;
     height: 60px;
 }
+/* Navigation */
 
+
+
+
+
+/* Header */
 #header {
     height: 50vh;
 }
@@ -27,12 +33,20 @@ body {
 .header-content {
     margin-top: 20vh;
 }
+/* Header */
+
+
+
+
+
+/* Main content */
 
 #section-content {
     background-color: #FFFCFB;
     height: 30vh;
 }
 
+/* Shortcuts */
 #content-shortcuts {
     width: 33%;
 }
@@ -41,12 +55,16 @@ body {
     /* height: 70px;
     width: 70px; */
 }
+/* Shortcuts */
 
+/* Additional content */
 #content-additional-text {
     background: rgb(206,202,232);
     background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
 }
+/* Additional content */
 
+/* Preview content */
 #img-outfit {
     max-height: 130px;
 }
@@ -59,15 +77,18 @@ body {
     background-color: #EFECFF;
 }
 
-.square {
-    height: 70px;
-    width: 70px;
-}
-
 .features {
     float: left;
 }
+/*Preview content */
 
+/* Main content */
+
+
+
+
+
+/* Footer */
 footer{
     height: 20vh;
     background: rgb(151,143,205);
@@ -78,3 +99,17 @@ footer{
     height: 25px;
     float: right;
 }
+/* Footer */
+
+
+
+
+
+/* General styles and effects */
+.square {
+    height: 70px;
+    width: 70px;
+}
+
+
+/* General styles and effects */
