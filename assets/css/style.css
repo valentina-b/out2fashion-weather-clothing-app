@@ -72,9 +72,20 @@ body {
     color: #FFFCFB;
 }
 
-#search-label {
-    
+#search-api-form {
+    margin-top: 40px;
+}
 
+#search-label {
+    font-size: 14px;
+    width: 220px;
+    /* height: 45px; */
+    background-color: #FFF1EC;
+    padding: 15px 18px;
+    border: 1px solid #978FCD;
+    /* border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; */
+    border-radius: 3px 0 0 3px;
 }
 /* Header */
 
