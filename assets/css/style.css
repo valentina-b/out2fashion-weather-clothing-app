@@ -27,7 +27,6 @@ body {
 }
 
 #navbarNav {
-    text-transform: uppercase;
     padding: 0;
     padding-right: 30px;
     background-color: #FFFCFB;
@@ -70,8 +69,12 @@ body {
     font-family: "Quicksand", sans-serif;
     font-size: 45px;
     letter-spacing: 9px;
-    text-transform: uppercase;
     color: #FFFCFB;
+}
+
+#search-label {
+    
+
 }
 /* Header */
 
