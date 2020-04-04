@@ -24,8 +24,9 @@ body {
 
 #navbarNav {
     text-transform: uppercase;
-    padding: 0;
-    margin-right: 30px;
+    /* padding: 0; */
+    padding-right: 30px;
+    background-color: #FFFCFB;
 }
 
 .navbar-brand {
@@ -39,7 +40,7 @@ body {
     margin-right: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .navbar-toggler {
         margin-right: 25px;
     }
@@ -47,6 +48,7 @@ body {
         margin-left: 25px;
     }
 }
+
 /* Navigation */
 
 
