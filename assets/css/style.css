@@ -175,7 +175,7 @@ body {
 
 /* Footer */
 footer{
-    height: 70px;
+    max-height: 70px;
     background: rgb(151,143,205);
     background: linear-gradient(90deg, rgba(151,143,205,1) 0%, rgba(204,135,185,1) 100%);
     color: #FFFCFB;
@@ -183,8 +183,25 @@ footer{
 
 .social-icons a img{
     height: 25px;
-    float: right;
 }
+
+.social-icons {
+    width: fit-content;
+}
+
+.copyrights {
+    width: fit-content;
+    font-size: 14px;
+}
+
+#footer-content {
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
 /* Footer */
 
 
