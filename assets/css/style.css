@@ -181,17 +181,23 @@ footer{
     color: #FFFCFB;
 }
 
-.social-icons a img{
+.social-icons a img {
     height: 25px;
+}
+
+.social-icons a {
+    margin-right: 40px;
 }
 
 .social-icons {
     width: fit-content;
+    float: left;
 }
 
 .copyrights {
     width: fit-content;
     font-size: 14px;
+    float: left;
 }
 
 #footer-content {
