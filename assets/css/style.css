@@ -59,6 +59,7 @@ body {
 /* Header */
 #header {
     height: 50vh;
+    min-height: 300px;
 }
 
 .header-content {
@@ -199,5 +200,12 @@ footer{
     border-radius: 10px;
 }
 
+.line {
+    width: 45px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #FFFCFB;
+    margin: 35px auto;
+}
 
 /* General styles and effects */
