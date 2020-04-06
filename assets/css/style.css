@@ -147,6 +147,18 @@ body {
     background: rgb(206,202,232);
     background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
 }
+
+#content-additional-text h2 {
+    font-size: 20px;
+    line-height: 160%;
+    text-transform: uppercase;
+}
+
+#content-additional-text p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+}
 /* Additional content */
 
 /* Preview content */
