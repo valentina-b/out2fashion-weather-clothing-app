@@ -148,18 +148,24 @@ body {
     background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
     width: 305px;
     border-radius: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #content-additional-text h2 {
     font-size: 20px;
     line-height: 160%;
     text-transform: uppercase;
+    padding-left: 38px;
+    padding-right: 38px;
 }
 
 #content-additional-text p {
     font-weight: 300;
     font-size: 16px;
     line-height: 140%;
+    padding-left: 23px;
+    padding-right: 23px;
 }
 /* Additional content */
 
