@@ -142,13 +142,18 @@ body {
 }
 
 .city-content {
+    width: 105px;
+}
 
+.city-content p {
+    padding-top: 10px;
+    font-size: 14px;
 }
 
 .square-city {
     height: 105px;
     width: 105px;
-    margin: 0 auto auto 15px;
+    margin: 0 auto;
 }
 /* Shortcuts */
 
@@ -181,7 +186,7 @@ body {
 
 /* Preview content */
 #img-outfit {
-    max-height: 130px;
+    max-width: 130px;
 }
 
 .feature-weather {
@@ -246,8 +251,8 @@ footer{
 
 /* General styles and effects */
 .square {
-    height: 120px;
-    width: 120px;
+    height: 130px;
+    width: 130px;
 }
 
 .shadow-main {
