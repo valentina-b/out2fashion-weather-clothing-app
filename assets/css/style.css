@@ -141,9 +141,10 @@ body {
     width: 33%;
 }
 
-.img-city {
-    /* height: 70px;
-    width: 70px; */
+.square-city {
+    height: 105px;
+    width: 105px;
+    margin: 0 auto auto 15px;
 }
 /* Shortcuts */
 
@@ -241,8 +242,8 @@ footer{
 
 /* General styles and effects */
 .square {
-    height: 70px;
-    width: 70px;
+    height: 120px;
+    width: 120px;
 }
 
 .shadow-main {
