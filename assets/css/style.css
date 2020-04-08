@@ -267,14 +267,7 @@ footer{
     margin-top: 45px;
 }
 
-.weather-icon-hp {
-    width: 60px;
-    display: block;
-    margin-top: -56px;
-    margin-left: 35px;
-}
-
-.clothes-icon {
+.weather-clothes-icon-hp {
     width: 60px;
     display: block;
     margin-top: -56px;
