@@ -186,7 +186,11 @@ body {
 
 /* Preview content */
 #img-outfit {
-    max-width: 130px;
+    max-height: 290px;
+}
+
+.outfit {
+    float: right;
 }
 
 .feature-weather {
