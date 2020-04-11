@@ -190,7 +190,7 @@ body {
 
 /* Preview content */
 #img-outfit {
-    max-height: 300px;
+    max-height: 297px;
 }
 
 .outfit {
@@ -206,7 +206,7 @@ body {
     background-color: #EFECFF;
 }
 
-.features p {
+.features p, .outfit p {
     font-size: 14px;
     padding-top: 10px;
 }
