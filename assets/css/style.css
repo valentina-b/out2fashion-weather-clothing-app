@@ -167,8 +167,8 @@ body {
     background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
     width: 305px;
     border-radius: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #content-additional-text h2 {
