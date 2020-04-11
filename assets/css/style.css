@@ -134,21 +134,23 @@ body {
 
 .content-box {
     margin: 35px auto;
+    max-width: 320px;
 }
 
 /* Shortcuts */
-#content-shortcuts {
+/* #content-shortcuts {
     width: 33%;
-}
+} */
 
 .city-content {
     width: 105px;
     float: left;
+    /* float: right; */
 }
 
-.padding-left-class {
+/* .padding-left-class {
     padding-left: 30px;
-}
+} */
 
 .city-content p {
     padding-top: 10px;
