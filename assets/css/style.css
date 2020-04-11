@@ -138,21 +138,14 @@ body {
 }
 
 /* Shortcuts */
-/* #content-shortcuts {
-    width: 33%;
-} */
 
 .city-content {
     width: 105px;
     float: right;
 }
 
-/* .shortcuts-row {
-    display: block;
-} */
-
-.margin-left-class {
-    margin-left: 30px;
+.margin-class {
+    margin-left: 40px;
 }
 
 .city-content p {
