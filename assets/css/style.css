@@ -140,7 +140,7 @@ body {
 /* Shortcuts */
 
 .city-content {
-    width: 105px;
+    width: 125px;
     float: right;
 }
 
@@ -154,8 +154,8 @@ body {
 }
 
 .square-city {
-    height: 105px;
-    width: 105px;
+    height: 125px;
+    width: 125px;
     margin: 0 auto;
 }
 
@@ -167,8 +167,8 @@ body {
     background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
     width: 305px;
     border-radius: 10px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #content-additional-text h2 {
@@ -190,7 +190,7 @@ body {
 
 /* Preview content */
 #img-outfit {
-    max-height: 290px;
+    max-height: 300px;
 }
 
 .outfit {
@@ -206,9 +206,9 @@ body {
     background-color: #EFECFF;
 }
 
-.feature-weather p, .feature-clothes p {
+.features p {
     font-size: 14px;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .features {
@@ -265,9 +265,9 @@ footer{
 
 /* General styles and effects */
 .square {
-    height: 130px;
-    width: 130px;
-    margin-bottom: 30px;
+    height: 125px;
+    width: 125px;
+    /* margin-bottom: 30px; */
     /* margin-right: 10px; */
 }
 
