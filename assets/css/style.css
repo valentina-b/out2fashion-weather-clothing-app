@@ -143,6 +143,11 @@ body {
 
 .city-content {
     width: 105px;
+    float: left;
+}
+
+.padding-left-class {
+    padding-left: 30px;
 }
 
 .city-content p {
@@ -155,6 +160,7 @@ body {
     width: 105px;
     margin: 0 auto;
 }
+
 /* Shortcuts */
 
 /* Additional content */
@@ -190,7 +196,8 @@ body {
 }
 
 .outfit {
-    float: right;
+    float: left;
+    padding-left: 30px;
 }
 
 .feature-weather {
