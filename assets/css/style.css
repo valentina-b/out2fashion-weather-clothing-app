@@ -144,13 +144,16 @@ body {
 
 .city-content {
     width: 105px;
-    float: left;
-    /* float: right; */
+    float: right;
 }
 
-/* .padding-left-class {
-    padding-left: 30px;
+/* .shortcuts-row {
+    display: block;
 } */
+
+.margin-left-class {
+    margin-left: 30px;
+}
 
 .city-content p {
     padding-top: 10px;
