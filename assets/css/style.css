@@ -180,11 +180,15 @@ body {
 }
 
 #content-additional-text h2 {
-    font-size: 20px;
-    line-height: 160%;
     text-transform: uppercase;
     padding-left: 38px;
     padding-right: 38px;
+}
+
+.h2-heading, .short-phrase {
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 300;
 }
 
 #content-additional-text p {
@@ -331,7 +335,7 @@ footer{
 }
 
 .short-phrase {
-    
+    max-width: 157px;
 }
 
 
