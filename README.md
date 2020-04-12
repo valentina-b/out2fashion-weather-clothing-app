@@ -6,3 +6,4 @@ Credits:
 - https://unsplash.com/ - images
 - https://www.esprit.de/damenmode - products
 - https://cssgradient.io/ - css code for gradient colours
+- https://stackoverflow.com/questions/39884260/is-it-possible-to-set-horizontal-gradient-to-text-via-css-left-letter-one-colo - gradient left to right css code
