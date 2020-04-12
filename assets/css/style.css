@@ -335,6 +335,10 @@ footer{
     padding: 0;
 }
 
+.forecast-summary {
+    margin-top: 20px;
+}
+
 .forecast-square {
     background-color: #FFF1EC;
     margin: 22px 0 0 10px;
@@ -352,7 +356,7 @@ footer{
 }
 
 .long-phrase {
-    margin-top: 40px;
+    margin: 35px 0 20px 0;
 }
 
 .city-name {
@@ -360,6 +364,11 @@ footer{
     background: -webkit-linear-gradient(left, #978FCD, #CC87B9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#recommendations .container .line {
+    float: left;
+    margin-top: 20px;
 }
 
 /* Berlin */
