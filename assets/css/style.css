@@ -330,12 +330,19 @@ footer{
 
 .forecast-square {
     background-color: #FFF1EC;
-    display: inline-block;
     margin: 22px 0 0 10px;
+    float: left;
+}
+
+.forecast-title {
+    float: left;
+    margin-top: 22px;
+    max-width: 157px;
 }
 
 .short-phrase {
-    max-width: 157px;
+    padding-left: 10px;
+
 }
 
 
