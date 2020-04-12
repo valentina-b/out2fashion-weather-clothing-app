@@ -117,8 +117,11 @@ body {
 }
 
 /* after JS */
-#loader {
+.loader {
     margin: 16px auto;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/svg-loader.svg");
 }
 
 /* Header */
