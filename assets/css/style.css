@@ -371,10 +371,21 @@ footer{
     margin-top: 20px;
 }
 
+.tip-div {
+    margin-top: 20px;
+}
+
+.tip-div p {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
 .tip-box {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: #FFF1EC;
 }
+
 
 /* Berlin */
