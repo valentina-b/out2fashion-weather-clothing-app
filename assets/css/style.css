@@ -7,7 +7,7 @@ body {
     color: #333333;
 
     /* help from https://cssgradient.io/ */
-    background: rgb(151,143,205);
+    background: rgb(151, 143, 205);
     background: linear-gradient(90deg, rgba(151,143,205,1) 0%, rgba(204,135,185,1) 100%);
 }
 
@@ -116,6 +116,10 @@ body {
     color: #9C9C9C;
 }
 
+/* after JS */
+/* #loader {
+    margin: 20px auto;
+} */
 /* Header */
 
 
@@ -303,5 +307,4 @@ footer{
     background-color: #FFFCFB;
     margin: 35px auto;
 }
-
 /* General styles and effects */
