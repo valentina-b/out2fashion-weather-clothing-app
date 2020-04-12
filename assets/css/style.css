@@ -342,7 +342,12 @@ footer{
 
 .short-phrase {
     padding-left: 10px;
+}
 
+.long-phrase {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 140%;
 }
 
 
