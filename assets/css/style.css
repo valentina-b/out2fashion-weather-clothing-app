@@ -312,3 +312,26 @@ footer{
     margin: 35px auto;
 }
 /* General styles and effects */
+
+
+/* Berlin */
+
+.content-forecast {
+    width: 300px;
+    height: 170px;
+    background: rgb(206,202,232);
+    background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
+    padding: 0;
+}
+
+.forecast-summary {
+    background-color: #FFF1EC;
+    display: block;
+    margin: auto 0;
+
+
+}
+
+
+
+/* Berlin */
