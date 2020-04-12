@@ -324,12 +324,14 @@ footer{
     padding: 0;
 }
 
-.forecast-summary {
+.forecast-square {
     background-color: #FFF1EC;
-    display: block;
-    margin: auto 0;
+    display: inline-block;
+    margin: 22px 0 0 10px;
+}
 
-
+.short-phrase {
+    
 }
 
 
