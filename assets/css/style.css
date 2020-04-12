@@ -185,7 +185,7 @@ body {
     padding-right: 38px;
 }
 
-.h2-heading, .short-phrase {
+.h2-heading {
     font-size: 20px;
     line-height: 160%;
     font-weight: 300;
@@ -312,8 +312,15 @@ footer{
     width: 45px;
     height: 2px;
     border-radius: 3px;
-    background-color: #FFFCFB;
     margin: 35px auto;
+}
+
+.light {
+    background-color: #FFFCFB;
+}
+
+.dark {
+    background-color: #333333;
 }
 /* General styles and effects */
 
@@ -345,9 +352,7 @@ footer{
 }
 
 .long-phrase {
-    font-weight: 300;
-    font-size: 22px;
-    line-height: 140%;
+    margin-top: 40px;
 }
 
 
