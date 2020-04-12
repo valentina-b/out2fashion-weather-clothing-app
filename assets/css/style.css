@@ -371,4 +371,10 @@ footer{
     margin-top: 20px;
 }
 
+.tip-box {
+    width: 30px;
+    height: 30px;
+    background-color: #FFF1EC;
+}
+
 /* Berlin */
