@@ -355,6 +355,11 @@ footer{
     margin-top: 40px;
 }
 
-
+.city-name {
+    font-weight: 400;
+    background: -webkit-linear-gradient(left, #978FCD, #CC87B9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* Berlin */
