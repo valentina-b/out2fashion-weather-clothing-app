@@ -332,6 +332,10 @@ footer{
 .dark {
     background-color: #978FCD;
 }
+
+.regular-weight {
+    font-weight: 400;
+}
 /* General styles and effects */
 
 
@@ -442,6 +446,19 @@ footer{
 .arrow-icon {
     margin-right: -3px;
     margin-bottom: -2px;
+}
+
+.last-box{
+    background: rgb(206,202,232);
+    background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
+    width: 300px;
+}
+
+.last-box p {
+    width: 225px;
+    margin: 0 auto;
+    padding: 35px 0;
+    font-size: 18px;
 }
 
 /* Berlin */
