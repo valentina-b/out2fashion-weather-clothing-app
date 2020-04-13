@@ -361,7 +361,7 @@ footer{
 
 .recommended-item-square {
     background-color: #EFECFF;
-    margin: 22px 0 0 10px;
+    /* margin: 22px 0 0 10px; */
     float: left;
 }
 
@@ -386,7 +386,7 @@ footer{
     -webkit-text-fill-color: transparent;
 }
 
-#recommendations .container .line {
+#recommendations .line-row-left .line {
     float: left;
     margin-top: 20px;
 }
