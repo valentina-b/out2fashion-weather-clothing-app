@@ -387,7 +387,7 @@ footer{
 }
 
 #recommendations .line-row-left .line {
-    float: left;
+    margin-left: 15px;
     margin-top: 20px;
 }
 
