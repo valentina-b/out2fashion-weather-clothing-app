@@ -387,8 +387,7 @@ footer{
 }
 
 #recommendations .line-row-left .line {
-    margin-left: 15px;
-    margin-top: 20px;
+    margin: 20px 0 15px 20px;
 }
 
 .tip-div {
@@ -468,7 +467,7 @@ footer{
 }
 
 .column-1, .column-2 {
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 /* Berlin */
