@@ -461,4 +461,14 @@ footer{
     font-size: 18px;
 }
 
+.recommended-item-box {
+    width: 310px;
+    height: 310px;
+    background-color: #fafafa;
+}
+
+.column-1, .column-2 {
+    margin-top: 50px;
+}
+
 /* Berlin */
