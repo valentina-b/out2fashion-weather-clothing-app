@@ -474,11 +474,15 @@ footer{
 .recommended-item-box {
     width: 310px;
     height: 310px;
-    background-color: #fafafa;
 }
 
-.column-1, .column-2 {
-    /* margin-top: 50px; */
+.price {
+    background-color: rgba(255, 252, 251, 0.7);
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 90px;
 }
 
 /* Berlin */
