@@ -411,13 +411,19 @@ footer{
 
 .weather-icon-img {
     width: 60px;
-    /* display: block; */
-    /* margin-top: -56px; */
-    margin-left: 35px;
+    margin-top: -15px;
+    margin-left: -15px;
 }
 
 .supporting-weather-icon-img {
-    width: 25px;
+    width: 20px;
+    margin-left: 5px;
+}
+
+.forecast-text {
+    margin-top: 30px;
+    font-size: 14px;
+    margin-left: 15px;
 }
 
 /* Berlin */
