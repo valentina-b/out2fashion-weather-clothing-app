@@ -379,13 +379,24 @@ footer{
     font-size: 12px;
     margin-left: 5px;
     margin-top: 5px;
+    color: #A8A8A8;
 }
 
 .tip-box {
     width: 25px;
     height: 25px;
+    background-color: #F0F0F0;
+}
+
+.refresh-square {
+    width: 25px;
+    height: 25px;
     background-color: #FFF1EC;
 }
 
+.refresh-icon {
+    margin-left: 7px;
+    margin-top: -3px;
+}
 
 /* Berlin */
