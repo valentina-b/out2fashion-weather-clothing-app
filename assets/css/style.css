@@ -293,6 +293,16 @@ footer{
     margin-top: 45px;
 }
 
+.circle-weather {
+    border-radius: 50%;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: 30px;
+}
+
 .weather-clothes-icon-hp {
     width: 60px;
     display: block;
@@ -397,6 +407,17 @@ footer{
 .refresh-icon {
     margin-left: 7px;
     margin-top: -3px;
+}
+
+.weather-icon-img {
+    width: 60px;
+    /* display: block; */
+    /* margin-top: -56px; */
+    margin-left: 35px;
+}
+
+.supporting-weather-icon-img {
+    width: 25px;
 }
 
 /* Berlin */
