@@ -293,7 +293,7 @@ footer{
     margin-top: 45px;
 }
 
-.circle-weather {
+.circle-weather, .circle-item {
     border-radius: 50%;
     background-color: white;
     width: 30px;
@@ -355,6 +355,12 @@ footer{
     float: left;
 }
 
+.recommended-item-square {
+    background-color: #EFECFF;
+    margin: 22px 0 0 10px;
+    float: left;
+}
+
 .forecast-title {
     float: left;
     margin-top: 22px;
@@ -409,10 +415,11 @@ footer{
     margin-top: -3px;
 }
 
-.weather-icon-img {
-    width: 60px;
-    margin-top: -15px;
-    margin-left: -15px;
+.weather-icon-img, .clothes-icon-img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: -10px;
+    margin-left: -10px;
 }
 
 .supporting-weather-icon-img {
@@ -425,6 +432,11 @@ footer{
     margin-top: 28px;
     font-size: 14px;
     margin-left: 15px;
+}
+
+.item-text {
+    margin-top: 28px;
+    font-size: 14px;
 }
 
 .arrow-icon {
