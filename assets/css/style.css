@@ -415,6 +415,13 @@ footer{
     width: 25px;
     height: 25px;
     background-color: #FFF1EC;
+    position: relative;
+    right: 7px;
+    top: 7px;
+}
+
+.feature-clothes .refresh-square {
+    background-color: #F0F0F0;
 }
 
 .refresh-icon {
