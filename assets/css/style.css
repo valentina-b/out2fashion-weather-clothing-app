@@ -152,8 +152,12 @@ body {
     float: right;
 }
 
-.margin-class {
+.margin-class-left {
     margin-left: 40px;
+}
+
+.margin-class-top {
+    margin-top: 40px;
 }
 
 .city-content p {
