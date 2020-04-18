@@ -160,23 +160,25 @@ body {
     margin-right: 15px;
 }
 
+.class-mb-15 {
+    margin-bottom: 15px;
+}
+
+.class-mt-15 {
+    margin-top: 15px;
+}
+
 
 /* Shortcuts */
 
 .city-content {
-    width: 100px;
+    width: 125px;
     float: left;
 }
 
 .city-content p {
     padding-top: 10px;
     font-size: 14px;
-}
-
-.square-city {
-    height: 100px;
-    width: 100px;
-    margin: 0 auto;
 }
 
 /* Shortcuts */
@@ -215,14 +217,24 @@ body {
 
 
 /* Preview content */
- 
+
 .square-text-hp p {
     display: block;
     margin: 0 auto;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     font-size: 14px;
+    width: fit-content;
 }
 
+.square-text-hp {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.weather-square, .clothes-square {
+    width: fit-content;
+    display: inline-block;
+}
 
 
 
@@ -241,7 +253,7 @@ body {
 }
 
 .clothes-hp img {
-    width: 100px;
+    width: 125px;
 }
 
 .outfit p {
@@ -303,8 +315,8 @@ footer{
 /* General styles and effects */
 
 .square {
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
     display: inline-block;
 }
 
