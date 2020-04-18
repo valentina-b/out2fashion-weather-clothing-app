@@ -65,7 +65,7 @@ body {
 } */
 
 .header-content {
-    margin-top: 10vh;
+    margin-top: 13vh;
 }
 
 #header-title {
@@ -79,7 +79,7 @@ body {
     color: #FFFCFB;
     max-width: 500px;
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 25px auto;
 }
 
 #search-api-form {
@@ -340,9 +340,9 @@ footer{
 
 .line {
     width: 45px;
-    height: 2px;
+    height: 1px;
     border-radius: 3px;
-    margin: 35px auto;
+    margin: 30px auto;
 }
 
 .light {
