@@ -247,9 +247,9 @@ body {
     max-height: 297px;
 }
 
-.outfit {
-    float: left;
+.content-column {
     width: fit-content;
+    float: left;
 }
 
 .clothes-hp img {
@@ -261,7 +261,23 @@ body {
     padding-top: 10px;
 }
 
+.recommendations-text p {
+    display: block;
+    margin: 0 auto;
+    /* padding-top: 5px; */
+    font-size: 14px;
+    width: fit-content;
+}
 
+.recommendations-text {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.recommendations-content {
+    width: fit-content;
+    margin: 0 auto;
+}
 
 /*Recommendations content */
 
