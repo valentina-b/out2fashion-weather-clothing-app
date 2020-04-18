@@ -75,6 +75,13 @@ body {
     color: #FFFCFB;
 }
 
+.header-paragraph {
+    color: #FFFCFB;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
 #search-api-form {
     margin-top: 40px;
 }
