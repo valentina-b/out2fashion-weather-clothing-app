@@ -153,6 +153,11 @@ body {
 }
 
 /* Shortcuts */
+#content-shortcuts .container {
+    width: 320px;
+    margin-right: 30px;
+
+}
 
 .city-content {
     width: 125px;
