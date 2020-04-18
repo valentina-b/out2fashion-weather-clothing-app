@@ -79,7 +79,8 @@ body {
     color: #FFFCFB;
     max-width: 500px;
     display: block;
-    margin: 0 auto 25px auto;
+    /* margin: 0 auto 25px auto; */
+    margin: 0 auto;
 }
 
 #search-api-form {
@@ -342,7 +343,7 @@ footer{
     width: 45px;
     height: 1px;
     border-radius: 3px;
-    margin: 30px auto;
+    margin: 25px auto;
 }
 
 .light {
