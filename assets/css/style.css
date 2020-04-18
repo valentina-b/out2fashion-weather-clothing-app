@@ -212,7 +212,25 @@ body {
 }
 /* Additional content */
 
+
+
 /* Preview content */
+ 
+.square-text-hp p {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+
+
+
+/* Preview content */
+
+
+
+/* Recommendations content */
 #img-outfit {
     max-height: 297px;
 }
@@ -226,17 +244,14 @@ body {
     width: 100px;
 }
 
-.features p, .outfit p {
+.outfit p {
     font-size: 14px;
     padding-top: 10px;
 }
 
-.features {
-    float: left;
-}
 
 
-/*Preview content */
+/*Recommendations content */
 
 /* Main content */
 
@@ -290,6 +305,7 @@ footer{
 .square {
     height: 100px;
     width: 100px;
+    display: inline-block;
 }
 
 .weather {
@@ -305,9 +321,9 @@ footer{
     background-color: #FFFFFF;
     width: 40px;
     height: 40px;
-    display: inline-block;
-    margin-left: 45px;
-    margin-top: 45px;
+    display: block;
+    /* margin-left: 45px;
+    margin-top: 45px; */
 }
 
 .circle-weather, .circle-item {
@@ -323,8 +339,8 @@ footer{
 .weather-clothes-icon-hp {
     width: 60px;
     display: block;
-    margin-top: -56px;
-    margin-left: 35px;
+    /* margin-top: -56px;
+    margin-left: 35px; */
 }
 
 .shadow-main {
