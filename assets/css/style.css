@@ -228,6 +228,16 @@ body {
     width: fit-content;
 }
 
+.clothes-hp > div:first-of-type {
+    background-image: url("../images/img-clothes-hp-1-umbrella.png");
+    background-size: contain;
+}
+
+.clothes-hp > div:nth-of-type(2) {
+    background-image: url("../images/img-clothes-hp-2-blouse.png");
+    background-size: contain;
+}
+
 .feature-weather {
     background-color: #FFF1EC;
 }
