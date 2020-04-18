@@ -225,7 +225,7 @@ body {
 
 .outfit {
     float: left;
-    padding-left: 30px;
+    width: fit-content;
 }
 
 .feature-weather {
