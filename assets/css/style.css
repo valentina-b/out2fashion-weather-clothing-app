@@ -80,6 +80,7 @@ body {
     max-width: 500px;
     display: block;
     /* margin: 0 auto 25px auto; */
+    padding-bottom: 25px;
     margin: 0 auto;
 }
 
