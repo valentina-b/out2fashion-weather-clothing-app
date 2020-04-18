@@ -151,7 +151,7 @@ body {
 
 .content-box {
     margin-top: 35px;
-    width: 320px;
+    /* width: 320px; */
 }
 
 /* Shortcuts */
@@ -162,7 +162,7 @@ body {
 }
 
 .city-content {
-    width: 125px;
+    width: 100px;
     float: left;
 }
 
@@ -180,8 +180,8 @@ body {
 }
 
 .square-city {
-    height: 125px;
-    width: 125px;
+    height: 100px;
+    width: 100px;
     margin: 0 auto;
 }
 
@@ -229,7 +229,7 @@ body {
 }
 
 .clothes-hp img {
-    width: 125px;
+    width: 100px;
 }
 
 .feature-weather {
@@ -299,8 +299,8 @@ footer{
 
 /* General styles and effects */
 .square {
-    height: 125px;
-    width: 125px;
+    height: 100px;
+    width: 100px;
     /* margin-bottom: 30px; */
     /* margin-right: 10px; */
 }
