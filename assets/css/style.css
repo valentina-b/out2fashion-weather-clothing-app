@@ -221,7 +221,7 @@ body {
 .square-text-hp p {
     display: block;
     margin: 0 auto;
-    /* padding: 10px 0; */
+    padding-top: 5px;
     font-size: 14px;
     width: fit-content;
 }
