@@ -151,7 +151,6 @@ body {
 
 .content-box {
     margin-top: 35px;
-    width: 290px;
 }
 
 .content-row {
@@ -213,6 +212,7 @@ body {
     font-size: 20px;
     line-height: 160%;
     font-weight: 300;
+    width: fit-content;
 }
 
 #content-additional-text p {
