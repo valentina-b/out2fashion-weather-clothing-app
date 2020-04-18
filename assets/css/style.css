@@ -151,15 +151,21 @@ body {
 
 .content-box {
     margin-top: 35px;
-    /* width: 320px; */
+    width: 290px;
 }
 
+.content-row {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
 /* Shortcuts */
-#content-shortcuts .container {
+/* #content-shortcuts .container {
     width: 320px;
     margin-right: 30px;
 
-}
+} */
 
 .city-content {
     width: 100px;
