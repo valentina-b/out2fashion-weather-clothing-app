@@ -250,21 +250,27 @@ body {
 .content-column {
     width: fit-content;
     float: left;
+    /* for the text below it */
+    /* margin-bottom: 10px; */
 }
 
 .clothes-hp img {
     width: 125px;
 }
 
-.outfit p {
+.clothes-hp > div:nth-of-type(2) {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/* .outfit p {
     font-size: 14px;
     padding-top: 10px;
-}
+} */
 
 .recommendations-text p {
     display: block;
     margin: 0 auto;
-    /* padding-top: 5px; */
     font-size: 14px;
     width: fit-content;
 }
@@ -272,6 +278,7 @@ body {
 .recommendations-text {
     width: fit-content;
     margin: 0 auto;
+    display: block;
 }
 
 .recommendations-content {
