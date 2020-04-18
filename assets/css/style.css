@@ -273,6 +273,8 @@ body {
     margin: 0 auto;
     font-size: 14px;
     width: fit-content;
+    position: relative;
+    bottom: 10px;
 }
 
 .recommendations-text {
