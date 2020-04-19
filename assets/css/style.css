@@ -253,8 +253,6 @@ body {
 .content-column {
     width: fit-content;
     float: left;
-    /* for the text below it */
-    /* margin-bottom: 10px; */
 }
 
 .clothes-hp img {
