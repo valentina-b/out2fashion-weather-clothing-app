@@ -556,26 +556,27 @@ footer{
     left: -10px;
 }
 
+.forecast-text {
+    font-size: 14px;
+    position: relative;
+    top: 60px;
+    left: 15px;
+}
+
 .supporting-weather-icon-img {
     width: 20px;
     margin-left: 5px;
     margin-top: -7px;
 }
 
-.forecast-text {
-    margin-top: 28px;
-    font-size: 14px;
-    margin-left: 15px;
+.arrow-icon {
+    margin-right: -3px;
+    margin-bottom: -2px;
 }
 
 .item-text {
     margin-top: 28px;
     font-size: 14px;
-}
-
-.arrow-icon {
-    margin-right: -3px;
-    margin-bottom: -2px;
 }
 
 .last-box{
