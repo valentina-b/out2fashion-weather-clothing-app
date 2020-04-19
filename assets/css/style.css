@@ -359,8 +359,9 @@ footer{
     width: 40px;
     height: 40px;
     display: block;
-    /* margin-left: 45px;
-    margin-top: 45px; */
+    position: relative;
+    left: 45px;
+    top: 40px;
 }
 
 .circle-weather, .circle-item {
@@ -376,8 +377,9 @@ footer{
 .weather-clothes-icon-hp {
     width: 60px;
     display: block;
-    /* margin-top: -56px;
-    margin-left: 35px; */
+    position: relative;
+    left: 35px;
+    bottom: 10px;
 }
 
 .shadow-main {
@@ -423,14 +425,14 @@ footer{
 
 
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .col-lg-4 {
         width: auto;
         margin: 0 auto;
 
     }
 
-}
+} */
 
 
 
