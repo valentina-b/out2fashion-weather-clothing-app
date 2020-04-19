@@ -263,11 +263,6 @@ body {
     margin-bottom: 0;
 }
 
-/* .outfit p {
-    font-size: 14px;
-    padding-top: 10px;
-} */
-
 .recommendations-text p {
     display: block;
     margin: 0 auto;
@@ -289,6 +284,22 @@ body {
 }
 
 /*Recommendations content */
+
+
+@media (max-width: 345px) {
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+
+    .city-content, .clothes-hp img {
+        width: 100px;
+    }
+
+    #img-outfit {
+        max-height: 248px;
+    }
+}
 
 /* Main content */
 
