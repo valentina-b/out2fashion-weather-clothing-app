@@ -589,10 +589,10 @@ footer{
     font-size: 18px;
 }
 
-.recommended-item-box {
+/* .recommended-item-box {
     width: 310px;
     height: 310px;
-}
+} */
 
 @media (max-width: 991px) {
     #content-recommendations-clothes .content-row {
@@ -612,6 +612,51 @@ footer{
     #content-recommendations-clothes .line {
         float: none!important;
     }
+    .last-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 345px) {
+    .recommended-item-box {
+        /* width: auto; */
+    }
+
+    .last-box {
+        width: 260px;
+    }
+
+    .content-forecast {
+        width: 260px;
+    }
+/* 
+    .square {
+        width: 100px;
+        height: 100px;
+    }
+
+    .city-content, .clothes-hp img {
+        width: 100px;
+    }
+
+    #img-outfit {
+        max-height: 248px;
+    }
+
+    .circle {
+        left: 30px;
+        top: 30px;
+    }
+
+    .weather-clothes-icon-hp {
+        width: 50px;
+        left: 25px;
+        bottom: 15px;
+    }
+
+    .price-hp {
+        bottom: 30px;
+    } */
 }
 
 /* Berlin */
