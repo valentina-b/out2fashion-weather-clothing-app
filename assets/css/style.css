@@ -325,7 +325,7 @@ footer{
     float: left;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 460px) {
     .copyrights {
         float: none;
         margin-top: 15px;
@@ -343,7 +343,7 @@ footer{
 
 #footer-content {
     padding-top: 22.5px;
-    padding-bottom: 22.5px;
+    /* padding-bottom: 22.5px; */
     width: fit-content;
     margin: 0 auto;
 }
