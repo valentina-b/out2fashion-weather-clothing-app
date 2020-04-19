@@ -45,6 +45,9 @@ body {
     .navbar-brand {
         margin-left: 25px;
     }
+    #recommendations-preview {
+        margin-bottom: 30px;
+    }
 }
 
 /* Navigation */
@@ -285,22 +288,6 @@ body {
 
 /*Recommendations content */
 
-
-@media (max-width: 345px) {
-    .square {
-        width: 100px;
-        height: 100px;
-    }
-
-    .city-content, .clothes-hp img {
-        width: 100px;
-    }
-
-    #img-outfit {
-        max-height: 248px;
-    }
-}
-
 /* Main content */
 
 
@@ -454,14 +441,35 @@ footer{
 
 
 
-/* @media (max-width: 992px) {
-    .col-lg-4 {
-        width: auto;
-        margin: 0 auto;
-
+@media (max-width: 345px) {
+    .square {
+        width: 100px;
+        height: 100px;
     }
 
-} */
+    .city-content, .clothes-hp img {
+        width: 100px;
+    }
+
+    #img-outfit {
+        max-height: 248px;
+    }
+
+    .circle {
+        left: 30px;
+        top: 30px;
+    }
+
+    .weather-clothes-icon-hp {
+        width: 50px;
+        left: 25px;
+        bottom: 15px;
+    }
+
+    .price-hp {
+        bottom: 30px;
+    }
+}
 
 
 
