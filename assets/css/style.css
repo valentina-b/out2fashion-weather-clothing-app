@@ -419,7 +419,8 @@ footer{
     display: block;
     margin: 0 auto;
     position: relative;
-    bottom: 35px;
+    bottom: 30px;
+
 }
 /* General styles and effects */
 
@@ -569,8 +570,8 @@ footer{
 }
 
 .item-text {
-    margin-top: 28px;
-    font-size: 14px;
+    position: relative;
+    top: 55px;
 }
 
 .last-box{
@@ -589,15 +590,6 @@ footer{
 .recommended-item-box {
     width: 310px;
     height: 310px;
-}
-
-.price {
-    background-color: rgba(255, 252, 251, 0.7);
-    width: 70px;
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 90px;
 }
 
 /* Berlin */
