@@ -325,16 +325,20 @@ footer{
     float: left;
 }
 
-@media (max-width: px) {
+@media (max-width: 450px) {
     .copyrights {
-
+        float: none;
+        margin-top: 15px;
     }
 
     .social-icons {
-        
+        float: none;
+        margin: 0 auto;
     }
-    
 
+    .social-icons a {
+        margin: 0 20px;
+    }
 }
 
 #footer-content {
