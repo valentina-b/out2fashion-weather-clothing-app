@@ -390,6 +390,10 @@ footer{
     border-radius: 10px;
 }
 
+.radius-small {
+    border-radius: 5px;
+}
+
 .line {
     width: 45px;
     height: 1px;
