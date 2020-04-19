@@ -596,7 +596,7 @@ footer{
 
 @media (max-width: 991px) {
     #content-recommendations-clothes .content-row {
-        float: none;
+        float: none!important;
         margin-left: auto;
         margin-right: auto;
     }
@@ -606,7 +606,7 @@ footer{
     }
 
     #content-recommendations-clothes .line {
-        float: none;
+        float: none!important;
     }
 }
 
