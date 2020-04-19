@@ -601,6 +601,10 @@ footer{
         margin-right: auto;
     }
 
+    #content-recommendations-clothes .row {
+        float: none!important;
+    }
+
     #content-recommendations-clothes .h2-heading {
         text-align: center;
     }
