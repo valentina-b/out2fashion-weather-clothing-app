@@ -305,7 +305,7 @@ footer{
 }
 
 .social-icons a img {
-    height: 25px;
+    height: 20px;
 }
 
 .social-icons a {
@@ -315,12 +315,26 @@ footer{
 .social-icons {
     width: fit-content;
     float: left;
+    position: relative;
+    bottom: 5px;
 }
 
 .copyrights {
     width: fit-content;
     font-size: 14px;
     float: left;
+}
+
+@media (max-width: px) {
+    .copyrights {
+
+    }
+
+    .social-icons {
+        
+    }
+    
+
 }
 
 #footer-content {
