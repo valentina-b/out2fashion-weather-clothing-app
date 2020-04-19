@@ -420,7 +420,7 @@ footer{
     margin: 0 auto;
     position: relative;
     bottom: 30px;
-
+    font-size: 14px;
 }
 /* General styles and effects */
 
@@ -641,34 +641,18 @@ footer{
         top: 75px;
         left: 75px;
     }
-/* 
-    .square {
-        width: 100px;
-        height: 100px;
+
+    /* fix the icons' position and content */
+    .icon-active {
+        left: -5px;
+        bottom: 0px;
+        height: 40px;
     }
 
-    .city-content, .clothes-hp img {
-        width: 100px;
-    }
-
-    #img-outfit {
-        max-height: 248px;
-    }
-
-    .circle {
-        left: 30px;
+    .item-text {
+        font-size: 14px;
         top: 30px;
     }
-
-    .weather-clothes-icon-hp {
-        width: 50px;
-        left: 25px;
-        bottom: 15px;
-    }
-
-    .price-hp {
-        bottom: 30px;
-    } */
 }
 
 /* Berlin */
