@@ -578,6 +578,8 @@ footer{
     background: rgb(206,202,232);
     background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
     width: 300px;
+    /* give some space on DSK */
+    /* margin-top: 30%; */
 }
 
 .last-box p {
