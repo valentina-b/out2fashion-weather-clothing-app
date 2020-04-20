@@ -7,3 +7,4 @@ Credits:
 - https://www.esprit.de/damenmode - products
 - https://cssgradient.io/ - css code for gradient colours
 - https://stackoverflow.com/questions/39884260/is-it-possible-to-set-horizontal-gradient-to-text-via-css-left-letter-one-colo - gradient left to right css code
+- https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/ - helped me understand API connection better
