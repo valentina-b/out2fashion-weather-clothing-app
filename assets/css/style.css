@@ -497,8 +497,8 @@ footer{
 }
 
 .long-phrase {
-    margin: 35px 0 20px 0;
     font-size: 16px;
+    max-width: 300px;
 }
 
 .city-name {
@@ -516,6 +516,7 @@ footer{
     width: 25px;
     height: 25px;
     background-color: #F0F0F0;
+    display: inline-block;
 }
 
 .refresh-square {
@@ -564,6 +565,14 @@ footer{
     top: 55px;
 }
 
+#content-recommendations-clothes {
+    margin-top: 35px;
+}
+
+/* .description {
+    margin-bottom: 35px;
+} */
+
 .last-box{
     background: rgb(206,202,232);
     background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
@@ -604,6 +613,10 @@ footer{
     }
     .last-box {
         margin-bottom: 30px;
+    }
+
+    .description {
+        max-width: 300px;
     }
 }
 
