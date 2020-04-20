@@ -494,6 +494,8 @@ footer{
 
 .short-phrase {
     padding-left: 10px;
+    position: relative;
+    top: 15px;
 }
 
 .long-phrase {
@@ -636,8 +638,6 @@ footer{
     .short-phrase {
         font-size: 16px;
         width: 130px;
-        position: relative;
-        top: 15px;
     }
 
     .forecast-text {
