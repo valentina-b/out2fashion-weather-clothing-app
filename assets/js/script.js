@@ -1,3 +1,7 @@
+$( document ).ready(function() {
+
+
+
 let apiKey = "cUKU5seD8FYw3kzd4humiPZ5JAu8Aep3";
 
 // Berlin, London, New York, Sydney
@@ -8,8 +12,22 @@ let newyorkURL = `http://dataservice.accuweather.com/forecasts/v1/daily/1day/${l
 let sydneyURL = `http://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[3]}?apikey=${apiKey}&language=en-us&details=true`;
 
 
-console.log(sydneyURL);
+
+
+fetch(berlinURL)
+  .then(response => {
+    return response.json()
+  })
+  .then(data => {
+    // JSON data
+    console.log(data.Headline.Text)
+  })
+//   .catch(err => {
+//     // Error
+//   })
 
 
 
 
+
+});
