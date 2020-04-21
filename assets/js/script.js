@@ -41,20 +41,28 @@ function fetchWeatherData() {
 
             // recalculate and display max temperature of the day
             let maxTemperature = $(".max-temperature");
+            let originalMaxTemperature = data.DailyForecasts[0].Temperature.Maximum.Value;
             function importMaxTemperature() {
-                let originalMaxTemperature = data.DailyForecasts[0].Temperature.Maximum.Value;
                 maxTemperature.text(Math.round(transformToCelsius(originalMaxTemperature)));
             }
             importMaxTemperature();
 
             // recalculate and display min temperature of the day
             let minTemperature = $(".min-temperature");
+            let originalMinTemperature = data.DailyForecasts[0].Temperature.Minimum.Value;
             function importMinTemperature() {
-                let originalMinTemperature = data.DailyForecasts[0].Temperature.Minimum.Value;
                 minTemperature.text(Math.round(transformToCelsius(originalMinTemperature)));
             }
             importMinTemperature();
 
+            // change main and secondary weather icons
+            let mainWeatherIcon = $("#main-weather-icon");
+            let secondaryWeatherIcon = $("#secondary-weather-icon");
+            let 
+
+            function changeWeatherIcons() {
+                
+            }
 
             // console.log(data.Headline.Text);
 
