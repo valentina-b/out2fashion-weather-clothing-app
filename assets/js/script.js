@@ -22,7 +22,7 @@ function fetchWeatherData() {
 
 
 
-    fetch(berlinURL)
+    fetch(testURL)
         .then(response => {
         return response.json()
         })
@@ -41,21 +41,27 @@ function fetchWeatherData() {
             }
             importLongPhrase();
 
-            // recalculate and display max temperature of the day
+            // recalculate and display max temperatures of the day
             let maxTemperature = $(".max-temperature");
+            let feelMaxTemperature = $(".feel-max-temperature");
+            let originalFeelMaxTemperature = data.DailyForecasts[0].RealFeelTemperature.Maximum.Value;
             let originalMaxTemperature = data.DailyForecasts[0].Temperature.Maximum.Value;
-            function importMaxTemperature() {
+            function importMaxTemperatures() {
                 maxTemperature.text(Math.round(transformToCelsius(originalMaxTemperature)));
+                feelMaxTemperature.text(Math.round(transformToCelsius(originalFeelMaxTemperature)));
             }
-            importMaxTemperature();
+            importMaxTemperatures();
 
-            // recalculate and display min temperature of the day
+            // recalculate and display min temperatures of the day
             let minTemperature = $(".min-temperature");
+            let feelMinTemperature = $(".feel-min-temperature");
             let originalMinTemperature = data.DailyForecasts[0].Temperature.Minimum.Value;
-            function importMinTemperature() {
+            let originalFeelMinTemperature = data.DailyForecasts[0].RealFeelTemperature.Minimum.Value;
+            function importMinTemperatures() {
                 minTemperature.text(Math.round(transformToCelsius(originalMinTemperature)));
+                feelMinTemperature.text(Math.round(transformToCelsius(originalFeelMinTemperature)));
             }
-            importMinTemperature();
+            importMinTemperatures();
 
             // change main and secondary weather icons
             let mainWeatherIcon = $("#main-weather-icon");
@@ -112,11 +118,15 @@ function fetchWeatherData() {
                     mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-wind.svg");
                     secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-wind.svg");
                 } else {
-                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-went-wrong.svg");
-                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-went-wrong.svg");
+                    mainWeatherIcon.attr("src","assets/images/svg-icon-went-wrong.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/svg-icon-went-wrong.svg");
                 }
             }
             changeWeatherIcons();
+
+            // change clothes icons based on temperature and precipitation
+            // 
+
 
             // console.log(data.Headline.Text);
 

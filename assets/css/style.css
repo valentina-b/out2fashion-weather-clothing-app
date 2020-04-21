@@ -498,7 +498,7 @@ footer{
     top: 15px;
 }
 
-.long-phrase {
+.long-phrase, .long-phrase-style {
     font-size: 16px;
     max-width: 300px;
 }
