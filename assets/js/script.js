@@ -11,8 +11,10 @@ function fetchWeatherData() {
     let newyorkURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[2]}?apikey=${apiKey}&language=en-us&details=true`;
     let sydneyURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[3]}?apikey=${apiKey}&language=en-us&details=true`;
 
-    // Recalculate F to C
-    // T(°C) = (T(°F) - 32) / 1.8
+    let testLocationKey = 113768
+    let testURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${testLocationKey}?apikey=${apiKey}&language=en-us&details=true`
+
+    // Recalculate F to C --> T(°C) = (T(°F) - 32) / 1.8
     // transformToCelsius(68) ---> 20
     function transformToCelsius(tempF) {
         return (tempF - 32) / 1.8
@@ -58,11 +60,63 @@ function fetchWeatherData() {
             // change main and secondary weather icons
             let mainWeatherIcon = $("#main-weather-icon");
             let secondaryWeatherIcon = $("#secondary-weather-icon");
-            let 
+            let iconNumber = data.DailyForecasts[0].Day.Icon;
 
             function changeWeatherIcons() {
-                
+                if (iconNumber === 1 || iconNumber === 2 || iconNumber === 30) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sun.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sun.svg");
+                } else if (iconNumber === 3 || iconNumber === 4) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sun.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                } else if (iconNumber === 5 || iconNumber === 6) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                } else if (iconNumber === 7 || iconNumber === 8) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-cloud.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-cloud.svg");
+                } else if (iconNumber === 11) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-fog.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-fog.svg");
+                } else if (iconNumber === 12 || iconNumber === 18) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-rain.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-rain.svg");
+                } else if (iconNumber === 13 || iconMuber === 14) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-rain.svg");
+                } else if (iconNumber === 15) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-storm.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-storm.svg");
+                } else if (iconNumber === 16 || iconNumber === 17) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-storm.svg");
+                } else if (iconNumber === 19) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sleet.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-cloud.svg");
+                } else if (iconNumber === 20 || iconNumber === 21) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sleet.svg");
+                } else if (iconNumber === 22) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-snow.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-snow.svg");
+                } else if (iconNumber === 23) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-snow.svg");
+                } else if (iconNumber === 24 || iconNumber === 31) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-ice.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-ice.svg");
+                } else if (iconNumber === 25 || iconNumber === 26 || iconNumber === 29) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sleet.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sleet.svg");
+                } else if (iconNumber === 32) {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-wind.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-wind.svg");
+                } else {
+                    mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-went-wrong.svg");
+                    secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-went-wrong.svg");
+                }
             }
+            changeWeatherIcons();
 
             // console.log(data.Headline.Text);
 
