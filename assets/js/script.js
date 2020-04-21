@@ -14,7 +14,6 @@ function fetchWeatherData() {
     // Recalculate F to C
     // T(°C) = (T(°F) - 32) / 1.8
     // transformToCelsius(68) ---> 20
-    // put it in Math.round() - rounds to the nearest integer
     function transformToCelsius(tempF) {
         return (tempF - 32) / 1.8
     }
@@ -41,13 +40,20 @@ function fetchWeatherData() {
             importLongPhrase();
 
             // recalculate and display max temperature of the day
-            // WIP
             let maxTemperature = $(".max-temperature");
             function importMaxTemperature() {
                 let originalMaxTemperature = data.DailyForecasts[0].Temperature.Maximum.Value;
-                transformToCelsius(originalMaxTemperature);
-                
+                maxTemperature.text(Math.round(transformToCelsius(originalMaxTemperature)));
             }
+            importMaxTemperature();
+
+            // recalculate and display min temperature of the day
+            let minTemperature = $(".min-temperature");
+            function importMinTemperature() {
+                let originalMinTemperature = data.DailyForecasts[0].Temperature.Minimum.Value;
+                minTemperature.text(Math.round(transformToCelsius(originalMinTemperature)));
+            }
+            importMinTemperature();
 
 
             // console.log(data.Headline.Text);
