@@ -5,14 +5,14 @@ function fetchWeatherData() {
 
     let apiKey = "cUKU5seD8FYw3kzd4humiPZ5JAu8Aep3";
     // Berlin, London, New York, Sydney
-    let locationKey = [178087, 328328, 349727, 22889]
+    let locationKey = [178087, 328328, 349727, 22889];
     let berlinURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[0]}?apikey=${apiKey}&language=en-us&details=true`;
     let londonURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[1]}?apikey=${apiKey}&language=en-us&details=true`;
     let newyorkURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[2]}?apikey=${apiKey}&language=en-us&details=true`;
     let sydneyURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[3]}?apikey=${apiKey}&language=en-us&details=true`;
 
-    let testLocationKey = 113768
-    let testURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${testLocationKey}?apikey=${apiKey}&language=en-us&details=true`
+    let testLocationKey = 113768;
+    let testURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${testLocationKey}?apikey=${apiKey}&language=en-us&details=true`;
 
     // Recalculate F to C --> T(°C) = (T(°F) - 32) / 1.8
     // transformToCelsius(68) ---> 20
@@ -125,13 +125,13 @@ function fetchWeatherData() {
             changeWeatherIcons();
 
             // change clothing items icons
-            function changeClothesIcons {
+            function changeClothesIcons() {
                 
             }
-
+            changeClothesIcons();
 
             // change clothes icons based on temperature and precipitation
-            // 
+            // select the item block of 3 classes and show 3 pictures, then next 3 untill last 3 ot of 15 and start again
 
 
             // console.log(data.Headline.Text);
