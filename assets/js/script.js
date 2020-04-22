@@ -22,7 +22,7 @@ function fetchWeatherData() {
 
 
 
-    fetch(newyorkURL)
+    fetch(berlinURL)
         .then(response => {
         return response.json()
         })
@@ -123,6 +123,12 @@ function fetchWeatherData() {
                 }
             }
             changeWeatherIcons();
+
+            // change clothing items icons
+            function changeClothesIcons {
+                
+            }
+
 
             // change clothes icons based on temperature and precipitation
             // 
