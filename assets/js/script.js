@@ -22,7 +22,7 @@ function fetchWeatherData() {
 
 
 
-    fetch(testURL)
+    fetch(newyorkURL)
         .then(response => {
         return response.json()
         })
