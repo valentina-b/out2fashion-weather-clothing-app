@@ -37,7 +37,7 @@ function fetchWeatherData() {
             // import long phrase
             let longPhrase = $(".long-phrase");
             function importLongPhrase() {
-                longPhrase.text(data.Headline.Text)
+                longPhrase.text(data.DailyForecasts[0].Day.LongPhrase)
             }
             importLongPhrase();
 
