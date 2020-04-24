@@ -155,16 +155,20 @@ function fetchWeatherData() {
                         clothesIconTopText.text("T-shirt");
                     }
                 }
+                changeClothesIconsTop();
+
                 // bottom = pants or shorts
                 function changeClothesIconsBottom() {
                     if (maxTemperatureResult > 24) {
                         clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-shorts.svg");
-                        clothesIconBottom.text("Shorts");
+                        clothesIconBottomText.text("Shorts");
                     } else {
                         clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-pants.svg");
                         clothesIconBottomText.text("Pants");
                     }
                 }
+                changeClothesIconsBottom();
+
                 // footwear = shoes or sandals
                 function changeClothesIconsFootwear() {
                     if (maxTemperatureResult > 24) {
@@ -175,6 +179,8 @@ function fetchWeatherData() {
                         clothesIconFootwearText.text("Shoes");
                     }
                 }
+                changeClothesIconsFootwear();
+
                 // footwear = boots
                 function changeClothesIconsFootwearBoots() {
                     // if 19 to 26, or 29
@@ -183,59 +189,52 @@ function fetchWeatherData() {
                         clothesIconFootwearText.text("Boots");
                     }
                 }
+                changeClothesIconsFootwearBoots();
+
                 // outerwear = jacket or blazer
-        // FIIIIIIIIIIIIIXXXXXXX
                 function changeClothesIconsOuterwear() {
                     if (maxTemperatureResult <= 17) {
                         clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-jacket.svg");
                         clothesIconOuterwearText.text("Jacket");
-                    } else if (maxTemperatureResult >= 18 && maxTemperatureResult <= 30){
-                        clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-hat.svg");
-                        clothesIconOuterwearText.text("Blazer");
-                    } else {
+                    } 
+                    else if (maxTemperatureResult > 29) {
                         clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-hat.svg");
                         clothesIconOuterwearText.text("Summer hat");
+                    } 
+                    else {
+                        clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-blazer.svg");
+                        clothesIconOuterwearText.text("Blazer");
                     }
                 }
-        // FIIIIIIIIIIIIIXXXXXXX
+                changeClothesIconsOuterwear();
 
-
-
-        // FIIIIIIIIIIIIIXXXXXXX
+                // additional = winter hat, sunglasses, socks
                 function changeClothesIconsAdditional() {
-                    if (maxTemperatureResult > 29) {
-                        clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-sunglasses.svg");
-                        clothesIconAdditionalText.text("Sunglasses");
-                    } else if (maxTemperatureResult < 15) {
+                    if (maxTemperatureResult < 15) {
                         clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-winter-hat.svg");
                         clothesIconAdditionalText.text("Winter hat");
-                    }
-                    else {
+                    } else if (maxTemperatureResult > 29) {
+                        clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-sunglasses.svg");
+                        clothesIconAdditionalText.text("Sunglasses");
+                    } else {
                         clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-socks.svg");
                         clothesIconAdditionalText.text("Socks");
                     }
                 }
-        // FIIIIIIIIIIIIIXXXXXXX
-
-        
-                // function changeClothesIconsUmbrella() {
-
-                // }
-
-
-                changeClothesIconsTop();
-                changeClothesIconsBottom()
-                changeClothesIconsFootwear()
-                changeClothesIconsBottomFootwear();
-                changeClothesIconsFootwearBoots();
-                changeClothesIconsOuterwear();
                 changeClothesIconsAdditional();
-                // changeClothesIconsUmbrella();
+
+                // additional = umbrella
+                function changeClothesIconsAdditionalUmbrella() {
+                    // if 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23 (no 24)
+                    // if 25, 26 and 29
+                    if ((iconNumber >= 12 && iconNumber <= 23) || (iconNumber >= 25 && iconNumber <= 26) || (iconNumber === 29)) {
+                        clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-umbrella.svg");
+                        clothesIconAdditionalText.text("Umbrella");
+                    }
+                }
+                changeClothesIconsAdditionalUmbrella();
             }
             changeClothesIcons();
-
-            // change clothes icons based on temperature and precipitation
-            // select the item block of 3 classes and show 3 pictures, then next 3 untill last 3 ot of 15 and start again
 
 
             // console.log(data.Headline.Text);
