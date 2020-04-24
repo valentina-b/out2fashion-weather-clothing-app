@@ -48,6 +48,12 @@ body {
     #content-recommendations-preview {
         margin-bottom: 30px;
     }
+
+    #content-additional-text {
+    max-width: 285px;
+    display: block;
+    margin: 0 auto;
+    }
 }
 
 /* Navigation */
@@ -182,9 +188,8 @@ body {
 #content-additional-text {
     background: rgb(206,202,232);
     background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
-    /* width: 305px; */
     border-radius: 10px;
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 40px;
 }
 
@@ -430,6 +435,9 @@ footer{
     .square {
         width: 100px;
         height: 100px;
+    }
+    #content-additional-text {
+        max-width: 230px;
     }
 
     .city-content, .clothes-hp img {
