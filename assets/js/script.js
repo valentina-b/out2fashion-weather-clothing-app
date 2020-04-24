@@ -145,24 +145,54 @@ function fetchWeatherData() {
             let maxTemperatureResult = Math.round(transformToCelsius(originalFeelMaxTemperature));
 
             function changeClothesIcons() {
-                if (maxTemperatureResult <= 30) {
-                    clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-shirt.svg");
-                    clothesIconTopText.text("Shirt");
-                } 
-                // else if (iconNumber === 3 || iconNumber === 4) {
-                //     mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sun.svg");
-                //     secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                // top = shirt or tshirt
+                function changeClothesIconsTop() {
+                    if (maxTemperatureResult <= 20) {
+                        clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-shirt.svg");
+                        clothesIconTopText.text("Shirt");
+                    } else {
+                        clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-tshirt.svg");
+                        clothesIconTopText.text("T-shirt");
+                    }
+                }
+                // bottom = pants or shorts, footwear = shoes or sandals
+                function changeClothesIconsBottomFootwear() {
+                    if (maxTemperatureResult > 24) {
+                        clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-pants.svg");
+                        clothesIconBottomText.text("Pants");
+                        clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-sandal.svg");
+                        clothesIconFootwearText.text("Sandals");
+                    } else {
+                        clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-shorts.svg");
+                        clothesIconBottom.text("Shorts");
+                        clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-shoe.svg");
+                        clothesIconFootwearText.text("Shoes");
+                    }
+                }
+                // footwear = boots
+                function changeClothesIconsFootwearBoots() {
+                    if (iconNumber >= 19 && iconNumber <= 26) {
+                        clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-boot.svg");
+                        clothesIconFootwearText.text("Boots");
+                    }
+                }
+                // outerwear = jacket or blazer
+                function changeClothesIconsOuterwear() {
+                    if (maxTemperatureResult <= 17) {
+                        clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-jacket.svg");
+                        clothesIconOuterwearText.text("Jacket");
+                    } else {
+                        clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-blazer.svg");
+                        clothesIconOuterwearText.text("Blazer");
+                    }
+                }
+
+                changeClothesIconsTop();
+                changeClothesIconsBottomFootwear();
+                changeClothesIconsFootwearBoots();
+                changeClothesIconsOuterwear();
+
             }
-
-
-            // function changeWeatherIcons() {
-            //     if (iconNumber === 1 || iconNumber === 2 || iconNumber === 30) {
-            //         mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sun.svg");
-            //         secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sun.svg");
-            //     } else if (iconNumber === 3 || iconNumber === 4) {
-            //         mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sun.svg");
-            //         secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
-            // }
             changeClothesIcons();
 
             // change clothes icons based on temperature and precipitation
