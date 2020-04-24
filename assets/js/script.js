@@ -11,7 +11,7 @@ function fetchWeatherData() {
     let newyorkURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[2]}?apikey=${apiKey}&language=en-us&details=true`;
     let sydneyURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[3]}?apikey=${apiKey}&language=en-us&details=true`;
 
-    let testLocationKey = 315275;
+    let testLocationKey = 3439872;
     let testURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${testLocationKey}?apikey=${apiKey}&language=en-us&details=true`;
 
     // Recalculate F to C --> T(°C) = (T(°F) - 32) / 1.8
@@ -184,24 +184,40 @@ function fetchWeatherData() {
                     }
                 }
                 // outerwear = jacket or blazer
+        // FIIIIIIIIIIIIIXXXXXXX
                 function changeClothesIconsOuterwear() {
                     if (maxTemperatureResult <= 17) {
                         clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-jacket.svg");
                         clothesIconOuterwearText.text("Jacket");
-                    } else {
-                        clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-blazer.svg");
+                    } else if (maxTemperatureResult >= 18 && maxTemperatureResult <= 30){
+                        clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-hat.svg");
                         clothesIconOuterwearText.text("Blazer");
+                    } else {
+                        clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-hat.svg");
+                        clothesIconOuterwearText.text("Summer hat");
                     }
                 }
-                // function changeClothesIconsHat() {
-                //     if (maxTemperatureResult > 29) {
-                //         clothesIconHat.attr("src","assets/images/clothes-icons/svg-icon-clothes-hat.svg");
-                //         clothesIconHatText.text("Summer Hat");
-                //     } else {
-                //         clothesIconHat.attr("src","assets/images/clothes-icons/svg-icon-clothes-blazer.svg");
-                //         clothesIconHatText.text("Blazer");
-                //     }
-                // }
+        // FIIIIIIIIIIIIIXXXXXXX
+
+
+
+        // FIIIIIIIIIIIIIXXXXXXX
+                function changeClothesIconsAdditional() {
+                    if (maxTemperatureResult > 29) {
+                        clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-sunglasses.svg");
+                        clothesIconAdditionalText.text("Sunglasses");
+                    } else if (maxTemperatureResult < 15) {
+                        clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-winter-hat.svg");
+                        clothesIconAdditionalText.text("Winter hat");
+                    }
+                    else {
+                        clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-socks.svg");
+                        clothesIconAdditionalText.text("Socks");
+                    }
+                }
+        // FIIIIIIIIIIIIIXXXXXXX
+
+        
                 // function changeClothesIconsUmbrella() {
 
                 // }
@@ -213,9 +229,8 @@ function fetchWeatherData() {
                 changeClothesIconsBottomFootwear();
                 changeClothesIconsFootwearBoots();
                 changeClothesIconsOuterwear();
-                // changeClothesIconsHat();
+                changeClothesIconsAdditional();
                 // changeClothesIconsUmbrella();
-
             }
             changeClothesIcons();
 
