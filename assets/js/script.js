@@ -130,16 +130,16 @@ function fetchWeatherData() {
             let clothesIconFootwear = $("#clothes-footwear");
             let clothesIconOuterwear = $("#clothes-outerwear");
             let clothesIconHat = $("#clothes-hat");
-            let clothesIconBag = $("#clothes-bag");
-            let clothesIconAccessories = $("#clothes-accessories");
+            // let clothesIconBag = $("#clothes-bag");
+            // let clothesIconAccessories = $("#clothes-accessories");
 
             let clothesIconTopText = $("#item-name-top");
             let clothesIconBottomText = $("#item-name-bottom");
             let clothesIconFootwearText = $("#item-name-footwear");
             let clothesIconOuterwearText = $("#item-name-outerwear");
             let clothesIconHatText = $("#item-name-hat");
-            let clothesIconBagText = $("#item-name-bag");
-            let clothesIconAccessoriesText = $("#item-name-accessories");
+            // let clothesIconBagText = $("#item-name-bag");
+            // let clothesIconAccessoriesText = $("#item-name-accessories");
 
             // result of a function from before - fetch the original tempereature, transform into C, round it and save it into a variable
             let maxTemperatureResult = Math.round(transformToCelsius(originalFeelMaxTemperature));
@@ -155,23 +155,30 @@ function fetchWeatherData() {
                         clothesIconTopText.text("T-shirt");
                     }
                 }
-                // bottom = pants or shorts, footwear = shoes or sandals
-                function changeClothesIconsBottomFootwear() {
+                // bottom = pants or shorts
+                function changeClothesIconsBottom() {
                     if (maxTemperatureResult > 24) {
+                        clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-shorts.svg");
+                        clothesIconBottom.text("Shorts");
+                    } else {
                         clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-pants.svg");
                         clothesIconBottomText.text("Pants");
+                    }
+                }
+                // footwear = shoes or sandals
+                function changeClothesIconsFootwear() {
+                    if (maxTemperatureResult > 24) {
                         clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-sandal.svg");
                         clothesIconFootwearText.text("Sandals");
                     } else {
-                        clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-shorts.svg");
-                        clothesIconBottom.text("Shorts");
                         clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-shoe.svg");
                         clothesIconFootwearText.text("Shoes");
                     }
                 }
                 // footwear = boots
                 function changeClothesIconsFootwearBoots() {
-                    if (iconNumber >= 19 && iconNumber <= 26) {
+                    // if 19 to 26, or 29
+                    if ((iconNumber >= 19 && iconNumber <= 26) || (iconNumber === 29)) {
                         clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-boot.svg");
                         clothesIconFootwearText.text("Boots");
                     }
@@ -186,11 +193,28 @@ function fetchWeatherData() {
                         clothesIconOuterwearText.text("Blazer");
                     }
                 }
+                // function changeClothesIconsHat() {
+                //     if (maxTemperatureResult > 29) {
+                //         clothesIconHat.attr("src","assets/images/clothes-icons/svg-icon-clothes-hat.svg");
+                //         clothesIconHatText.text("Summer Hat");
+                //     } else {
+                //         clothesIconHat.attr("src","assets/images/clothes-icons/svg-icon-clothes-blazer.svg");
+                //         clothesIconHatText.text("Blazer");
+                //     }
+                // }
+                // function changeClothesIconsUmbrella() {
+
+                // }
+
 
                 changeClothesIconsTop();
+                changeClothesIconsBottom()
+                changeClothesIconsFootwear()
                 changeClothesIconsBottomFootwear();
                 changeClothesIconsFootwearBoots();
                 changeClothesIconsOuterwear();
+                // changeClothesIconsHat();
+                // changeClothesIconsUmbrella();
 
             }
             changeClothesIcons();
