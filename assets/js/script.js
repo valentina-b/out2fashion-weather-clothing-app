@@ -11,7 +11,7 @@ function fetchWeatherData() {
     let newyorkURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[2]}?apikey=${apiKey}&language=en-us&details=true`;
     let sydneyURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[3]}?apikey=${apiKey}&language=en-us&details=true`;
 
-    let testLocationKey = 113768;
+    let testLocationKey = 315275;
     let testURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${testLocationKey}?apikey=${apiKey}&language=en-us&details=true`;
 
     // Recalculate F to C --> T(°C) = (T(°F) - 32) / 1.8
@@ -22,7 +22,7 @@ function fetchWeatherData() {
 
 
 
-    fetch(berlinURL)
+    fetch(testURL)
         .then(response => {
         return response.json()
         })
@@ -129,7 +129,7 @@ function fetchWeatherData() {
             let clothesIconBottom = $("#clothes-bottom");
             let clothesIconFootwear = $("#clothes-footwear");
             let clothesIconOuterwear = $("#clothes-outerwear");
-            let clothesIconHat = $("#clothes-hat");
+            let clothesIconAdditional = $("#clothes-additional");
             // let clothesIconBag = $("#clothes-bag");
             // let clothesIconAccessories = $("#clothes-accessories");
 
@@ -137,7 +137,7 @@ function fetchWeatherData() {
             let clothesIconBottomText = $("#item-name-bottom");
             let clothesIconFootwearText = $("#item-name-footwear");
             let clothesIconOuterwearText = $("#item-name-outerwear");
-            let clothesIconHatText = $("#item-name-hat");
+            let clothesIconAdditionalText = $("#item-name-additional");
             // let clothesIconBagText = $("#item-name-bag");
             // let clothesIconAccessoriesText = $("#item-name-accessories");
 
