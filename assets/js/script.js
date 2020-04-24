@@ -4,12 +4,48 @@ $( document ).ready(function() {
 function fetchWeatherData() {
 
     let apiKey = "cUKU5seD8FYw3kzd4humiPZ5JAu8Aep3";
-    // Berlin, London, New York, Sydney
-    let locationKey = [178087, 328328, 349727, 22889];
-    let berlinURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[0]}?apikey=${apiKey}&language=en-us&details=true`;
-    let londonURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[1]}?apikey=${apiKey}&language=en-us&details=true`;
-    let newyorkURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[2]}?apikey=${apiKey}&language=en-us&details=true`;
-    let sydneyURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[3]}?apikey=${apiKey}&language=en-us&details=true`;
+    let locationKey = [
+        {
+            city: "Berlin",
+            cityKey: 178087
+        },
+        {
+            city: "London",
+            cityKey: 328328
+        },
+        {
+            city: "Paris",
+            cityKey: 623
+        },
+        {
+            city: "New York",
+            cityKey: 349727
+        },
+        {
+            city: "Sydney",
+            cityKey: 22889
+        },
+        {
+            city: "Hong Kong",
+            cityKey: 1123655
+        },
+        {
+            city: "Seoul",
+            cityKey: 226081
+        },
+        {
+            city: "Auckland",
+            cityKey: 252066
+        }];
+
+    let berlinURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[0].cityKey}?apikey=${apiKey}&language=en-us&details=true`;
+    let londonURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[1].cityKey}?apikey=${apiKey}&language=en-us&details=true`;
+    let parisURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[2].cityKey}?apikey=${apiKey}&language=en-us&details=true`;
+    let newyorkURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[3].cityKey}?apikey=${apiKey}&language=en-us&details=true`;
+    let sydneyURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[4].cityKey}?apikey=${apiKey}&language=en-us&details=true`;
+    let hongkongURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[5].cityKey}?apikey=${apiKey}&language=en-us&details=true`;
+    let seoulURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[6].cityKey}?apikey=${apiKey}&language=en-us&details=true`;
+    let aucklandURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[7].cityKey}?apikey=${apiKey}&language=en-us&details=true`;
 
     let testLocationKey = 3439872;
     let testURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${testLocationKey}?apikey=${apiKey}&language=en-us&details=true`;
@@ -22,7 +58,7 @@ function fetchWeatherData() {
 
 
 
-    fetch(berlinURL)
+    fetch(seoulURL)
         .then(response => {
         return response.json()
         })
