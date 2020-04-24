@@ -18,7 +18,7 @@
 <body>
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+<nav class="navbar navbar-light fixed-top" id="navbar">
 
     <a class="navbar-brand" href="index.html">
     <img src="assets/images/svg-logo.svg" alt="Logo image">
@@ -55,8 +55,10 @@
             <h1 id="header-title" class="text-uppercase">Out-2-Fashion</h1>
             <div class="line light">
             </div>
-            <p class="header-paragraph">A web app that tells you which clothing items you should wear today. 
-                Select your city, check the weather forecast and get the fashion recommendations for the day!
+            <p class="header-paragraph">
+                OUT2FASHION is a web app that tells you which clothing items you should wear today.
+                <br>
+                <span class="text-uppercase">Select your city below!</span>
             </p>
             <!-- <form id="search-api-form">
                 <label for="search-api" class="text-uppercase shadow-main" id="search-label">Tell me how to dress in:</label>
@@ -68,7 +70,7 @@
             <!-- </div> -->
         </div>
     </div>
-  </header>
+</header>
 <!-- Header -->
 
 <!-- Main content -->
@@ -80,7 +82,7 @@
             <div class="col-lg-4" id="content-shortcuts">
 
                     <div class="content-box">
-                        <h2 class="text-uppercase text-center h2-heading">1. Choose your city</h2>
+                        <!-- <h2 class="text-uppercase text-center h2-heading">1. Choose your city</h2> -->
 
                         <div class="content-row">
                             <div class="city-content class-mr-15">
@@ -117,102 +119,59 @@
 
             </div>
 
-            
-            
-            <div class="col-lg-4" id="content-preview">
+
+            <div class="col-lg-4" id="content-additional">
+                <div class="content-box text-center shadow-main" id="content-additional-text">
+                    <!-- <h2 class="h2-heading">Select your city!</h2> -->
+                    <div class="line light">
+                    </div>
+                    <p class="">
+                        Never forget your umbrella again! Select your city, check the weather forecast and get the fashion recommendations of the day!
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4" id="content-shortcuts">
 
                     <div class="content-box">
-                        <h2 class="text-uppercase text-center h2-heading">2. Check the weather</h2>
+                        <!-- <h2 class="text-uppercase text-center h2-heading">1. Choose your city</h2> -->
 
                         <div class="content-row">
-
-                            <div class="weather-square class-mr-15">
-                                <div class="square weather shadow-main radius">
-                                    <div class="circle">
-                                    </div>
-                                    <img src="assets/images/weather-icons/svg-icon-weather-sun.svg" class="weather-clothes-icon-hp" alt="Sun icon">
-                                </div>
-                                <div class="square-text-hp">
-                                    <p class="text-center">Sunny?</p>
-                                </div>
+                            <div class="city-content class-mr-15">
+                                <a href="berlin.html" class="city-link">
+                                    <img src="assets/images/cities/img-city-berlin.png" class="square shadow-main radius" alt="Berlin">
+                                </a>
+                                <p class="text-center">Berlin</p>
                             </div>
-
-                            <div class="clothes-square class-ml-15">
-                                <div class="square clothes shadow-main radius">
-                                    <div class="circle">
-                                    </div>
-                                    <img src="assets/images/clothes-icons/svg-icon-clothes-tshirt.svg" class="weather-clothes-icon-hp" alt="T-shirt icon">
-                                </div>
-                                <div class="square-text-hp">
-                                    <p class="text-center">T-shirt time!</p>
-                                </div>
+                            <div class="city-content class-ml-15">
+                                <a href="london.html" class="city-link">
+                                    <img src="assets/images/cities/img-city-london.png" class="square shadow-main radius" alt="London">
+                                </a>
+                                <p class="text-center">London</p>
                             </div>
-
                         </div>
 
-                        <div class="content-row class-mt-15">
-
-                            <div class="weather-square class-mr-15">
-                                <div class="square weather shadow-main radius">
-                                    <div class="circle">
-                                    </div>
-                                    <img src="assets/images/weather-icons/svg-icon-weather-rain.svg" class="weather-clothes-icon-hp" alt="Rain icon">
-                                </div>
-                                <div class="square-text-hp">
-                                    <p class="text-center">Rainy?</p>
-                                </div>
+                        <div class="content-row">
+                            <div class="city-content class-mr-15">
+                                <a href="newyork.html" class="city-link">
+                                    <img src="assets/images/cities/img-city-newyork.png" class="square shadow-main radius" alt="New York">
+                                </a>
+                                <p class="text-center">New York</p>
                             </div>
-
-                            <div class="clothes-square class-ml-15">
-                                <div class="square clothes shadow-main radius">
-                                    <div class="circle">
-                                    </div>
-                                    <img src="assets/images/clothes-icons/svg-icon-clothes-umbrella.svg" class="weather-clothes-icon-hp" alt="Umbrella icon">
-                                </div>
-                                <div class="square-text-hp">
-                                    <p class="text-center">Get umbrella!</p>
-                                </div>
+                            <div class="city-content class-ml-15">
+                                <a href="sydney.html" class="city-link">
+                                    <img src="assets/images/cities/img-city-sydney.png" class="square shadow-main radius" alt="Sydney">
+                                </a>
+                                <p class="text-center">Sydney</p>
                             </div>
-                            
                         </div>
+
 
                     </div>
+
             </div>
-
-
-
-            <div class="col-lg-4" id="content-recommendations-preview">
-                <div class="content-box">
-                    <h2 class="text-uppercase text-center h2-heading">3. Get inspired & shop</h2>
-
-                    <div class="recommendations-content">
-                        <div class="outfit content-column class-mr-15">
-                            <img src="assets/images/img-outfit.png" id="img-outfit" class="shadow-main radius" alt="Outfit preview">
-                        </div>
-
-                        <div class="clothes-hp content-column class-ml-15">
-                            <div class="">
-                                <img src="assets/images/img-clothes-hp-1-umbrella.png"  class="square radius shadow-main" alt="Esprit umbrella">
-                                <p class="price-hp text-center radius-small"><span class="price-tag">12.99 €</span></p>
-                            </div>
-                            <div>
-                                <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
-                                <p class="price-hp text-center radius-small"><span class="price-tag">34.99 €</span></p>
-                            </div>
-                        </div>
-
-
-                        <div class="recommendations-text">
-                            <p class="text-center">Dress your best today</p>
-                        </div>
-
-                    </div>
-                    
-
-
-                    </div>
-                <!-- </div> -->
-            </div>
+            
 
 
 
@@ -221,6 +180,450 @@
     </div>
 </section>
 <!-- Main content -->
+
+
+
+
+<!-- Main content BERLIN-->
+<section class="container-fluid d-none d-lg-block" id="section-content">
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-lg-4" id="content-weather-summary">
+
+                <div class="content-box">
+
+                    <div class="content-row">
+                        <h2 class="h2-heading text-uppercase text-center">What to expect in <span class="city-name">Berlin</span>?</h2>
+                    </div>
+
+                    <div class="content-row">
+                        <div class="content-forecast radius shadow-main">
+                            <div class="forecast-summary">
+
+                                <div class="square weather forecast-square radius shadow-main">
+                                
+                                    <!-- weather icon content combined -->
+                                    <div class="weather-icon">
+                                        <div class="circle">
+                                            <img src="assets/images/svg-icon-happy.svg" id="main-weather-icon" class="weather-clothes-icon-hp icon-active" alt="Main weather icon">
+                                        </div>
+                                    </div>
+                                    <!--  -->
+
+                                    <p class="forecast-text">
+                                        <img src="assets/images/svg-icon-arrow-up.svg" class="arrow-icon" alt="Arrow up">
+                                        <span class="max-temperature">0</span>°C
+                                        <img src="assets/images/svg-icon-arrow-down.svg" class="arrow-icon" alt="Arrow down">
+                                        <span class="min-temperature">0</span>°C
+                                        <img src="assets/images/svg-icon-happy.svg" id="secondary-weather-icon" class="supporting-weather-icon-img" alt="Secondary weather icon">
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="forecast-title">
+                                <h2 class="short-phrase h2-heading text-uppercase text-center">Cooler with a shower or two</h2>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <h2 class="h2-heading class-mt-15 long-phrase-style"><span class="long-phrase">Some sun, then turning cloudy and very warm</span>. 
+                        The real-feel temperature today will be between <span class="feel-max-temperature">0</span>°C and <span class="feel-min-temperature">0</span>°C.</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="col-lg-8" id="content-recommendations-clothes">
+            
+                <!-- intro -->
+                <div class="content-row float-left class-mb-15">
+                    <h2 class="h2-heading text-uppercase text-left">Today you will need:</h2>
+                </div>
+
+                <div class="content-row float-left">
+                    <p class="description">
+
+                        Select one item from each category to create your fashion moodboard of the day. 
+                        You can also refresh the category offer by clicking the refresh button - 
+                        <span class="tip-box radius shadow-clicked">
+                            <img src="assets/images/svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                        </span>
+                    </p>
+
+                    <div class="line dark float-left">
+                    </div>
+                </div>
+                
+
+                <!-- a row withing the lg-8 column with 2 lg-6 columns -->
+
+                <div class="row float-left">
+                    <div class="col-lg-6 column-1">
+
+                            <!-- first recommendation item square TOP -->
+                            <div class="recommended-item-box class-mb-15 content-row">
+
+                                <div class="content-row">
+
+                                    <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                        <div class="clothes-icon">
+                                            <div class="refresh-square radius shadow-main float-right">
+                                                <img src="assets/images/svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                            </div>
+                                            <div class="circle">
+                                                <img src="assets/images/clothes-icons/svg-icon-clothes-tshirt.svg" class="clothes-1 weather-clothes-icon-hp icon-active" alt="Clothes icon">
+                                            </div>
+                                        </div>
+                                        <p class="item-text text-center">
+                                            <span class="item-name text-uppercase">T-shirt</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">1 €</span></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="content-row">
+
+                                    <div class="clothes-square class-mr-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">2 €</span></p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">3 €</span></p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="content-row">
+                                    <div class="line dark">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- second recommendation item square BOTTOM-->
+                            <div class="recommended-item-box class-mb-15 content-row">
+
+                                <div class="content-row">
+
+                                    <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                        <div class="clothes-icon">
+                                            <div class="refresh-square radius shadow-main float-right">
+                                                <img src="assets/images/svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                            </div>
+                                            <div class="circle">
+                                                <img src="assets/images/clothes-icons/svg-icon-clothes-shorts.svg" class="clothes-2 weather-clothes-icon-hp icon-active" alt="Clothes icon">
+                                            </div>
+                                        </div>
+                                        <p class="item-text text-center">
+                                            <span class="item-name text-uppercase">Shorts</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">1 €</span></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="content-row">
+
+                                    <div class="clothes-square class-mr-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">2 €</span></p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">3 €</span></p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="content-row">
+                                    <div class="line dark">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- third recommendation item square FOOTWEAR-->
+                            <div class="recommended-item-box class-mb-15 content-row">
+
+                                <div class="content-row">
+
+                                    <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                        <div class="clothes-icon">
+                                            <div class="refresh-square radius shadow-main float-right">
+                                                <img src="assets/images/svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                            </div>
+                                            <div class="circle">
+                                                <img src="assets/images/clothes-icons/svg-icon-clothes-shoe.svg" class="clothes-3 weather-clothes-icon-hp icon-active" alt="Clothes icon">
+                                            </div>
+                                        </div>
+                                        <p class="item-text text-center">
+                                            <span class="item-name text-uppercase">Shoes</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">1 €</span></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="content-row">
+
+                                    <div class="clothes-square class-mr-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">2 €</span></p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">3 €</span></p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="content-row">
+                                    <div class="line dark">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <!-- fourth recommendation item square JACKETS/BLAZERS-->
+                            <div class="recommended-item-box class-mb-15 content-row">
+
+                                <div class="content-row">
+
+                                    <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                        <div class="clothes-icon">
+                                            <div class="refresh-square radius shadow-main float-right">
+                                                <img src="assets/images/svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                            </div>
+                                            <div class="circle">
+                                                <img src="assets/images/clothes-icons/svg-icon-clothes-cardigan.svg" class="clothes-4 weather-clothes-icon-hp icon-active" alt="Clothes icon">
+                                            </div>
+                                        </div>
+                                        <p class="item-text text-center">
+                                            <span class="item-name text-uppercase">Blazer</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">1 €</span></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="content-row">
+
+                                    <div class="clothes-square class-mr-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">2 €</span></p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">3 €</span></p>
+                                    </div>
+                                    
+                                </div>
+
+                                <!-- <div class="content-row">
+                                    <div class="line dark">
+                                    </div>
+                                </div> -->
+                                
+                            </div>
+
+
+                    </div>
+
+                    <div class="col-lg-6 column-2">
+
+                            <!-- fifth recommendation item square UMBRELLA/SUMMER-HATS/WINTER-ACCESSORIES-->
+                            <div class="recommended-item-box class-mb-15 content-row">
+
+                                <div class="content-row">
+
+                                    <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                        <div class="clothes-icon">
+                                            <div class="refresh-square radius shadow-main float-right">
+                                                <img src="assets/images/svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                            </div>
+                                            <div class="circle">
+                                                <img src="assets/images/clothes-icons/svg-icon-clothes-hat.svg" class="clothes-5 weather-clothes-icon-hp icon-active" alt="Clothes icon">
+                                            </div>
+                                        </div>
+                                        <p class="item-text text-center">
+                                            <span class="item-name text-uppercase">Summer hat</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">1 €</span></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="content-row">
+
+                                    <div class="clothes-square class-mr-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">2 €</span></p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">3 €</span></p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="content-row">
+                                    <div class="line dark">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <!-- sixth recommendation item square BAG-->
+                            <div class="recommended-item-box class-mb-15 content-row">
+
+                                <div class="content-row">
+
+                                    <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                        <div class="clothes-icon">
+                                            <div class="refresh-square radius shadow-main float-right">
+                                                <img src="assets/images/svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                            </div>
+                                            <div class="circle">
+                                                <img src="assets/images/clothes-icons/svg-icon-clothes-bag.svg" class="clothes-6 weather-clothes-icon-hp icon-active" alt="Clothes icon">
+                                            </div>
+                                        </div>
+                                        <p class="item-text text-center">
+                                            <span class="item-name text-uppercase">Bag</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">1 €</span></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="content-row">
+
+                                    <div class="clothes-square class-mr-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">2 €</span></p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">3 €</span></p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="content-row">
+                                    <div class="line dark">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <!-- seventh recommendation item square ACCESSORIES-->
+                            <div class="recommended-item-box class-mb-15 content-row">
+
+                                <div class="content-row">
+
+                                    <div class="square recommended-item-square radius shadow-main class-mr-15">
+                                        <div class="clothes-icon">
+                                            <div class="refresh-square radius shadow-main float-right">
+                                                <img src="assets/images/svg-icon-refresh.svg" alt="Refresh icon" class="refresh-icon">
+                                            </div>
+                                            <div class="circle">
+                                                <img src="assets/images/clothes-icons/svg-icon-clothes-accessories.svg" class="clothes-7 weather-clothes-icon-hp icon-active" alt="Clothes icon">
+                                            </div>
+                                        </div>
+                                        <p class="item-text text-center">
+                                            <span class="item-name text-uppercase">Accessories</span>
+                                        </p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">1 €</span></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="content-row">
+
+                                    <div class="clothes-square class-mr-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">2 €</span></p>
+                                    </div>
+
+                                    <div class="clothes-square class-ml-15">
+                                        <img src="assets/images/img-clothes-hp-2-blouse.png"  class="square radius shadow-main" alt="Esprit blouse">
+                                        <p class="price-hp text-center radius-small"><span class="price-tag">3 €</span></p>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="content-row">
+                                    <div class="line dark">
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <!-- last element -->
+                            <div class="content-row last-box shadow-main radius">
+                                <p class="text-center">Pssst... don’t forget to visit us tomorrow for new <span class="regular-weight">trendy inspirations!</span></p>
+                            </div>
+
+                            <div class="content-row">
+                                <div class="line dark">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!-- Main content BERLIN-->
+
 
 
 
