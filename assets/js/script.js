@@ -22,7 +22,7 @@ function fetchWeatherData() {
 
 
 
-    fetch(testURL)
+    fetch(berlinURL)
         .then(response => {
         return response.json()
         })
@@ -197,7 +197,7 @@ function fetchWeatherData() {
                         clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-jacket.svg");
                         clothesIconOuterwearText.text("Jacket");
                     } 
-                    else if (maxTemperatureResult > 29) {
+                    else if (maxTemperatureResult > 28) {
                         clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-hat.svg");
                         clothesIconOuterwearText.text("Summer hat");
                     } 
@@ -213,7 +213,7 @@ function fetchWeatherData() {
                     if (maxTemperatureResult < 15) {
                         clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-winter-hat.svg");
                         clothesIconAdditionalText.text("Winter hat");
-                    } else if (maxTemperatureResult > 29) {
+                    } else if (maxTemperatureResult > 28) {
                         clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-sunglasses.svg");
                         clothesIconAdditionalText.text("Sunglasses");
                     } else {
