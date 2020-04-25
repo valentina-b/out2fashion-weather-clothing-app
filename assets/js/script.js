@@ -1,7 +1,48 @@
 $( document ).ready(function() {
 
+    // when a user clicks on a city
+    // hide main content
+    // show city content
+    // fetch city data
 
-function fetchWeatherData() {
+    function changeContent() {
+        $("#main-content").addClass("d-none");
+        $("#city-content").removeClass("d-none");
+    };
+
+    // let cityName = ;
+    // let cityNamePopulated = $("#city-name-populated").text();
+
+    // function changeCityName(cityName) {
+        
+    // }
+
+    $("#berlin").click(function() {
+        changeContent();
+    });
+    $("#london").click(function() {
+        changeContent();
+    });
+    $("#paris").click(function() {
+        changeContent();
+    });
+    $("#newyork").click(function() {
+        changeContent();
+    });
+    $("#sydney").click(function() {
+        changeContent();
+    });
+    $("#hongkong").click(function() {
+        changeContent();
+    });
+    $("#seoul").click(function() {
+        changeContent();
+    });
+    $("#auckland").click(function() {
+        changeContent();
+    });
+
+
 
     let apiKey = "cUKU5seD8FYw3kzd4humiPZ5JAu8Aep3";
     let locationKey = [
@@ -36,7 +77,8 @@ function fetchWeatherData() {
         {
             city: "Auckland",
             cityKey: 252066
-        }];
+        }
+    ];
 
     let berlinURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[0].cityKey}?apikey=${apiKey}&language=en-us&details=true`;
     let londonURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${locationKey[1].cityKey}?apikey=${apiKey}&language=en-us&details=true`;
@@ -50,15 +92,18 @@ function fetchWeatherData() {
     let testLocationKey = 3439872;
     let testURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${testLocationKey}?apikey=${apiKey}&language=en-us&details=true`;
 
+    // let cityURL = [berlinURL, londonURL, parisURL, newyorkURL, sydneyURL, hongkongURL, seoulURL, aucklandURL]
+
+
+function fetchWeatherData() {
+
     // Recalculate F to C --> T(°C) = (T(°F) - 32) / 1.8
     // transformToCelsius(68) ---> 20
     function transformToCelsius(tempF) {
         return (tempF - 32) / 1.8
     }
 
-
-
-    fetch(seoulURL)
+    fetch(berlinURL)
         .then(response => {
         return response.json()
         })
