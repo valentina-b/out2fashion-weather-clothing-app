@@ -1,5 +1,21 @@
 $( document ).ready(function() {
 
+    // EFFECTS
+    $(".city-content img").mouseenter(function(){
+        $(this).addClass("square-hover");
+    });
+    $(".city-content img").mouseleave(function(){
+        $(this).removeClass("square-hover");
+    })
+
+    $(".refresh-square").mouseenter(function(){
+        $(this).addClass("shadow-hover");
+    });
+    $(".refresh-square").mouseleave(function(){
+        $(this).removeClass("shadow-hover");
+    })
+
+
     // when a user clicks on a city
     // hide main content
     // show city content
