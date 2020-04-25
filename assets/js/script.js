@@ -189,22 +189,22 @@ $( document ).ready(function() {
                     }
                     changeWeatherIcons();
 
-                    // change clothing items icons
+                    // change clothing items icons and text
                     let clothesIconTop = $("#clothes-top");
                     let clothesIconBottom = $("#clothes-bottom");
                     let clothesIconFootwear = $("#clothes-footwear");
                     let clothesIconOuterwear = $("#clothes-outerwear");
                     let clothesIconAdditional = $("#clothes-additional");
-                    // let clothesIconBag = $("#clothes-bag");
-                    // let clothesIconAccessories = $("#clothes-accessories");
+                    let clothesIconBag = $("#clothes-bag");
+                    let clothesIconAccessories = $("#clothes-accessories");
 
                     let clothesIconTopText = $("#item-name-top");
                     let clothesIconBottomText = $("#item-name-bottom");
                     let clothesIconFootwearText = $("#item-name-footwear");
                     let clothesIconOuterwearText = $("#item-name-outerwear");
                     let clothesIconAdditionalText = $("#item-name-additional");
-                    // let clothesIconBagText = $("#item-name-bag");
-                    // let clothesIconAccessoriesText = $("#item-name-accessories");
+                    let clothesIconBagText = $("#item-name-bag");
+                    let clothesIconAccessoriesText = $("#item-name-accessories");
 
                     // result of a function from before - fetch the original tempereature, transform into C, round it and save it into a variable
                     let maxTemperatureResult = Math.round(transformToCelsius(originalFeelMaxTemperature));
@@ -299,6 +299,25 @@ $( document ).ready(function() {
                         changeClothesIconsAdditionalUmbrella();
                     }
                     changeClothesIcons();
+
+                    // populate products based on the clothes icons
+                    // let clothesIconTopText = $("#item-name-top");
+                    // let clothesIconBottomText = $("#item-name-bottom");
+                    // let clothesIconFootwearText = $("#item-name-footwear");
+                    // let clothesIconOuterwearText = $("#item-name-outerwear");
+                    // let clothesIconAdditionalText = $("#item-name-additional");
+                    // let clothesIconBagText = $("#item-name-bag");
+                    // let clothesIconAccessoriesText = $("#item-name-accessories");
+                    let itemText = $(".item-name").text();
+                    function populateProducts(itemText) {
+                        for (let i = 0; i < products.length; i++) {
+                            if (products[i] == itemText) {
+                                
+                            }
+                            
+                        }
+                    }
+
                 })
                 .catch(err => {
                 // Error

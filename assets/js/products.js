@@ -1,6 +1,6 @@
 const products = {
 
-    "umbrella": [
+    "Umbrella": [
         [
             {
                 "price": "19,99",
@@ -88,7 +88,7 @@ const products = {
         ]
     ],
 
-    "t-shirt": [
+    "T-shirt": [
         [
             {
                 "price": "19,99",
