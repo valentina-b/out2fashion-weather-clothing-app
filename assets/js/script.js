@@ -26,37 +26,16 @@ $( document ).ready(function() {
         $("#city-content").removeClass("d-none");
     };
 
+    $("#berlin, #london, #paris, #newyork, #sydney, #hongkong, #seoul, #auckland").click(function() {
+        changeContent();
+    });
+
     // let cityName = ;
     // let cityNamePopulated = $("#city-name-populated").text();
 
     // function changeCityName(cityName) {
         
     // }
-
-    $("#berlin").click(function() {
-        changeContent();
-    });
-    $("#london").click(function() {
-        changeContent();
-    });
-    $("#paris").click(function() {
-        changeContent();
-    });
-    $("#newyork").click(function() {
-        changeContent();
-    });
-    $("#sydney").click(function() {
-        changeContent();
-    });
-    $("#hongkong").click(function() {
-        changeContent();
-    });
-    $("#seoul").click(function() {
-        changeContent();
-    });
-    $("#auckland").click(function() {
-        changeContent();
-    });
 
 
 
