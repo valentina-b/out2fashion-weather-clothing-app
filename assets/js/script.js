@@ -23,7 +23,8 @@ $( document ).ready(function() {
         $("#main-content").addClass("d-none");
         $("#city-content").removeClass("d-none");
         // bring the user to the top of the page
-
+        // credits: https://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
         // 3 change city name in the city content
