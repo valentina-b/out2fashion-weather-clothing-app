@@ -236,7 +236,7 @@ $( document ).ready(function() {
 
                         // footwear = shoes or sandals
                         function changeClothesIconsFootwear() {
-                            if (maxTemperatureResult > 25) {
+                            if (maxTemperatureResult > 26) {
                                 clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-sandal.svg");
                                 clothesIconFootwearText.text("Sandals");
                             } else {
@@ -248,7 +248,6 @@ $( document ).ready(function() {
 
                         // footwear = boots
                         function changeClothesIconsFootwearBoots() {
-                            // if 19 to 26, or 29
                             if ((iconNumber >= 19 && iconNumber <= 26) || (iconNumber === 29)) {
                                 clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-boot.svg");
                                 clothesIconFootwearText.text("Boots");
@@ -278,7 +277,7 @@ $( document ).ready(function() {
                             if (maxTemperatureResult < 15) {
                                 clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-winter-hat.svg");
                                 clothesIconAdditionalText.text("Winter hat");
-                            } else if (maxTemperatureResult > 25) {
+                            } else if (maxTemperatureResult > 26) {
                                 clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-sunglasses.svg");
                                 clothesIconAdditionalText.text("Sunglasses");
                             } else {
@@ -292,7 +291,7 @@ $( document ).ready(function() {
                         function changeClothesIconsAdditionalUmbrella() {
                             // if 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23 (no 24)
                             // if 25, 26 and 29
-                            if ((iconNumber >= 12 && iconNumber <= 23) || (iconNumber >= 25 && iconNumber <= 26) || (iconNumber === 29)) {
+                            if ((iconNumber >= 12 && iconNumber <= 23) || [25, 26, 29].includes(iconNumber)) {
                                 clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-umbrella.svg");
                                 clothesIconAdditionalText.text("Umbrella");
                             }
