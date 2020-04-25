@@ -17,28 +17,23 @@ $( document ).ready(function() {
 
 
     // when a user clicks on a city
-    // hide main content
-    // show city content
-    // fetch city data
-
+        // 1 hide main content
+        // 2 show city content
     function changeContent() {
         $("#main-content").addClass("d-none");
         $("#city-content").removeClass("d-none");
+        // bring the user to the top of the page
+
     };
 
-    $("#berlin, #london, #paris, #newyork, #sydney, #hongkong, #seoul, #auckland").click(function() {
+        // 3 change city name in the city content
+    $(".city-name-img").click(function() {
         changeContent();
+        let cityAttributeText = $(this).attr("alt");
+        $("#city-name-populated").text(cityAttributeText);
     });
 
-    // let cityName = ;
-    // let cityNamePopulated = $("#city-name-populated").text();
-
-    // function changeCityName(cityName) {
-        
-    // }
-
-
-
+        // 4 fetch city data
     let apiKey = "cUKU5seD8FYw3kzd4humiPZ5JAu8Aep3";
     let locationKey = [
         {
@@ -88,6 +83,7 @@ $( document ).ready(function() {
     let testURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${testLocationKey}?apikey=${apiKey}&language=en-us&details=true`;
 
     // let cityURL = [berlinURL, londonURL, parisURL, newyorkURL, sydneyURL, hongkongURL, seoulURL, aucklandURL]
+
 
 
 function fetchWeatherData() {
