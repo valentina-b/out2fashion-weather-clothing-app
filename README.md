@@ -10,3 +10,4 @@ Credits:
 - https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/ - helped me understand API connection better
 - http://ami.responsivedesign.is/ - for the showcase photos and responsiveness look and feel
 - https://esprima.org/demo/validate.html - for the help with small, often overlooked, JS syntax errors
+- https://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript - for the js code for scrolling to the top
