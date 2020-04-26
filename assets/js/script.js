@@ -206,23 +206,40 @@ $( document ).ready(function() {
                     let clothesIconBagText = $("#item-name-bag");
                     let clothesIconAccessoriesText = $("#item-name-accessories");
 
-                    // result of a function from before - fetch the original tempereature, transform into C, round it and save it into a variable
+                    // result of a function from before - fetch the original temperature, transform into C, round it and save it into a variable
                     let maxTemperatureResult = Math.round(transformToCelsius(originalFeelMaxTemperature));
                     
+                    // create a random number 0-4 to access 1 out of 5 collections of the products object
                     function randomZeroToFour() {
                         return Math.floor(Math.random() * 5); 
                     };
-                    // let recommendationProductBox1price1 = $("#recommendation-1 .price-tag:nth-child(1)");
 
-                    // function populateProducts () {
-                    //     let randomNumber = randomZeroToFour();
-                    //     for (let i = 0; i < array.length; i++) {
-                    //         recommendationProductBox1price1.text(products.shirt[randomNumber][i].price);
-                            
-                    //     }
-                        
-                    // }
-                    // populateProducts();
+                    // take an array and populate recommended-item-box with products
+                    function populateProducts(productsArray) {
+                        productsArray[0].text(productsArray[1]);
+                        productsArray[2].attr("src", `assets/images/clothes-items/${productsArray[4]}/${productsArray[3]}.png`);
+                    };
+
+                    let price1 = $("#price1");
+                    let price2 = $("#price2");
+                    let price3 = $("#price3");
+                    let price4 = $("#price4");
+                    let price5 = $("#price5");
+                    let price6 = $("#price6");
+
+                    let image1 = $("#image1");
+                    let image2 = $("#image2");
+                    let image3 = $("#image3");
+                    let image4 = $("#image4");
+                    let image5 = $("#image5");
+                    let image6 = $("#image6");
+
+                    let randomNumber = randomZeroToFour();
+                    let productName1 = "shirt";
+                    let productName2 = "tshirt";
+                    let productName3 = "shorts";
+                    let productName4 = "pants";
+
 
                     function changeClothesIcons() {
                         // top = shirt or tshirt
@@ -230,17 +247,7 @@ $( document ).ready(function() {
                             if (maxTemperatureResult <= 20) {
                                 clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-shirt.svg");
                                 clothesIconTopText.text("Shirt");
-
-                                let price1 = $("#price1");
-                                let price2 = $("#price2");
-                                let price3 = $("#price3");
-
-                                let image1 = $("#image1");
-                                let image2 = $("#image2");
-                                let image3 = $("#image3");
                                 
-                                let randomNumber = randomZeroToFour();
-
                                 let fetchPrice1 = products.shirt[randomNumber][0].price;
                                 let fetchPrice2 = products.shirt[randomNumber][1].price;
                                 let fetchPrice3 = products.shirt[randomNumber][2].price;
@@ -249,28 +256,18 @@ $( document ).ready(function() {
                                 let fetchImage2 = products.shirt[randomNumber][1].imageTitle;
                                 let fetchImage3 = products.shirt[randomNumber][2].imageTitle;
 
-                                function populateProducts(price, fetchPrice, image, fetchImage) {
-                                    price.text(fetchPrice);
-                                    image.attr("src", `assets/images/clothes-items/shirt/${fetchImage}.png`);
-                                }; 
-                                populateProducts(price1, fetchPrice1, image1, fetchImage1);
-                                populateProducts(price2, fetchPrice2, image2, fetchImage2);
-                                populateProducts(price3, fetchPrice3, image3, fetchImage3);
+                                let productsArray1 = [price1, fetchPrice1, image1, fetchImage1, productName1];
+                                let productsArray2 = [price2, fetchPrice2, image2, fetchImage2, productName1];
+                                let productsArray3 = [price3, fetchPrice3, image3, fetchImage3, productName1];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
 
                             } else {
                                 clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-tshirt.svg");
                                 clothesIconTopText.text("T-shirt");
-
-                                let price1 = $("#price1");
-                                let price2 = $("#price2");
-                                let price3 = $("#price3");
-
-                                let image1 = $("#image1");
-                                let image2 = $("#image2");
-                                let image3 = $("#image3");
-                                
-                                let randomNumber = randomZeroToFour();
-
+                // ************* create products.tshirt variable and then iterate on it 
                                 let fetchPrice1 = products.tshirt[randomNumber][0].price;
                                 let fetchPrice2 = products.tshirt[randomNumber][1].price;
                                 let fetchPrice3 = products.tshirt[randomNumber][2].price;
@@ -279,13 +276,13 @@ $( document ).ready(function() {
                                 let fetchImage2 = products.tshirt[randomNumber][1].imageTitle;
                                 let fetchImage3 = products.tshirt[randomNumber][2].imageTitle;
 
-                                function populateProducts(price, fetchPrice, image, fetchImage) {
-                                    price.text(fetchPrice);
-                                    image.attr("src", `assets/images/clothes-items/tshirt/${fetchImage}.png`);
-                                }; 
-                                populateProducts(price1, fetchPrice1, image1, fetchImage1);
-                                populateProducts(price2, fetchPrice2, image2, fetchImage2);
-                                populateProducts(price3, fetchPrice3, image3, fetchImage3);
+                                let productsArray1 = [price1, fetchPrice1, image1, fetchImage1, productName2];
+                                let productsArray2 = [price2, fetchPrice2, image2, fetchImage2, productName2];
+                                let productsArray3 = [price3, fetchPrice3, image3, fetchImage3, productName2];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
                             }
                         }
                         changeClothesIconsTop();
@@ -295,9 +292,42 @@ $( document ).ready(function() {
                             if (maxTemperatureResult > 24) {
                                 clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-shorts.svg");
                                 clothesIconBottomText.text("Shorts");
+
+                                let fetchPrice1 = products.shorts[randomNumber][0].price;
+                                let fetchPrice2 = products.shorts[randomNumber][1].price;
+                                let fetchPrice3 = products.shorts[randomNumber][2].price;
+
+                                let fetchImage1 = products.shorts[randomNumber][0].imageTitle;
+                                let fetchImage2 = products.shorts[randomNumber][1].imageTitle;
+                                let fetchImage3 = products.shorts[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price4, fetchPrice1, image4, fetchImage1, productName3];
+                                let productsArray2 = [price5, fetchPrice2, image5, fetchImage2, productName3];
+                                let productsArray3 = [price6, fetchPrice3, image6, fetchImage3, productName3];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
+
                             } else {
                                 clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-pants.svg");
                                 clothesIconBottomText.text("Pants");
+
+                                let fetchPrice1 = products.pants[randomNumber][0].price;
+                                let fetchPrice2 = products.pants[randomNumber][1].price;
+                                let fetchPrice3 = products.pants[randomNumber][2].price;
+
+                                let fetchImage1 = products.pants[randomNumber][0].imageTitle;
+                                let fetchImage2 = products.pants[randomNumber][1].imageTitle;
+                                let fetchImage3 = products.pants[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price4, fetchPrice1, image4, fetchImage1, productName4];
+                                let productsArray2 = [price5, fetchPrice2, image5, fetchImage2, productName4];
+                                let productsArray3 = [price6, fetchPrice3, image6, fetchImage3, productName4];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
                             }
                         }
                         changeClothesIconsBottom();
