@@ -176,7 +176,7 @@ const products = {
         ]
     ],
 
-      "shirt": [
+    "shirt": [
         [
             {
             "price": "39,99",
@@ -263,6 +263,183 @@ const products = {
             }
         ]
     ],
+
+    "shorts": [
+        [
+            {
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/basic-bermuda-aus-100-baumwolle-030EE1C306_400",
+                "imageTitle": "shorts-1"
+            },
+            {
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/high-rise-shorts-aus-hellem-denim-040CC1C303_903",
+                "imageTitle": "shorts-2"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/shorts-aus-jogger-denim-mit-organic-cotton-040EE1C309_100",
+                "imageTitle": "shorts-3"
+            }
+        ],
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/satinierte-bermuda-mit-stretchkomfort-040EO1C306_001",
+                "imageTitle": "shorts-4"
+            },
+            {
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/denim-shorts-mit-knopfleiste-030EE1C303_001",
+                "imageTitle": "shorts-5"
+            },
+            {
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/baumwoll-shorts-mit-lycra-xtra-life%E2%84%A2-040EE1C311_440",
+                "imageTitle": "shorts-6"
+            }
+        ],
+        [
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/flie%C3%9Fende-bermuda-mit-weitem-bein-040EO1C303_825",
+                "imageTitle": "shorts-7"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/mit-leinen-gestreifte-paperbag-bermuda-040EE1C319_285",
+                "imageTitle": "shorts-8"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/denim-shorts-mit-high-waist-bund-040CC1C308_903",
+                "imageTitle": "shorts-9"
+            }
+        ],
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/shorts-aus-strech-denim-050EE1C312_901",
+                "imageTitle": "shorts-10"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/jeans-shorts-mit-g%C3%BCrtel-und-zwei-kn%C3%B6pfen-030CC1C301_901",
+                "imageTitle": "shorts-11"
+            },
+            {
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/stretch-shorts-mit-streifen-040EE1C313_100",
+                "imageTitle": "shorts-12"
+            }
+        ],
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/mit-leinen-high-waist-shorts-050CC1C305_350",
+                "imageTitle": "shorts-13"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/high-rise-shorts-mit-g%C3%BCrtel-040EO1C304_110",
+                "imageTitle": "shorts-14"
+            },
+            {
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/shorts-capris/shorts-in-gewaschenem-look-100-baumwolle-069EE1C004_690",
+                "imageTitle": "shorts-15"
+            }
+        ]
+    ],
+
+    "pants": [
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jeans/stretch-jeans-mit-organic-cotton-999CC1B805_902",
+                "imageTitle": "pants-1"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/hosen/chino-aus-kompaktem-jersey-stretch-129EE1B022_040",
+                "imageTitle": "pants-2"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/hosen/kn%C3%B6chellange-stretch-hose-mit-saum-zippern-030EE1B311_270",
+                "imageTitle": "pants-3"
+            }
+        ],
+        [
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/hosen/aus-tencel%E2%84%A2-leinen-culotte-paperbag-hose-050EE1B314_401",
+                "imageTitle": "pants-4"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jeans/basic-jeans-mit-organic-cotton-040EE1B349_901",
+                "imageTitle": "pants-5"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/hosen/melierte-hose-mit-paperbag-bund-040EE1B332_400",
+                "imageTitle": "pants-6"
+            }
+        ],
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/hosen/summer-chino-mit-g%C3%BCrtel-und-stretch-030EE1B310_001",
+                "imageTitle": "pants-7"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/hosen/aus-leinen-mix-jogger-pants-im-cargo-stil-030CC1B322_110",
+                "imageTitle": "pants-8"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/hosen/business-pants-mit-stretchkomfort-129EE1B027_400",
+                "imageTitle": "pants-9"
+            }
+        ],
+        [
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jeans/stretch-jeans-mit-organic-cotton-998EE1B820_901",
+                "imageTitle": "pants-10"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jeans/kn%C3%B6chellange-jeans-mit-details-040EO1B319_100",
+                "imageTitle": "pants-11"
+            },
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/hosen/aus-leinen-mix-culotte-mit-bundfalten-040EO1B318_001",
+                "imageTitle": "pants-12"
+            }
+        ],
+        [
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jeans/kn%C3%B6chellange-shaping-jeans-050EE1B313_921",
+                "imageTitle": "pants-13"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/hosen/baumwoll-stretch-chino-mit-lycra-xtra-life%E2%84%A2-990EE1B302_350",
+                "imageTitle": "pants-14"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/hosen/mit-lyocell-bundfalten-culotte-050EE1B304_100",
+                "imageTitle": "pants-15"
+            }
+        ],
+    ],
+
 
 
 }
