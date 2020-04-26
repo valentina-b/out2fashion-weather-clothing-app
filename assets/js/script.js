@@ -230,25 +230,62 @@ $( document ).ready(function() {
                             if (maxTemperatureResult <= 20) {
                                 clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-shirt.svg");
                                 clothesIconTopText.text("Shirt");
+
                                 let price1 = $("#price1");
                                 let price2 = $("#price2");
                                 let price3 = $("#price3");
+
+                                let image1 = $("#image1");
+                                let image2 = $("#image2");
+                                let image3 = $("#image3");
                                 
                                 let randomNumber = randomZeroToFour();
 
                                 let fetchPrice1 = products.shirt[randomNumber][0].price;
-                                // let fetchPrice1 = products.shirt[randomNumber][1].price;
-                                // let fetchPrice1 = products.shirt[randomNumber][2].price;
+                                let fetchPrice2 = products.shirt[randomNumber][1].price;
+                                let fetchPrice3 = products.shirt[randomNumber][2].price;
 
-                                function populateProducts() {
-                                    price1.text(fetchPrice1)
-                                };
-                                populateProducts();
-                                // populateProducts(price2, fetchPrice2);
-                                // populateProducts(price3, fetchPrice3);
+                                let fetchImage1 = products.shirt[randomNumber][0].imageTitle;
+                                let fetchImage2 = products.shirt[randomNumber][1].imageTitle;
+                                let fetchImage3 = products.shirt[randomNumber][2].imageTitle;
+
+                                function populateProducts(price, fetchPrice, image, fetchImage) {
+                                    price.text(fetchPrice);
+                                    image.attr("src", `assets/images/clothes-items/shirt/${fetchImage}.png`);
+                                }; 
+                                populateProducts(price1, fetchPrice1, image1, fetchImage1);
+                                populateProducts(price2, fetchPrice2, image2, fetchImage2);
+                                populateProducts(price3, fetchPrice3, image3, fetchImage3);
+
                             } else {
                                 clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-tshirt.svg");
                                 clothesIconTopText.text("T-shirt");
+
+                                let price1 = $("#price1");
+                                let price2 = $("#price2");
+                                let price3 = $("#price3");
+
+                                let image1 = $("#image1");
+                                let image2 = $("#image2");
+                                let image3 = $("#image3");
+                                
+                                let randomNumber = randomZeroToFour();
+
+                                let fetchPrice1 = products.tshirt[randomNumber][0].price;
+                                let fetchPrice2 = products.tshirt[randomNumber][1].price;
+                                let fetchPrice3 = products.tshirt[randomNumber][2].price;
+
+                                let fetchImage1 = products.tshirt[randomNumber][0].imageTitle;
+                                let fetchImage2 = products.tshirt[randomNumber][1].imageTitle;
+                                let fetchImage3 = products.tshirt[randomNumber][2].imageTitle;
+
+                                function populateProducts(price, fetchPrice, image, fetchImage) {
+                                    price.text(fetchPrice);
+                                    image.attr("src", `assets/images/clothes-items/tshirt/${fetchImage}.png`);
+                                }; 
+                                populateProducts(price1, fetchPrice1, image1, fetchImage1);
+                                populateProducts(price2, fetchPrice2, image2, fetchImage2);
+                                populateProducts(price3, fetchPrice3, image3, fetchImage3);
                             }
                         }
                         changeClothesIconsTop();
