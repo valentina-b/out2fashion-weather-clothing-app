@@ -208,6 +208,21 @@ $( document ).ready(function() {
 
                     // result of a function from before - fetch the original tempereature, transform into C, round it and save it into a variable
                     let maxTemperatureResult = Math.round(transformToCelsius(originalFeelMaxTemperature));
+                    
+                    function randomZeroToFour() {
+                        return Math.floor(Math.random() * 5); 
+                    };
+                    // let recommendationProductBox1price1 = $("#recommendation-1 .price-tag:nth-child(1)");
+
+                    // function populateProducts () {
+                    //     let randomNumber = randomZeroToFour();
+                    //     for (let i = 0; i < array.length; i++) {
+                    //         recommendationProductBox1price1.text(products.shirt[randomNumber][i].price);
+                            
+                    //     }
+                        
+                    // }
+                    // populateProducts();
 
                     function changeClothesIcons() {
                         // top = shirt or tshirt
@@ -215,6 +230,22 @@ $( document ).ready(function() {
                             if (maxTemperatureResult <= 20) {
                                 clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-shirt.svg");
                                 clothesIconTopText.text("Shirt");
+                                let price1 = $("#price1");
+                                let price2 = $("#price2");
+                                let price3 = $("#price3");
+                                
+                                let randomNumber = randomZeroToFour();
+
+                                let fetchPrice1 = products.shirt[randomNumber][0].price;
+                                // let fetchPrice1 = products.shirt[randomNumber][1].price;
+                                // let fetchPrice1 = products.shirt[randomNumber][2].price;
+
+                                function populateProducts() {
+                                    price1.text(fetchPrice1)
+                                };
+                                populateProducts();
+                                // populateProducts(price2, fetchPrice2);
+                                // populateProducts(price3, fetchPrice3);
                             } else {
                                 clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-tshirt.svg");
                                 clothesIconTopText.text("T-shirt");
@@ -308,15 +339,29 @@ $( document ).ready(function() {
                     // let clothesIconAdditionalText = $("#item-name-additional");
                     // let clothesIconBagText = $("#item-name-bag");
                     // let clothesIconAccessoriesText = $("#item-name-accessories");
-                    let itemText = $(".item-name").text();
-                    function populateProducts(itemText) {
-                        for (let i = 0; i < products.length; i++) {
-                            if (products[i] == itemText) {
+
+                    // create a random number from 0 to 4 for the products arrays
+                    // https://www.w3schools.com/js/js_random.asp
+                    // function randomZeroToFour() {
+                    //     return Math.floor(Math.random() * 5); 
+                    // };
+
+
+
+                    // let itemText = $(".item-name").text();
+                    // function populateProducts(itemText) {
+
+                    // }
+
+                    // let item
+                    // function populateProducts(itemText) {
+                    //     for (let i = 0; i < products.length; i++) {
+                    //         if (products[i] == itemText) {
                                 
-                            }
+                    //         }
                             
-                        }
-                    }
+                    //     }
+                    // }
 
                 })
                 .catch(err => {
