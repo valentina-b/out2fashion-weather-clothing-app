@@ -240,6 +240,11 @@ $( document ).ready(function() {
                     let productName3 = "shorts";
                     let productName4 = "pants";
 
+                    let productsShirt = products.shirt;
+                    let productsTshirt = products.tshirt;
+                    let productsShorts = products.shorts;
+                    let productsPants = products.pants;
+
 
                     function changeClothesIcons() {
                         // top = shirt or tshirt
@@ -248,13 +253,13 @@ $( document ).ready(function() {
                                 clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-shirt.svg");
                                 clothesIconTopText.text("Shirt");
                                 
-                                let fetchPrice1 = products.shirt[randomNumber][0].price;
-                                let fetchPrice2 = products.shirt[randomNumber][1].price;
-                                let fetchPrice3 = products.shirt[randomNumber][2].price;
+                                let fetchPrice1 = productsShirt[randomNumber][0].price;
+                                let fetchPrice2 = productsShirt[randomNumber][1].price;
+                                let fetchPrice3 = productsShirt[randomNumber][2].price;
 
-                                let fetchImage1 = products.shirt[randomNumber][0].imageTitle;
-                                let fetchImage2 = products.shirt[randomNumber][1].imageTitle;
-                                let fetchImage3 = products.shirt[randomNumber][2].imageTitle;
+                                let fetchImage1 = productsShirt[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsShirt[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsShirt[randomNumber][2].imageTitle;
 
                                 let productsArray1 = [price1, fetchPrice1, image1, fetchImage1, productName1];
                                 let productsArray2 = [price2, fetchPrice2, image2, fetchImage2, productName1];
@@ -267,15 +272,33 @@ $( document ).ready(function() {
                             } else {
                                 clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-tshirt.svg");
                                 clothesIconTopText.text("T-shirt");
+
                 // ************* create products.tshirt variable and then iterate on it 
-                                let fetchPrice1 = products.tshirt[randomNumber][0].price;
-                                let fetchPrice2 = products.tshirt[randomNumber][1].price;
-                                let fetchPrice3 = products.tshirt[randomNumber][2].price;
 
-                                let fetchImage1 = products.tshirt[randomNumber][0].imageTitle;
-                                let fetchImage2 = products.tshirt[randomNumber][1].imageTitle;
-                                let fetchImage3 = products.tshirt[randomNumber][2].imageTitle;
+                                let fetchPrice1 = productsTshirt[randomNumber][0].price;
+                                let fetchPrice2 = productsTshirt[randomNumber][1].price;
+                                let fetchPrice3 = productsTshirt[randomNumber][2].price;
 
+                                let fetchImage1 = productsTshirt[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsTshirt[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsTshirt[randomNumber][2].imageTitle;
+
+                // ************* iterate through prices and save in a variable? As a string and then transform into an array?
+                                // function iteratePricesAndImages() {
+                                //     for (let i = 0; i < productsTshirt.length; i++) {
+                                //         productsTshirt[randomNumber][i].price;
+                                //         productsTshirt[randomNumber][i].imageTitle;
+                                //     }
+                                //     return productsTshirt[randomNumber][i].price;
+                                //     return productsTshirt[randomNumber][i].imageTitle;
+                                // }
+                // ***********this one worked
+                                // function iteratePricesAndImages() {
+                                //     for (let i = 0; i < productsTshirt.length; i++) {
+                                //         console.log(productsTshirt[3][i].price)
+                                //         console.log(productsTshirt[3][i].imageTitle)
+                                //     }
+                                // }
                                 let productsArray1 = [price1, fetchPrice1, image1, fetchImage1, productName2];
                                 let productsArray2 = [price2, fetchPrice2, image2, fetchImage2, productName2];
                                 let productsArray3 = [price3, fetchPrice3, image3, fetchImage3, productName2];
@@ -293,13 +316,13 @@ $( document ).ready(function() {
                                 clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-shorts.svg");
                                 clothesIconBottomText.text("Shorts");
 
-                                let fetchPrice1 = products.shorts[randomNumber][0].price;
-                                let fetchPrice2 = products.shorts[randomNumber][1].price;
-                                let fetchPrice3 = products.shorts[randomNumber][2].price;
+                                let fetchPrice1 = productsShorts[randomNumber][0].price;
+                                let fetchPrice2 = productsShorts[randomNumber][1].price;
+                                let fetchPrice3 = productsShorts[randomNumber][2].price;
 
-                                let fetchImage1 = products.shorts[randomNumber][0].imageTitle;
-                                let fetchImage2 = products.shorts[randomNumber][1].imageTitle;
-                                let fetchImage3 = products.shorts[randomNumber][2].imageTitle;
+                                let fetchImage1 = productsShorts[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsShorts[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsShorts[randomNumber][2].imageTitle;
 
                                 let productsArray1 = [price4, fetchPrice1, image4, fetchImage1, productName3];
                                 let productsArray2 = [price5, fetchPrice2, image5, fetchImage2, productName3];
@@ -313,13 +336,13 @@ $( document ).ready(function() {
                                 clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-pants.svg");
                                 clothesIconBottomText.text("Pants");
 
-                                let fetchPrice1 = products.pants[randomNumber][0].price;
-                                let fetchPrice2 = products.pants[randomNumber][1].price;
-                                let fetchPrice3 = products.pants[randomNumber][2].price;
+                                let fetchPrice1 = productsPants[randomNumber][0].price;
+                                let fetchPrice2 = productsPants[randomNumber][1].price;
+                                let fetchPrice3 = productsPants[randomNumber][2].price;
 
-                                let fetchImage1 = products.pants[randomNumber][0].imageTitle;
-                                let fetchImage2 = products.pants[randomNumber][1].imageTitle;
-                                let fetchImage3 = products.pants[randomNumber][2].imageTitle;
+                                let fetchImage1 = productsPants[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsPants[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsPants[randomNumber][2].imageTitle;
 
                                 let productsArray1 = [price4, fetchPrice1, image4, fetchImage1, productName4];
                                 let productsArray2 = [price5, fetchPrice2, image5, fetchImage2, productName4];
@@ -398,37 +421,6 @@ $( document ).ready(function() {
                     }
                     changeClothesIcons();
 
-                    // populate products based on the clothes icons
-                    // let clothesIconTopText = $("#item-name-top");
-                    // let clothesIconBottomText = $("#item-name-bottom");
-                    // let clothesIconFootwearText = $("#item-name-footwear");
-                    // let clothesIconOuterwearText = $("#item-name-outerwear");
-                    // let clothesIconAdditionalText = $("#item-name-additional");
-                    // let clothesIconBagText = $("#item-name-bag");
-                    // let clothesIconAccessoriesText = $("#item-name-accessories");
-
-                    // create a random number from 0 to 4 for the products arrays
-                    // https://www.w3schools.com/js/js_random.asp
-                    // function randomZeroToFour() {
-                    //     return Math.floor(Math.random() * 5); 
-                    // };
-
-
-
-                    // let itemText = $(".item-name").text();
-                    // function populateProducts(itemText) {
-
-                    // }
-
-                    // let item
-                    // function populateProducts(itemText) {
-                    //     for (let i = 0; i < products.length; i++) {
-                    //         if (products[i] == itemText) {
-                                
-                    //         }
-                            
-                    //     }
-                    // }
 
                 })
                 .catch(err => {
