@@ -1056,4 +1056,355 @@ const products = {
         ]
     ],
 
+    "summerhat": [
+        [
+            {
+                "price": "22,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/geflochtener-trilby-hut-aus-stroh-049CA1P005_295",
+                "imageTitle": "summerhat-1"
+            },
+            {
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/gestrickter-trilby-hut-mit-band-040EA1P310_285",
+                "imageTitle": "summerhat-2"
+            },
+            {
+                "price": "29,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/handgearbeitetes-cap-aus-stroh-040EA1P302_285",
+                "imageTitle": "summerhat-3"
+            }
+        ],
+        [
+            {
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/panama-hut-aus-bast-040EA1P308_295",
+                "imageTitle": "summerhat-4"
+            },
+            {
+                "price": "19,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/trilby-hut-aus-bast-040EA1P307_001",
+                "imageTitle": "summerhat-5"
+            },
+            {
+                "price": "15,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/handgearbeitetes-visor-cap-aus-stroh-040EA1P304_430",
+                "imageTitle": "summerhat-6"
+            }
+        ],
+        [
+            {
+                "price": "29,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/handgearbeiteter-sonnenhut-aus-stroh-040EA1P301_285",
+                "imageTitle": "summerhat-7"
+            },
+            {
+                "price": "22,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/geflochtener-trilby-hut-aus-stroh-069CA1P002_430",
+                "imageTitle": "summerhat-8"
+            },
+            {
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/geh%C3%A4kelter-trilby-hut-mit-band-040EA1P311_840",
+                "imageTitle": "summerhat-9"
+            }
+        ],
+        [
+            {
+                "price": "22,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/trilby-hut-aus-stroh-mit-multicolor-band-059CA1P002_285",
+                "imageTitle": "summerhat-10"
+            },
+            {
+                "price": "29,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/handgearbeiteter-sonnenhut-aus-stroh-040EA1P305_001",
+                "imageTitle": "summerhat-11"
+            },
+            {
+                "price": "17,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/geh%C3%A4kelter-trilby-hut-049CA1P004_745",
+                "imageTitle": "summerhat-12"
+            }
+        ],
+        [
+            {
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/fedora-hut-mit-bandana-049EA1P004_110",
+                "imageTitle": "summerhat-13"
+            },
+            {
+                "price": "15,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/sonnenschutz-aus-stroh-040EA1P303_285",
+                "imageTitle": "summerhat-14"
+            },
+            {
+                "price": "19,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/geflochtener-trilby-hut-aus-stroh-069EA1P001_640",
+                "imageTitle": "summerhat-15"
+            }
+        ]
+    ],
+
+    "sunglasses": [
+        [
+            {
+                "price": "39,90",
+                "link": "https://www.esprit.de/sonnenbrille-mit-metallgestell-39063S_538",
+                "imageTitle": "sunglasses-1"
+            },
+            {
+                "price": "69,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-mit-metall-details-17989S_515",
+                "imageTitle": "sunglasses-2"
+            },
+            {
+                "price": "49,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-mit-vintage-charme-39091S_505",
+                "imageTitle": "sunglasses-3"
+            }
+        ],
+        [
+            {
+                "price": "99,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-zu-100-biologisch-abbaubar-40005S_543",
+                "imageTitle": "sunglasses-4"
+            },
+            {
+                "price": "39,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-mit-transparentem-rahmen-39102S_577",
+                "imageTitle": "sunglasses-5"
+            },
+            {
+                "price": "39,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-mit-runden-gl%C3%A4sern-39103S_543",
+                "imageTitle": "sunglasses-6"
+            }
+        ],
+        [
+            {
+                "price": "49,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-mit-farbverlauf-39105S_535",
+                "imageTitle": "sunglasses-7"
+            },
+            {
+                "price": "39,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-mit-metall-detail-39111S_538",
+                "imageTitle": "sunglasses-8"
+            },
+            {
+                "price": "29,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-mit-transparentem-rahmen-39112S_505",
+                "imageTitle": "sunglasses-9"
+            }
+        ],
+        [
+            {
+                "price": "39,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-mit-transparentem-rahmen-39124S_535",
+                "imageTitle": "sunglasses-10"
+            },
+            {
+                "price": "79,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-im-multicolor-look-17998S_535",
+                "imageTitle": "sunglasses-11"
+            },
+            {
+                "price": "39,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-mit-metallb%C3%BCgeln-39117S_535",
+                "imageTitle": "sunglasses-12"
+            }
+        ],
+        [
+            {
+                "price": "59,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-mit-metallrahmen-39096S_535",
+                "imageTitle": "sunglasses-13"
+            },
+            {
+                "price": "69,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/unisex-sonnenbrille-mit-verbreitertem-metallrahmen-17988S_535",
+                "imageTitle": "sunglasses-14"
+            },
+            {
+                "price": "29,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/sonnenbrillen/sonnenbrille-mit-verspiegelten-gl%C3%A4sern-39094S_524",
+                "imageTitle": "sunglasses-15"
+            }
+        ]
+    ],
+
+    "winterhat": [
+        [
+            {
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/denim-barett-aus-100-baumwolle-030EA1P302_110",
+                "imageTitle": "winterhat-1"
+            },
+            {
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/denim-barett-aus-100-baumwolle-020EA1P305_400",
+                "imageTitle": "winterhat-2"
+            },
+            {
+                "price": "19,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/100-baumwolle-m%C3%BCtze-mit-strickmuster-030EA1P303_001",
+                "imageTitle": "winterhat-3"
+            }
+        ],
+        [
+            {
+                "price": "17,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/strick-m%C3%BCtze-aus-100-baumwolle-999EA1P800_665",
+                "imageTitle": "winterhat-4"
+            },
+            {
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/mit-wolle-und-alpaka-m%C3%BCtze-aus-boucl%C3%A9-119EA1P006_030",
+                "imageTitle": "winterhat-5"
+            },
+            {
+                "price": "29,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/mit-wolle-und-alpaka-m%C3%BCtze-mit-webfell-pompon-119EA1P012_030",
+                "imageTitle": "winterhat-6"
+            }
+        ],
+        [
+            {
+                "price": "17,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/melierte-jersey-m%C3%BCtze-mit-organic-cotton-079CA1P001_610",
+                "imageTitle": "winterhat-7"
+            },
+            {
+                "price": "19,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/m%C3%BCtze-mit-ripp-muster-119EA1P001_030",
+                "imageTitle": "winterhat-8"
+            },
+            {
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/schifferm%C3%BCtze-mit-webband-applikation-079CA1P002_345",
+                "imageTitle": "winterhat-9"
+            }
+        ],
+        [
+            {
+                "price": "19,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/jersey-m%C3%BCtze-mit-umschlag-020CA1P302_020",
+                "imageTitle": "winterhat-10"
+            },
+            {
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/mit-wolle-m%C3%BCtze-mit-x-mas-motiv-119EA1P023_402",
+                "imageTitle": "winterhat-11"
+            },
+            {
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/mit-wolle-m%C3%BCtze-aus-italienischem-garn-109CA1P008_030",
+                "imageTitle": "winterhat-12"
+            }
+        ],
+        [
+            {
+                "price": "29,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/alpaka-woll-mix-baskenm%C3%BCtze-mit-noppen-119EA1P011_550",
+                "imageTitle": "winterhat-13"
+            },
+            {
+                "price": "29,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/mit-wolle-und-alpaka-m%C3%BCtze-mit-webfell-pompon-129EA1P007_040",
+                "imageTitle": "winterhat-14"
+            },
+            {
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/huete-muetzen/alpaka-mix-mit-wolle-m%C3%BCtze-mit-umschlag-119EA1P014_010",
+                "imageTitle": "winterhat-15"
+            }
+        ]
+    ],
+
+    "bag": [
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/pochette-mit-schulterkette-vegan-040EA1O317_100",
+                "imageTitle": "bag-1"
+            },
+            {
+                "price": "129,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/schultertasche-aus-veloursleder-030EA1O353_335",
+                "imageTitle": "bag-2"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/schultertasche-susie-t.-040EA1O335_290",
+                "imageTitle": "bag-3"
+            }
+        ],
+        [
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/shopper-in-leder-optik-990EA1O303_400",
+                "imageTitle": "bag-4"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/variable-schultertasche-in-leder-optik-099EA1O009_220",
+                "imageTitle": "bag-5"
+            },
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/schultertasche-aus-material-mix-vegan-030EA1O331_001",
+                "imageTitle": "bag-6"
+            }
+        ],
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/flap-over-bag-in-leder-optik-099EA1O008_220",
+                "imageTitle": "bag-7"
+            },
+            {
+                "price": "149,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/shopper-aus-100-veloursleder-030EA1O354_335",
+                "imageTitle": "bag-8"
+            },
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/business-tasche-mit-monogramm-030EA1O304_270",
+                "imageTitle": "bag-9"
+            }
+        ],
+        [
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/xl-shopper-in-leder-optik-vegan-030EA1O309_001",
+                "imageTitle": "bag-10"
+            },
+            {
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/shopper-mit-neuer-henkel-l%C3%B6sung-010EA1O318_055",
+                "imageTitle": "bag-11"
+            },
+            {
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/pochette-mit-schulterkette-vegan-030EA1O310_090",
+                "imageTitle": "bag-12"
+            }
+        ],
+        [
+            {
+                "price": "19,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/phone-bag-in-leder-optik-099EA1V002_240",
+                "imageTitle": "bag-13"
+            },
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/schultertasche-in-leder-optik-vegan-030EA1O308_001",
+                "imageTitle": "bag-14"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/taschen/bucket-bag-in-leder-optik-129EA1O011_240",
+                "imageTitle": "bag-15"
+            }
+        ]
+    ]
 }
