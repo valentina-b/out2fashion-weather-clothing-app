@@ -440,6 +440,269 @@ const products = {
         ],
     ],
 
+    "sandals": [
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/aus-leder-pantolette-mit-schnallen-030EK1W323_235",
+                "imageTitle": "sandals-1"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/sandalette-mit-riemen-in-flecht-optik-030EK1W303_685",
+                "imageTitle": "sandals-2"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/riemchen-sandale-aus-leder-040EK1W303_100",
+                "imageTitle": "sandals-3"
+            }
+        ],
+        [
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/sandalette-in-leder-optik-030EK1W317_100",
+                "imageTitle": "sandals-4"
+            },
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/sandaletten-in-leder-optik-040EK1W343_001",
+                "imageTitle": "sandals-5"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/espadrilles-sandalette-mit-streifen-030EK1W352_295",
+                "imageTitle": "sandals-6"
+            }
+        ],
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/sandale-mit-schlangen-optik-030EK1W319_001",
+                "imageTitle": "sandals-7"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/aus-leder-pantolette-mit-schnallen-030EK1W323_001",
+                "imageTitle": "sandals-8"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/velours-sandalette-mit-metallic-akzenten-049EK1W061_220",
+                "imageTitle": "sandals-9"
+            }
+        ],
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/sandale-mit-glitter-in-leder-optik-030EK1W310_090",
+                "imageTitle": "sandals-10"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/sandalette-mit-riemen-in-flecht-optik-030EK1W302_285",
+                "imageTitle": "sandals-11"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/sandale-in-leder-optik-030EK1W316_001",
+                "imageTitle": "sandals-12"
+            }
+        ],
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/sandale-mit-schlangen-optik-030EK1W319_030",
+                "imageTitle": "sandals-13"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/sandalette-mit-riemen-in-flecht-optik-030EK1W303_001",
+                "imageTitle": "sandals-14"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/sandalen/riemchen-sandale-aus-leder-040EK1W303_001",
+                "imageTitle": "sandals-15"
+            }
+        ]
+    ],
+    
+    "shoes": [
+        [
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/aus-leder-ballerina-mit-karree-form-020EK1W321_001",
+                "imageTitle": "shoes-1"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/pumps-highheels/pumps-in-nubuk-optik-019EK1W011_400",
+                "imageTitle": "shoes-2"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/pumps-highheels/pumps-in-leder-optik-019EK1W010_100",
+                "imageTitle": "shoes-3"
+            }
+        ],
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/ballerinas/ballerina-mit-nieten-details-030EK1W308_241",
+                "imageTitle": "shoes-4"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/ballerinas/ballerina-mit-nieten-details-030EK1W308_230",
+                "imageTitle": "shoes-5"
+            },
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/karree-pumps-mit-flachem-blockabsatz-030EK1W333_001",
+                "imageTitle": "shoes-6"
+            }
+        ],
+        [
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/aus-leder-pumps-mit-blockabsatz-030EK1W331_685",
+                "imageTitle": "shoes-7"
+            },
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/ballerinas/aus-leder-ballerina-in-cleanem-style-020EK1W322_100",
+                "imageTitle": "shoes-8"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/pumps-highheels/pumps-in-leder-optik-109EK1W047_685",
+                "imageTitle": "shoes-9"
+            }
+        ],
+        [
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/pumps-highheels/pumps-in-leder-optik-019EK1W010_001",
+                "imageTitle": "shoes-10"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/ballerinas/ballerina-mit-nieten-details-030EK1W308_040",
+                "imageTitle": "shoes-11"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/pumps-highheels/pumps-in-leder-optik-019EK1W010_290",
+                "imageTitle": "shoes-12"
+            }
+        ],
+        [
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/pumps-highheels/pumps-in-leder-optik-109EK1W047_400",
+                "imageTitle": "shoes-13"
+            },
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/ballerinas/ballerinas-aus-leder-040EK1W322_090",
+                "imageTitle": "shoes-14"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/pumps-highheels/pumps-in-leder-optik-079EK1W002_090",
+                "imageTitle": "shoes-15"
+            }
+        ]
+    ],
+    
+    "boots": [
+        [
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/boots-aus-leder-129EK1W003_225",
+                "imageTitle": "boots-1"
+            },
+            {
+                "price": "89,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/aus-leder-verzierte-cowboy-boots-129EK1W015_001",
+                "imageTitle": "boots-2"
+            },
+            {
+                "price": "119,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/stiefel-aus-material-mix-mit-leder-099EK1W020_001",
+                "imageTitle": "boots-3"
+            }
+        ],
+        [
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/boots-aus-leder-129EK1W005_001",
+                "imageTitle": "boots-4"
+            },
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/cowboy-boots-aus-veloursleder-129EK1W007_235",
+                "imageTitle": "boots-5"
+            },
+            {
+                "price": "99,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/stretch-boots-mit-veloursleder-099EK1W022_001",
+                "imageTitle": "boots-6"
+            }
+        ],
+        [
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/cowboy-boots-aus-veloursleder-129EK1W025_001",
+                "imageTitle": "boots-7"
+            },
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/aus-rauleder-cowboy-boots-mit-reptil-optik-129EK1W011_001",
+                "imageTitle": "boots-8"
+            },
+            {
+                "price": "119,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/stretch-boots-mit-veloursleder-099EK1W023_001",
+                "imageTitle": "boots-9"
+            }
+        ],
+        [
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/cowboy-boots-aus-leder-129EK1W013_001",
+                "imageTitle": "boots-10"
+            },
+            {
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/warm-gefuettert/winter-booties-mit-webfell-futter-099EK1W038_090",
+                "imageTitle": "boots-11"
+            },
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/echtleder/cowboy-boots-aus-leder-129EK1W009_001",
+                "imageTitle": "boots-12"
+            }
+        ],
+        [
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/warm-gefuettert/schn%C3%BCrboots-mit-webfell-futter-099EK1W035_675",
+                "imageTitle": "boots-13"
+            },
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/warm-gefuettert/schn%C3%BCrboots-mit-webfell-futter-099EK1W035_001",
+                "imageTitle": "boots-14"
+            },
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/schuhe/warm-gefuettert/schn%C3%BCrboots-mit-webfell-futter-109EK1W008_015",
+                "imageTitle": "boots-15"
+            }
+        ]
+    ],
 
 
 }
