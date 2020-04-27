@@ -226,6 +226,9 @@ $( document ).ready(function() {
                     let price4 = $("#price4");
                     let price5 = $("#price5");
                     let price6 = $("#price6");
+                    let price7 = $("#price7");
+                    let price8 = $("#price8");
+                    let price9 = $("#price9");
 
                     let image1 = $("#image1");
                     let image2 = $("#image2");
@@ -233,17 +236,26 @@ $( document ).ready(function() {
                     let image4 = $("#image4");
                     let image5 = $("#image5");
                     let image6 = $("#image6");
+                    let image7 = $("#image7");
+                    let image8 = $("#image8");
+                    let image9 = $("#image9");
 
                     let randomNumber = randomZeroToFour();
                     let productName1 = "shirt";
                     let productName2 = "tshirt";
                     let productName3 = "shorts";
                     let productName4 = "pants";
+                    let productName5 = "sandals";
+                    let productName6 = "shoes";
+                    let productName7 = "boots";
 
                     let productsShirt = products.shirt;
                     let productsTshirt = products.tshirt;
                     let productsShorts = products.shorts;
                     let productsPants = products.pants;
+                    let productsSandals = products.sandals;
+                    let productsShoes = products.shoes;
+                    let productsBoots = products.boots;
 
 
                     function changeClothesIcons() {
@@ -360,9 +372,42 @@ $( document ).ready(function() {
                             if (maxTemperatureResult > 26) {
                                 clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-sandal.svg");
                                 clothesIconFootwearText.text("Sandals");
+
+                                let fetchPrice1 = productsSandals[randomNumber][0].price;
+                                let fetchPrice2 = productsSandals[randomNumber][1].price;
+                                let fetchPrice3 = productsSandals[randomNumber][2].price;
+
+                                let fetchImage1 = productsSandals[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsSandals[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsSandals[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price7, fetchPrice1, image7, fetchImage1, productName5];
+                                let productsArray2 = [price8, fetchPrice2, image8, fetchImage2, productName5];
+                                let productsArray3 = [price9, fetchPrice3, image9, fetchImage3, productName5];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
+
                             } else {
                                 clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-shoe.svg");
                                 clothesIconFootwearText.text("Shoes");
+
+                                let fetchPrice1 = productsShoes[randomNumber][0].price;
+                                let fetchPrice2 = productsShoes[randomNumber][1].price;
+                                let fetchPrice3 = productsShoes[randomNumber][2].price;
+
+                                let fetchImage1 = productsShoes[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsShoes[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsShoes[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price7, fetchPrice1, image7, fetchImage1, productName6];
+                                let productsArray2 = [price8, fetchPrice2, image8, fetchImage2, productName6];
+                                let productsArray3 = [price9, fetchPrice3, image9, fetchImage3, productName6];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
                             }
                         }
                         changeClothesIconsFootwear();
@@ -372,6 +417,22 @@ $( document ).ready(function() {
                             if ((iconNumber >= 19 && iconNumber <= 26) || (iconNumber === 29)) {
                                 clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-boot.svg");
                                 clothesIconFootwearText.text("Boots");
+
+                                let fetchPrice1 = productsBoots[randomNumber][0].price;
+                                let fetchPrice2 = productsBoots[randomNumber][1].price;
+                                let fetchPrice3 = productsBoots[randomNumber][2].price;
+
+                                let fetchImage1 = productsBoots[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsBoots[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsBoots[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price7, fetchPrice1, image7, fetchImage1, productName7];
+                                let productsArray2 = [price8, fetchPrice2, image8, fetchImage2, productName7];
+                                let productsArray3 = [price9, fetchPrice3, image9, fetchImage3, productName7];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
                             }
                         }
                         changeClothesIconsFootwearBoots();
