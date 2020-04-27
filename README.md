@@ -11,3 +11,4 @@ Credits:
 - http://ami.responsivedesign.is/ - for the showcase photos and responsiveness look and feel
 - https://esprima.org/demo/validate.html - for the help with small, often overlooked, JS syntax errors
 - https://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript - for the js code for scrolling to the top
+- https://jsonformatter.curiousconcept.com/ - for the help with turning messy API code into readable and structure objects
