@@ -179,87 +179,87 @@ const products = {
     "shirt": [
         [
             {
-            "price": "39,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/stretch-longsleeve-in-wickel-optik-050EO1G308_001",
-            "imageTitle": "shirt-1"
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/stretch-longsleeve-in-wickel-optik-050EO1G308_001",
+                "imageTitle": "shirt-1"
             },
             {
-            "price": "25,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/longsleeve-mit-weiten-%C3%A4rmeln-100-baumwolle-030CC1K333_100",
-            "imageTitle": "shirt-2"
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/longsleeve-mit-weiten-%C3%A4rmeln-100-baumwolle-030CC1K333_100",
+                "imageTitle": "shirt-2"
             },
             {
-            "price": "29,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/pullover-strick/pullover/pullover-mit-organic-cotton-999EE1I801_750",
-            "imageTitle": "shirt-3"
+                "price": "29,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/pullover-strick/pullover/pullover-mit-organic-cotton-999EE1I801_750",
+                "imageTitle": "shirt-3"
             }
         ],
         [
             {
-            "price": "35,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/pullover-strick/pullover/rundhals-pullover-mit-organic-cotton-990CC1I303_110",
-            "imageTitle": "shirt-4"
+                "price": "35,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/pullover-strick/pullover/rundhals-pullover-mit-organic-cotton-990CC1I303_110",
+                "imageTitle": "shirt-4"
             },
             {
-            "price": "49,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/pullover-strick/pullover/pullover-mit-nieten-dekor-129EE1I012_039",
-            "imageTitle": "shirt-5"
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/pullover-strick/pullover/pullover-mit-nieten-dekor-129EE1I012_039",
+                "imageTitle": "shirt-5"
             },
             {
-            "price": "29,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/stretch-longsleeve-mit-modernem-ausschnitt-999EO1K810_401",
-            "imageTitle": "shirt-6"
+                "price": "29,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/stretch-longsleeve-mit-modernem-ausschnitt-999EO1K810_401",
+                "imageTitle": "shirt-6"
             }
         ],
         [
             {
-            "price": "35,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/stretch-shirt-im-wickel-look-999EO1K809_001",
-            "imageTitle": "shirt-7"
+                "price": "35,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/stretch-shirt-im-wickel-look-999EO1K809_001",
+                "imageTitle": "shirt-7"
             },
             {
-            "price": "25,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/longsleeve-aus-100-baumwolle-999EE1K818_110",
-            "imageTitle": "shirt-8"
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/longsleeve-aus-100-baumwolle-999EE1K818_110",
+                "imageTitle": "shirt-8"
             },
             {
-            "price": "35,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/longsleeve-aus-doubleface-jersey-100-baumwolle-020CC1K350_110",
-            "imageTitle": "shirt-9"
+                "price": "35,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/longsleeve-aus-doubleface-jersey-100-baumwolle-020CC1K350_110",
+                "imageTitle": "shirt-9"
             }
         ],
         [
             {
-            "price": "39,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/heavy-jersey-shirt-mit-stehkragen-109EE1K068_001",
-            "imageTitle": "shirt-10"
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/heavy-jersey-shirt-mit-stehkragen-109EE1K068_001",
+                "imageTitle": "shirt-10"
             },
             {
-            "price": "49,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/pullover-strick/pullover/pullover-mit-ripp-b%C3%BCndchen-100-baumwolle-010EE1I306_110",
-            "imageTitle": "shirt-11"
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/pullover-strick/pullover/pullover-mit-ripp-b%C3%BCndchen-100-baumwolle-010EE1I306_110",
+                "imageTitle": "shirt-11"
             },
             {
-            "price": "69,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/pullover-strick/pullover/mit-leinen-zarter-v-neck-pullover-040EO1I308_274",
-            "imageTitle": "shirt-12"
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/pullover-strick/pullover/mit-leinen-zarter-v-neck-pullover-040EO1I308_274",
+                "imageTitle": "shirt-12"
             }
         ],
         [
             {
-            "price": "39,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/flauschiges-longsleeve-mit-ripp-b%C3%BCndchen-129CC1K011_435",
-            "imageTitle": "shirt-13"
+                "price": "39,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/flauschiges-longsleeve-mit-ripp-b%C3%BCndchen-129CC1K011_435",
+                "imageTitle": "shirt-13"
             },
             {
-            "price": "19,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/stretch-longsleeve-mit-rundem-ausschnitt-998EE1K812_001",
-            "imageTitle": "shirt-14"
+                "price": "19,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/stretch-longsleeve-mit-rundem-ausschnitt-998EE1K812_001",
+                "imageTitle": "shirt-14"
             },
             {
-            "price": "22,99",
-            "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/longsleeve-mit-stoffkragen-089EE1K060_110",
-            "imageTitle": "shirt-15"
+                "price": "22,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/t-shirts-langarmshirts/langarmshirts/longsleeve-mit-stoffkragen-089EE1K060_110",
+                "imageTitle": "shirt-15"
             }
         ]
     ],
@@ -527,7 +527,7 @@ const products = {
             }
         ]
     ],
-    
+
     "shoes": [
         [
             {
@@ -615,7 +615,7 @@ const products = {
             }
         ]
     ],
-    
+
     "boots": [
         [
             {
@@ -704,5 +704,356 @@ const products = {
         ]
     ],
 
+    "accessories": [
+        [
+            {
+                "price": "109,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/uhren/edelstahl-uhr-mit-zirkonia-besatz-ES1L167M0075_1CO",
+                "imageTitle": "accessoires-1"
+            },
+            {
+                "price": "29,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/silber-stahlschmuck/armband-mit-zirkonia-anh%C3%A4nger-sterling-silber-ESBR00811117_1CO",
+                "imageTitle": "accessoires-2"
+            },
+            {
+                "price": "29,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/guertel/g%C3%BCrtel-aus-leder-020CA1S325_560",
+                "imageTitle": "accessoires-3"
+            }
+        ],
+        [
+            {
+                "price": "99,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/uhren/edelstahl-uhr-mit-leder-armband-ES1L165L0105_1CO",
+                "imageTitle": "accessoires-4"
+            },
+            {
+                "price": "39,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/silber-stahlschmuck/ohrstecker-mit-perle-sterling-silber-ESER00831100_1CO",
+                "imageTitle": "accessoires-5"
+            },
+            {
+                "price": "25,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/guertel/g%C3%BCrtel-aus-leder-mit-lochmuster-040EA1S308_110",
+                "imageTitle": "accessoires-6"
+            }
+        ],
+        [
+            {
+                "price": "99,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/uhren/edelstahl-uhr-mit-leder-armband-ES1L142L0025_1CO",
+                "imageTitle": "accessoires-7"
+            },
+            {
+                "price": "69,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/silber-stahlschmuck/ring-aus-sterling-silber-ESRG01061100_090",
+                "imageTitle": "accessoires-8"
+            },
+            {
+                "price": "29,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/guertel/g%C3%BCrtel-mit-matter-oberfl%C3%A4che-aus-leder-999CA1S800_220",
+                "imageTitle": "accessoires-9"
+            }
+        ],
+        [
+            {
+                "price": "99,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/uhren/edelstahl-uhr-mit-leder-armband-ES1L105L0035_1CO",
+                "imageTitle": "accessoires-10"
+            },
+            {
+                "price": "79,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/silber-stahlschmuck/kette-mit-anh%C3%A4ngern-sterling-silber-ESNL00971142_090",
+                "imageTitle": "accessoires-11"
+            },
+            {
+                "price": "29,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/guertel/aus-leder-g%C3%BCrtel-mit-%C3%BCberkreuzter-schlaufe-020EA1S323_001",
+                "imageTitle": "accessoires-12"
+            }
+        ],
+        [
+            {
+                "price": "69,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/uhren/edelstahl-uhr-mit-leder-armband-ES1L014L0115_1CO",
+                "imageTitle": "accessoires-13"
+            },
+            {
+                "price": "65,90",
+                "link": "https://www.esprit.de/damenmode/accessoires/silber-stahlschmuck/pendelkette-mit-herz-anh%C3%A4ngern-edelstahl-ESNL00892270_1CO",
+                "imageTitle": "accessoires-14"
+            },
+            {
+                "price": "35,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/guertel/aus-leder-g%C3%BCrtel-mit-flecht-schnalle-040EA1S312_100",
+                "imageTitle": "accessoires-15"
+            },
+        ]
+    ],
+
+    "socks": [
+        [
+            {
+                "price": "19,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/5er-pack-sneaker-socken-17232_002",
+                "imageTitle": "socks-1"
+            },
+            {
+                "price": "13,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/hahnentritt-socken-im-3er-pack-17229_200",
+                "imageTitle": "socks-2"
+            },
+            {
+                "price": "18,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/5er-pack-socken-aus-baumwoll-mix-19859_612",
+                "imageTitle": "socks-3"
+            }
+        ],
+        [
+            {
+                "price": "9,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/2er-pack-sneaker-socken-mit-tupfen-17273_200",
+                "imageTitle": "socks-4"
+            },
+            {
+                "price": "9,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/2er-pack-f%C3%BC%C3%9Flinge-mit-anti-slip-system-17227_001",
+                "imageTitle": "socks-5"
+            },
+            {
+                "price": "13,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/3er-pack-feinstricksocken-19883_300",
+                "imageTitle": "socks-6"
+            }
+        ],
+        [
+            {
+                "price": "9,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/2er-pack-sneaker-socken-in-uni-und-mit-blumen-17228_200",
+                "imageTitle": "socks-7"
+            },
+            {
+                "price": "14,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/mit-kaschmir-2er-pack-f%C3%BC%C3%9Flinge-17220_300",
+                "imageTitle": "socks-8"
+            },
+            {
+                "price": "9,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/im-2er-pack-sneaker-socken-mit-glitter-17223_005",
+                "imageTitle": "socks-9"
+            }
+        ],
+        [
+            {
+                "price": "9,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/im-2er-pack-sneaker-socken-mit-tupfen-17245_204",
+                "imageTitle": "socks-10"
+            },
+            {
+                "price": "14,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/3er-pack-socken-aus-baumwoll-mix-17226_001",
+                "imageTitle": "socks-11"
+            },
+            {
+                "price": "13,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/3er-pack-basic-socken-aus-baumwoll-mix-19807_LOT",
+                "imageTitle": "socks-12"
+            }
+        ],
+        [
+            {
+                "price": "10,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/im-2er-pack-socken-mit-streifen-und-kontrasten-17519_200",
+                "imageTitle": "socks-13"
+            },
+            {
+                "price": "10,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/2er-pack-socken-im-streifen-look-17522_200",
+                "imageTitle": "socks-14"
+            },
+            {
+                "price": "10,95",
+                "link": "https://www.esprit.de/damenmode/accessoires/socken-strumpfhosen/2er-pack-socken-mit-punkten-und-im-2tone-look-17521_200",
+                "imageTitle": "socks-15"
+            }
+        ],
+    ],
+
+    "jacket": [
+        [
+            {
+                "price": "129,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/parka-im-washed-look-020EE1G306_820",
+                "imageTitle": "jacket-1"
+            },
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/active-jacke-mit-wende-option-020EI1G301_345",
+                "imageTitle": "jacket-2"
+            },
+            {
+                "price": "129,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/kapuzen-parka-mit-leichter-wattierung-010EE1G308_400",
+                "imageTitle": "jacket-3"
+            }
+        ],
+        [
+            {
+                "price": "199,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/aus-leder-feminin-taillierte-jacke-020EO1G314_400",
+                "imageTitle": "jacket-4"
+            },
+            {
+                "price": "99,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/curvy-jersey-mantel-mit-streifen-futter-020EE1G340_610",
+                "imageTitle": "jacket-5"
+            },
+            {
+                "price": "119,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/strukturierter-mantel-mit-spatenkragen-010EO1G301_400",
+                "imageTitle": "jacket-6"
+            }
+        ],
+        [
+            {
+                "price": "129,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/zweireihiger-trenchcoat-100-baumwolle-010EO1G306_270",
+                "imageTitle": "jacket-7"
+            },
+            {
+                "price": "149,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/mit-wolle-mantel-mit-variablem-kragen-099EO1G068_001",
+                "imageTitle": "jacket-8"
+            },
+            {
+                "price": "129,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/wattierter-trench-mit-kontrast-paspeln-010EO1G310_270",
+                "imageTitle": "jacket-9"
+            }
+        ],
+        [
+            {
+                "price": "199,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/aus-leder-biker-jacke-mit-vintage-finish-020EE1G314_001",
+                "imageTitle": "jacket-10"
+            },
+            {
+                "price": "99,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/zweireiher-trenchcoat-aus-baumwoll-mix-020EE1G324_610",
+                "imageTitle": "jacket-11"
+            },
+            {
+                "price": "149,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/mit-wolle-mantel-mit-stehkragen-099EO1G028_044",
+                "imageTitle": "jacket-12"
+            }
+        ],
+        [
+            {
+                "price": "179,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/stepp-mantel-mit-3m%E2%84%A2thinsulate%E2%84%A2-technologie-109EO1G003_001",
+                "imageTitle": "jacket-13"
+            },
+            {
+                "price": "189,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/woll-mix-mantel-aus-italienischem-garn-129EO1G005_385",
+                "imageTitle": "jacket-14"
+            },
+            {
+                "price": "89,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/jacken-maentel/leichte-steppjacke-mit-3m%E2%84%A2-thinsulate%E2%84%A2-f%C3%BCllung-079EO1G002_685",
+                "imageTitle": "jacket-15"
+            }
+        ]
+    ],
+
+    "blazer": [
+        [
+            {
+                "price": "99,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/taillierter-struktur-blazer-recycelt-990EO1G301_440",
+                "imageTitle": "blazer-1"
+            },
+            {
+                "price": "99,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/summer-biz-mix-match-stretch-blazer-030EO1G303_044",
+                "imageTitle": "blazer-2"
+            },
+            {
+                "price": "99,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/spring-twill-mix-match-stretch-blazer-999EO1G800_400",
+                "imageTitle": "blazer-3"
+            }
+        ],
+        [
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/wedding-mix-match-cr%C3%A8pe-hose-030EO1B304_100",
+                "imageTitle": "blazer-4"
+            },
+            {
+                "price": "49,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/strukturierter-jersey-stretch-blazer-999EE1G804_001",
+                "imageTitle": "blazer-5"
+            },
+            {
+                "price": "59,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/offener-kurz-blazer-mit-kipp-kragen-030EO1G306_400",
+                "imageTitle": "blazer-6"
+            }
+        ],
+        [
+            {
+                "price": "99,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/aus-leinen-mix-1-knopf-blazer-040EO1G306_110",
+                "imageTitle": "blazer-7"
+            },
+            {
+                "price": "119,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/structure-mix-match-stretch-blazer-999EO1G804_404",
+                "imageTitle": "blazer-8"
+            },
+            {
+                "price": "129,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/structure-stripes-struktur-blazer-020EO1G310_400",
+                "imageTitle": "blazer-9"
+            }
+        ],
+        [
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/mit-wolle-active-mix-match-stretch-hose-020EO1B308_034",
+                "imageTitle": "blazer-10"
+            },
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/pure-business-mix-match-stretch-pants-999EO1B801_001",
+                "imageTitle": "blazer-11"
+            },
+            {
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/taillierter-piqu%C3%A9-stretch-blazer-020EE1G311_610",
+                "imageTitle": "blazer-12"
+            }
+        ],
+        [
+            {
+                "price": "https://www.esprit.de/damenmode/bekleidung/anzuege/jersey-stretch-blazer-aus-piqu%C3%A9-020EE1G309_044",
+                "link": "69,99",
+                "imageTitle": "blazer-13"
+            },
+            {
+                "price": "99,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/modern-mix-match-blazer-020EO1G308_400",
+                "imageTitle": "blazer-14"
+            },
+            {
+                "price": "79,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/baumwoll-stretch-blazer-mit-peach-finish-020EE1G318_610",
+                "imageTitle": "blazer-15"
+            }
+        ]
+    ],
 
 }
