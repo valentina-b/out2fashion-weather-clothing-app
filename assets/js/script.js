@@ -229,6 +229,18 @@ $( document ).ready(function() {
                     let price7 = $("#price7");
                     let price8 = $("#price8");
                     let price9 = $("#price9");
+                    let price10 = $("#price10");
+                    let price11 = $("#price11");
+                    let price12 = $("#price12");
+                    // let price13 = $("#price13");
+                    // let price14 = $("#price14");
+                    // let price15 = $("#price15");
+                    // let price16 = $("#price16");
+                    // let price17 = $("#price17");
+                    // let price18 = $("#price18");
+                    // let price19 = $("#price19");
+                    // let price20 = $("#price20");
+                    // let price21 = $("#price21");
 
                     let image1 = $("#image1");
                     let image2 = $("#image2");
@@ -239,8 +251,21 @@ $( document ).ready(function() {
                     let image7 = $("#image7");
                     let image8 = $("#image8");
                     let image9 = $("#image9");
+                    let image10 = $("#image10");
+                    let image11 = $("#image11");
+                    let image12 = $("#image12");
+                    // let image13 = $("#image13");
+                    // let image14 = $("#image14");
+                    // let image15 = $("#image15");
+                    // let image16 = $("#image16");
+                    // let image17 = $("#image17");
+                    // let image18 = $("#image18");
+                    // let image19 = $("#image19");
+                    // let image20 = $("#image20");
+                    // let image21 = $("#image21");
 
                     let randomNumber = randomZeroToFour();
+
                     let productName1 = "shirt";
                     let productName2 = "tshirt";
                     let productName3 = "shorts";
@@ -248,6 +273,16 @@ $( document ).ready(function() {
                     let productName5 = "sandals";
                     let productName6 = "shoes";
                     let productName7 = "boots";
+                    let productName8 = "jacket";
+                    let productName9 = "summerhat";
+                    let productName10 = "blazer";
+                    // let productName11 = "winterhat";
+                    // let productName12 = "socks";
+                    // let productName13 = "sunglasses";
+                    // let productName14 = "umbrella";
+                    // let productName15 = "bag";
+                    // let productName16 = "accessories";
+
 
                     let productsShirt = products.shirt;
                     let productsTshirt = products.tshirt;
@@ -256,6 +291,15 @@ $( document ).ready(function() {
                     let productsSandals = products.sandals;
                     let productsShoes = products.shoes;
                     let productsBoots = products.boots;
+                    let productsJacket = products.jacket;
+                    let productsSummerhat = products.summerhat;
+                    let productsBlazer = products.blazer;
+                    // let productsWinterhat = products.winterhat;
+                    // let productsSocks = products.socks;
+                    // let productsSocks = products.sunglasses;
+                    // let productsSunglasses = products.umbrella;
+                    // let productsBag = products.bag;
+                    // let productsAccessories = products.accessories;
 
 
                     function changeClothesIcons() {
@@ -437,19 +481,67 @@ $( document ).ready(function() {
                         }
                         changeClothesIconsFootwearBoots();
 
-                        // outerwear = jacket or blazer
+                        // outerwear = jacket or blazer; summerhat
                         function changeClothesIconsOuterwear() {
                             if (maxTemperatureResult <= 17) {
                                 clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-jacket.svg");
                                 clothesIconOuterwearText.text("Jacket");
-                            } 
-                            else if (maxTemperatureResult > 28) {
+
+                                let fetchPrice1 = productsJacket[randomNumber][0].price;
+                                let fetchPrice2 = productsJacket[randomNumber][1].price;
+                                let fetchPrice3 = productsJacket[randomNumber][2].price;
+
+                                let fetchImage1 = productsJacket[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsJacket[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsJacket[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price10, fetchPrice1, image10, fetchImage1, productName8];
+                                let productsArray2 = [price11, fetchPrice2, image11, fetchImage2, productName8];
+                                let productsArray3 = [price12, fetchPrice3, image12, fetchImage3, productName8];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
+
+                            } else if (maxTemperatureResult > 28) {
                                 clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-hat.svg");
                                 clothesIconOuterwearText.text("Summer hat");
-                            } 
-                            else {
+
+                                let fetchPrice1 = productsSummerhat[randomNumber][0].price;
+                                let fetchPrice2 = productsSummerhat[randomNumber][1].price;
+                                let fetchPrice3 = productsSummerhat[randomNumber][2].price;
+
+                                let fetchImage1 = productsSummerhat[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsSummerhat[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsSummerhat[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price10, fetchPrice1, image10, fetchImage1, productName9];
+                                let productsArray2 = [price11, fetchPrice2, image11, fetchImage2, productName9];
+                                let productsArray3 = [price12, fetchPrice3, image12, fetchImage3, productName9];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
+
+                            } else {
                                 clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-blazer.svg");
                                 clothesIconOuterwearText.text("Blazer");
+
+                                let fetchPrice1 = productsBlazer[randomNumber][0].price;
+                                let fetchPrice2 = productsBlazer[randomNumber][1].price;
+                                let fetchPrice3 = productsBlazer[randomNumber][2].price;
+
+                                let fetchImage1 = productsBlazer[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsBlazer[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsBlazer[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price10, fetchPrice1, image10, fetchImage1, productName10];
+                                let productsArray2 = [price11, fetchPrice2, image11, fetchImage2, productName10];
+                                let productsArray3 = [price12, fetchPrice3, image12, fetchImage3, productName10];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
                             }
                         }
                         changeClothesIconsOuterwear();
@@ -459,12 +551,62 @@ $( document ).ready(function() {
                             if (maxTemperatureResult < 15) {
                                 clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-winter-hat.svg");
                                 clothesIconAdditionalText.text("Winter hat");
+
+                                let fetchPrice1 = productsWinterhat[randomNumber][0].price;
+                                let fetchPrice2 = productsWinterhat[randomNumber][1].price;
+                                let fetchPrice3 = productsWinterhat[randomNumber][2].price;
+
+                                let fetchImage1 = productsWinterhat[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsWinterhat[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsWinterhat[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName11];
+                                let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName11];
+                                let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName11];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
+
                             } else if (maxTemperatureResult > 26) {
                                 clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-sunglasses.svg");
                                 clothesIconAdditionalText.text("Sunglasses");
+
+                                let fetchPrice1 = productsSunglasses[randomNumber][0].price;
+                                let fetchPrice2 = productsSunglasses[randomNumber][1].price;
+                                let fetchPrice3 = productsSunglasses[randomNumber][2].price;
+
+                                let fetchImage1 = productsSunglasses[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsSunglasses[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsSunglasses[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName12];
+                                let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName12];
+                                let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName12];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
+
                             } else {
                                 clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-socks.svg");
                                 clothesIconAdditionalText.text("Socks");
+
+                                let fetchPrice1 = productsSocks[randomNumber][0].price;
+                                let fetchPrice2 = productsSocks[randomNumber][1].price;
+                                let fetchPrice3 = productsSocks[randomNumber][2].price;
+
+                                let fetchImage1 = productsSocks[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsSocks[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsSocks[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName13];
+                                let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName13];
+                                let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName13];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
                             }
                         }
                         changeClothesIconsAdditional();
@@ -476,6 +618,22 @@ $( document ).ready(function() {
                             if ((iconNumber >= 12 && iconNumber <= 23) || [25, 26, 29].includes(iconNumber)) {
                                 clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-umbrella.svg");
                                 clothesIconAdditionalText.text("Umbrella");
+
+                                let fetchPrice1 = productsUmbrella[randomNumber][0].price;
+                                let fetchPrice2 = productsUmbrella[randomNumber][1].price;
+                                let fetchPrice3 = productsUmbrella[randomNumber][2].price;
+
+                                let fetchImage1 = productsUmbrella[randomNumber][0].imageTitle;
+                                let fetchImage2 = productsUmbrella[randomNumber][1].imageTitle;
+                                let fetchImage3 = productsUmbrella[randomNumber][2].imageTitle;
+
+                                let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName14];
+                                let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName14];
+                                let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName14];
+
+                                populateProducts(productsArray1);
+                                populateProducts(productsArray2);
+                                populateProducts(productsArray3);
                             }
                         }
                         changeClothesIconsAdditionalUmbrella();
