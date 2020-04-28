@@ -232,15 +232,15 @@ $( document ).ready(function() {
                     let price10 = $("#price10");
                     let price11 = $("#price11");
                     let price12 = $("#price12");
-                    // let price13 = $("#price13");
-                    // let price14 = $("#price14");
-                    // let price15 = $("#price15");
-                    // let price16 = $("#price16");
-                    // let price17 = $("#price17");
-                    // let price18 = $("#price18");
-                    // let price19 = $("#price19");
-                    // let price20 = $("#price20");
-                    // let price21 = $("#price21");
+                    let price13 = $("#price13");
+                    let price14 = $("#price14");
+                    let price15 = $("#price15");
+                    let price16 = $("#price16");
+                    let price17 = $("#price17");
+                    let price18 = $("#price18");
+                    let price19 = $("#price19");
+                    let price20 = $("#price20");
+                    let price21 = $("#price21");
 
                     let image1 = $("#image1");
                     let image2 = $("#image2");
@@ -254,15 +254,15 @@ $( document ).ready(function() {
                     let image10 = $("#image10");
                     let image11 = $("#image11");
                     let image12 = $("#image12");
-                    // let image13 = $("#image13");
-                    // let image14 = $("#image14");
-                    // let image15 = $("#image15");
-                    // let image16 = $("#image16");
-                    // let image17 = $("#image17");
-                    // let image18 = $("#image18");
-                    // let image19 = $("#image19");
-                    // let image20 = $("#image20");
-                    // let image21 = $("#image21");
+                    let image13 = $("#image13");
+                    let image14 = $("#image14");
+                    let image15 = $("#image15");
+                    let image16 = $("#image16");
+                    let image17 = $("#image17");
+                    let image18 = $("#image18");
+                    let image19 = $("#image19");
+                    let image20 = $("#image20");
+                    let image21 = $("#image21");
 
                     let randomNumber = randomZeroToFour();
 
@@ -276,10 +276,10 @@ $( document ).ready(function() {
                     let productName8 = "jacket";
                     let productName9 = "summerhat";
                     let productName10 = "blazer";
-                    // let productName11 = "winterhat";
-                    // let productName12 = "socks";
-                    // let productName13 = "sunglasses";
-                    // let productName14 = "umbrella";
+                    let productName11 = "winterhat";
+                    let productName12 = "socks";
+                    let productName13 = "sunglasses";
+                    let productName14 = "umbrella";
                     // let productName15 = "bag";
                     // let productName16 = "accessories";
 
@@ -294,10 +294,10 @@ $( document ).ready(function() {
                     let productsJacket = products.jacket;
                     let productsSummerhat = products.summerhat;
                     let productsBlazer = products.blazer;
-                    // let productsWinterhat = products.winterhat;
-                    // let productsSocks = products.socks;
-                    // let productsSocks = products.sunglasses;
-                    // let productsSunglasses = products.umbrella;
+                    let productsWinterhat = products.winterhat;
+                    let productsSocks = products.socks;
+                    let productsSunglasses = products.sunglasses;
+                    let productsUmbrella = products.umbrella;
                     // let productsBag = products.bag;
                     // let productsAccessories = products.accessories;
 
