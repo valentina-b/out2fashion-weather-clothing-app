@@ -277,8 +277,8 @@ $( document ).ready(function() {
                     let productName9 = "summerhat";
                     let productName10 = "blazer";
                     let productName11 = "winterhat";
-                    let productName12 = "socks";
-                    let productName13 = "sunglasses";
+                    let productName12 = "sunglasses";
+                    let productName13 = "socks";
                     let productName14 = "umbrella";
                     // let productName15 = "bag";
                     // let productName16 = "accessories";
