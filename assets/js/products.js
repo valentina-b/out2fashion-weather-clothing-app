@@ -1039,8 +1039,8 @@ const products = {
         ],
         [
             {
-                "price": "https://www.esprit.de/damenmode/bekleidung/anzuege/jersey-stretch-blazer-aus-piqu%C3%A9-020EE1G309_044",
-                "link": "69,99",
+                "price": "69,99",
+                "link": "https://www.esprit.de/damenmode/bekleidung/anzuege/jersey-stretch-blazer-aus-piqu%C3%A9-020EE1G309_044",
                 "imageTitle": "blazer-13"
             },
             {
