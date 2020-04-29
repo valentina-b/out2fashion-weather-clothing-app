@@ -709,85 +709,85 @@ const products = {
             {
                 "price": "109,90",
                 "link": "https://www.esprit.de/damenmode/accessoires/uhren/edelstahl-uhr-mit-zirkonia-besatz-ES1L167M0075_1CO",
-                "imageTitle": "accessoires-1"
+                "imageTitle": "accessories-1"
             },
             {
                 "price": "29,90",
                 "link": "https://www.esprit.de/damenmode/accessoires/silber-stahlschmuck/armband-mit-zirkonia-anh%C3%A4nger-sterling-silber-ESBR00811117_1CO",
-                "imageTitle": "accessoires-2"
+                "imageTitle": "accessories-2"
             },
             {
                 "price": "29,99",
                 "link": "https://www.esprit.de/damenmode/accessoires/guertel/g%C3%BCrtel-aus-leder-020CA1S325_560",
-                "imageTitle": "accessoires-3"
+                "imageTitle": "accessories-3"
             }
         ],
         [
             {
                 "price": "99,90",
                 "link": "https://www.esprit.de/damenmode/accessoires/uhren/edelstahl-uhr-mit-leder-armband-ES1L165L0105_1CO",
-                "imageTitle": "accessoires-4"
+                "imageTitle": "accessories-4"
             },
             {
                 "price": "39,90",
                 "link": "https://www.esprit.de/damenmode/accessoires/silber-stahlschmuck/ohrstecker-mit-perle-sterling-silber-ESER00831100_1CO",
-                "imageTitle": "accessoires-5"
+                "imageTitle": "accessories-5"
             },
             {
                 "price": "25,99",
                 "link": "https://www.esprit.de/damenmode/accessoires/guertel/g%C3%BCrtel-aus-leder-mit-lochmuster-040EA1S308_110",
-                "imageTitle": "accessoires-6"
+                "imageTitle": "accessories-6"
             }
         ],
         [
             {
                 "price": "99,90",
                 "link": "https://www.esprit.de/damenmode/accessoires/uhren/edelstahl-uhr-mit-leder-armband-ES1L142L0025_1CO",
-                "imageTitle": "accessoires-7"
+                "imageTitle": "accessories-7"
             },
             {
                 "price": "69,90",
                 "link": "https://www.esprit.de/damenmode/accessoires/silber-stahlschmuck/ring-aus-sterling-silber-ESRG01061100_090",
-                "imageTitle": "accessoires-8"
+                "imageTitle": "accessories-8"
             },
             {
                 "price": "29,99",
                 "link": "https://www.esprit.de/damenmode/accessoires/guertel/g%C3%BCrtel-mit-matter-oberfl%C3%A4che-aus-leder-999CA1S800_220",
-                "imageTitle": "accessoires-9"
+                "imageTitle": "accessories-9"
             }
         ],
         [
             {
                 "price": "99,90",
                 "link": "https://www.esprit.de/damenmode/accessoires/uhren/edelstahl-uhr-mit-leder-armband-ES1L105L0035_1CO",
-                "imageTitle": "accessoires-10"
+                "imageTitle": "accessories-10"
             },
             {
                 "price": "79,90",
                 "link": "https://www.esprit.de/damenmode/accessoires/silber-stahlschmuck/kette-mit-anh%C3%A4ngern-sterling-silber-ESNL00971142_090",
-                "imageTitle": "accessoires-11"
+                "imageTitle": "accessories-11"
             },
             {
                 "price": "29,99",
                 "link": "https://www.esprit.de/damenmode/accessoires/guertel/aus-leder-g%C3%BCrtel-mit-%C3%BCberkreuzter-schlaufe-020EA1S323_001",
-                "imageTitle": "accessoires-12"
+                "imageTitle": "accessories-12"
             }
         ],
         [
             {
                 "price": "69,90",
                 "link": "https://www.esprit.de/damenmode/accessoires/uhren/edelstahl-uhr-mit-leder-armband-ES1L014L0115_1CO",
-                "imageTitle": "accessoires-13"
+                "imageTitle": "accessories-13"
             },
             {
                 "price": "65,90",
                 "link": "https://www.esprit.de/damenmode/accessoires/silber-stahlschmuck/pendelkette-mit-herz-anh%C3%A4ngern-edelstahl-ESNL00892270_1CO",
-                "imageTitle": "accessoires-14"
+                "imageTitle": "accessories-14"
             },
             {
                 "price": "35,99",
                 "link": "https://www.esprit.de/damenmode/accessoires/guertel/aus-leder-g%C3%BCrtel-mit-flecht-schnalle-040EA1S312_100",
-                "imageTitle": "accessoires-15"
+                "imageTitle": "accessories-15"
             },
         ]
     ],
