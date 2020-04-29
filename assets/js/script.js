@@ -280,8 +280,8 @@ $( document ).ready(function() {
                     let productName12 = "sunglasses";
                     let productName13 = "socks";
                     let productName14 = "umbrella";
-                    // let productName15 = "bag";
-                    // let productName16 = "accessories";
+                    let productName15 = "bag";
+                    let productName16 = "accessories";
 
 
                     let productsShirt = products.shirt;
@@ -298,8 +298,8 @@ $( document ).ready(function() {
                     let productsSocks = products.socks;
                     let productsSunglasses = products.sunglasses;
                     let productsUmbrella = products.umbrella;
-                    // let productsBag = products.bag;
-                    // let productsAccessories = products.accessories;
+                    let productsBag = products.bag;
+                    let productsAccessories = products.accessories;
 
 
                     function changeClothesIcons() {
@@ -637,6 +637,50 @@ $( document ).ready(function() {
                             }
                         }
                         changeClothesIconsAdditionalUmbrella();
+
+                        // populate bags
+                        function populateBags() {
+                            
+                            let fetchPrice1 = productsBag[randomNumber][0].price;
+                            let fetchPrice2 = productsBag[randomNumber][1].price;
+                            let fetchPrice3 = productsBag[randomNumber][2].price;
+
+                            let fetchImage1 = productsBag[randomNumber][0].imageTitle;
+                            let fetchImage2 = productsBag[randomNumber][1].imageTitle;
+                            let fetchImage3 = productsBag[randomNumber][2].imageTitle;
+
+                            let productsArray1 = [price16, fetchPrice1, image16, fetchImage1, productName15;
+                            let productsArray2 = [price17, fetchPrice2, image17, fetchImage2, productName15];
+                            let productsArray3 = [price18, fetchPrice3, image18, fetchImage3, productName15];
+
+                            populateProducts(productsArray1);
+                            populateProducts(productsArray2);
+                            populateProducts(productsArray3);
+                            }
+                        populateBags();
+
+                        // populate accessories
+                        function populateAccessories() {
+
+                            let fetchPrice1 = productsAccessories[randomNumber][0].price;
+                            let fetchPrice2 = productsAccessories[randomNumber][1].price;
+                            let fetchPrice3 = productsAccessories[randomNumber][2].price;
+
+                            let fetchImage1 = productsAccessories[randomNumber][0].imageTitle;
+                            let fetchImage2 = productsAccessories[randomNumber][1].imageTitle;
+                            let fetchImage3 = productsAccessories[randomNumber][2].imageTitle;
+
+                            let productsArray1 = [price19, fetchPrice1, image19, fetchImage1, productName16];
+                            let productsArray2 = [price20, fetchPrice2, image20, fetchImage2, productName16];
+                            let productsArray3 = [price21, fetchPrice3, image21, fetchImage3, productName16];
+
+                            populateProducts(productsArray1);
+                            populateProducts(productsArray2);
+                            populateProducts(productsArray3);
+                            }
+                        populateAccessories();
+
+
                     }
                     changeClothesIcons();
 
