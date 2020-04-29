@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
     // EFFECTS
-    $(".city-content img").mouseenter(function () {
+    $(".city-content img, .clothes-square img").mouseenter(function () {
         $(this).addClass("square-hover");
     });
-    $(".city-content img").mouseleave(function () {
+    $(".city-content img, .clothes-square img").mouseleave(function () {
         $(this).removeClass("square-hover");
     })
 
