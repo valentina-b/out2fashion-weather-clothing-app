@@ -637,10 +637,12 @@ $( document ).ready(function() {
                             }
                         }
                         changeClothesIconsAdditionalUmbrella();
+                    }
+                    changeClothesIcons();
 
-                        // populate bags
+                    // populate bags
                         function populateBags() {
-                            
+
                             let fetchPrice1 = productsBag[randomNumber][0].price;
                             let fetchPrice2 = productsBag[randomNumber][1].price;
                             let fetchPrice3 = productsBag[randomNumber][2].price;
@@ -649,7 +651,7 @@ $( document ).ready(function() {
                             let fetchImage2 = productsBag[randomNumber][1].imageTitle;
                             let fetchImage3 = productsBag[randomNumber][2].imageTitle;
 
-                            let productsArray1 = [price16, fetchPrice1, image16, fetchImage1, productName15;
+                            let productsArray1 = [price16, fetchPrice1, image16, fetchImage1, productName15];
                             let productsArray2 = [price17, fetchPrice2, image17, fetchImage2, productName15];
                             let productsArray3 = [price18, fetchPrice3, image18, fetchImage3, productName15];
 
@@ -679,10 +681,6 @@ $( document ).ready(function() {
                             populateProducts(productsArray3);
                             }
                         populateAccessories();
-
-
-                    }
-                    changeClothesIcons();
 
 
                 })
