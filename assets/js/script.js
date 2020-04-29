@@ -1,17 +1,17 @@
-$( document ).ready(function() {
+$(document).ready(function () {
 
     // EFFECTS
-    $(".city-content img").mouseenter(function(){
+    $(".city-content img").mouseenter(function () {
         $(this).addClass("square-hover");
     });
-    $(".city-content img").mouseleave(function(){
+    $(".city-content img").mouseleave(function () {
         $(this).removeClass("square-hover");
     })
 
-    $(".refresh-square").mouseenter(function(){
+    $(".refresh-square").mouseenter(function () {
         $(this).addClass("shadow-hover");
     });
-    $(".refresh-square").mouseleave(function(){
+    $(".refresh-square").mouseleave(function () {
         $(this).removeClass("shadow-hover");
     })
 
@@ -22,58 +22,58 @@ $( document ).ready(function() {
     }
 
     // when a user clicks on a city
-        // 1 hide main content
-        // 2 show city content
+    // 1 hide main content
+    // 2 show city content
     function changeContent() {
         $("#main-content").addClass("d-none");
         $("#city-content").removeClass("d-none");
         // 3 bring the user to the top of the page
         // credits: https://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript
-        window.scrollTo({top: 0, behavior: 'smooth'});
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     function fetchWeatherData() {
         // 4 change city name in the city content
-        $(".city-name-img").click(function() {
+        $(".city-name-img").click(function () {
             changeContent();
             let cityAttributeText = $(this).attr("alt");
             $("#city-name-populated").text(cityAttributeText);
-            
-        // 5 fetch city data
+
+            // 5 fetch city data
             let locationKey = [
-            {
-                city: "Berlin",
-                cityKey: 178087
-            },
-            {
-                city: "London",
-                cityKey: 328328
-            },
-            {
-                city: "Paris",
-                cityKey: 623
-            },
-            {
-                city: "New York",
-                cityKey: 349727
-            },
-            {
-                city: "Sydney",
-                cityKey: 22889
-            },
-            {
-                city: "Hong Kong",
-                cityKey: 1123655
-            },
-            {
-                city: "Seoul",
-                cityKey: 226081
-            },
-            {
-                city: "Auckland",
-                cityKey: 252066
-            }
-        ];
+                {
+                    city: "Berlin",
+                    cityKey: 178087
+                },
+                {
+                    city: "London",
+                    cityKey: 328328
+                },
+                {
+                    city: "Paris",
+                    cityKey: 623
+                },
+                {
+                    city: "New York",
+                    cityKey: 349727
+                },
+                {
+                    city: "Sydney",
+                    cityKey: 22889
+                },
+                {
+                    city: "Hong Kong",
+                    cityKey: 1123655
+                },
+                {
+                    city: "Seoul",
+                    cityKey: 226081
+                },
+                {
+                    city: "Auckland",
+                    cityKey: 252066
+                }
+            ];
 
             function findAPIurl() {
                 for (let i = 0; i < locationKey.length; i++) {
@@ -89,7 +89,7 @@ $( document ).ready(function() {
 
             fetch(apiURL)
                 .then(response => {
-                return response.json()
+                    return response.json()
                 })
                 .then(data => {
                     // import short phrase
@@ -135,56 +135,56 @@ $( document ).ready(function() {
 
                     function changeWeatherIcons() {
                         if ([1, 2, 30].includes(iconNumber)) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sun.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sun.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-sun.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-sun.svg");
                         } else if ([3, 4].includes(iconNumber)) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sun.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-sun.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
                         } else if ([5, 6].includes(iconNumber)) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
                         } else if ([7, 8].includes(iconNumber)) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-cloud.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-cloud.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-cloud.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-cloud.svg");
                         } else if (iconNumber === 11) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-fog.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-fog.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-fog.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-fog.svg");
                         } else if ([12, 18].includes(iconNumber)) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-rain.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-rain.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-rain.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-rain.svg");
                         } else if ([13, 14].includes(iconNumber)) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-rain.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-rain.svg");
                         } else if (iconNumber === 15) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-storm.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-storm.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-storm.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-storm.svg");
                         } else if ([16, 17].includes(iconNumber)) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-storm.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-storm.svg");
                         } else if (iconNumber === 19) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sleet.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-cloud.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-sleet.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-cloud.svg");
                         } else if ([20, 21].includes(iconNumber)) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sleet.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-sleet.svg");
                         } else if (iconNumber === 22) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-snow.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-snow.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-snow.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-snow.svg");
                         } else if (iconNumber === 23) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-snow.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-mostly-cloud.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-snow.svg");
                         } else if ([24, 31].includes(iconNumber)) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-ice.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-ice.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-ice.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-ice.svg");
                         } else if ([25, 26, 29].includes(iconNumber)) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sleet.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-sleet.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-sleet.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-sleet.svg");
                         } else if (iconNumber === 32) {
-                            mainWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-wind.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/weather-icons/svg-icon-weather-wind.svg");
+                            mainWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-wind.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/weather-icons/svg-icon-weather-wind.svg");
                         } else {
-                            mainWeatherIcon.attr("src","assets/images/svg-icon-went-wrong.svg");
-                            secondaryWeatherIcon.attr("src","assets/images/svg-icon-went-wrong.svg");
+                            mainWeatherIcon.attr("src", "assets/images/svg-icon-went-wrong.svg");
+                            secondaryWeatherIcon.attr("src", "assets/images/svg-icon-went-wrong.svg");
                         }
                     }
                     changeWeatherIcons();
@@ -208,10 +208,10 @@ $( document ).ready(function() {
 
                     // result of a function from before - fetch the original temperature, transform into C, round it and save it into a variable
                     let maxTemperatureResult = Math.round(transformToCelsius(originalFeelMaxTemperature));
-                    
+
                     // create a random number 0-4 to access 1 out of 5 collections of the products object
                     function randomZeroToFour() {
-                        return Math.floor(Math.random() * 5); 
+                        return Math.floor(Math.random() * 5);
                     };
 
                     // take an array and populate recommended-item-box with products
@@ -266,6 +266,77 @@ $( document ).ready(function() {
 
                     let randomNumber = randomZeroToFour();
 
+                    function refreshRandomNumber() {
+                        function newRandomNumber() {
+                            return randomNumber + 1;
+                        };
+
+                        function checkRandomNumber() {
+                            if (randomNumber > 4) {
+                                let randomNumber = 0;
+                                return randomNumber;
+                            } else {
+                                return randomNumber;
+                            };
+                        }
+                        randomNumber = newRandomNumber();
+                        randomNumber = checkRandomNumber();
+                        return randomNumber;
+                    };
+
+
+                    // function refreshRandomNumber() {
+                    //     let refreshedRandomNumber = randomNumber + 1;
+                    //     if (refreshedRandomNumber === 5) {
+                    //         refreshedRandomNumber === 0;
+                    //     }
+                    //     return refreshedRandomNumber;
+                    // };
+
+                    // function refreshRandomNumber() {
+                    //     function newRandomNumber(){
+                    //         return randomNumber + 1;
+                    //     };
+                    //     randomNumber = newRandomNumber();
+                    //     if (randomNumber == 5) {
+                    //         randomNumber == 0;
+                    //     }
+                    //     return randomNumber;  
+                    // };
+                    // ----------------------------------
+                    // function newRandomNumber(){
+                    //     return randomNumber + 1;
+                    //  };
+
+                    //  function checkRandomNumber() {
+                    //         if (randomNumber > 4) {
+                    //             let randomNumber = 0;
+                    //             return randomNumber;
+                    //         } else {
+                    //             return randomNumber;
+                    //            };
+                    //     }
+                    // ---------------------------------
+
+                    //     function newRandomNumber(){
+                    //         return randomNumber + 1;
+                    //      };
+
+                    //     function refreshRandomNumber() {
+                    //         let randomNumber = newRandomNumber();
+
+                    //         function checkRandomNumber() {
+                    //             if (randomNumber > 5) {
+                    //                 let randomNumber = 0;
+                    //                 return randomNumber;
+                    //             } else {
+                    //                 return randomNumber;
+                    //                };
+                    //         }
+                    //         checkRandomNumber();
+                    //    }
+
+
                     let productName1 = "shirt";
                     let productName2 = "tshirt";
                     let productName3 = "shorts";
@@ -306,9 +377,9 @@ $( document ).ready(function() {
                         // top = shirt or tshirt
                         function changeClothesIconsTop() {
                             if (maxTemperatureResult <= 20) {
-                                clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-shirt.svg");
+                                clothesIconTop.attr("src", "assets/images/clothes-icons/svg-icon-clothes-shirt.svg");
                                 clothesIconTopText.text("Shirt");
-                                
+
                                 let fetchPrice1 = productsShirt[randomNumber][0].price;
                                 let fetchPrice2 = productsShirt[randomNumber][1].price;
                                 let fetchPrice3 = productsShirt[randomNumber][2].price;
@@ -326,10 +397,10 @@ $( document ).ready(function() {
                                 populateProducts(productsArray3);
 
                             } else {
-                                clothesIconTop.attr("src","assets/images/clothes-icons/svg-icon-clothes-tshirt.svg");
+                                clothesIconTop.attr("src", "assets/images/clothes-icons/svg-icon-clothes-tshirt.svg");
                                 clothesIconTopText.text("T-shirt");
 
-                // ************* create products.tshirt variable and then iterate on it 
+                                // ************* create products.tshirt variable and then iterate on it 
 
                                 let fetchPrice1 = productsTshirt[randomNumber][0].price;
                                 let fetchPrice2 = productsTshirt[randomNumber][1].price;
@@ -339,7 +410,7 @@ $( document ).ready(function() {
                                 let fetchImage2 = productsTshirt[randomNumber][1].imageTitle;
                                 let fetchImage3 = productsTshirt[randomNumber][2].imageTitle;
 
-                // ************* iterate through prices and save in a variable? As a string and then transform into an array?
+                                // ************* iterate through prices and save in a variable? As a string and then transform into an array?
                                 // function iteratePricesAndImages() {
                                 //     for (let i = 0; i < productsTshirt.length; i++) {
                                 //         productsTshirt[randomNumber][i].price;
@@ -348,7 +419,7 @@ $( document ).ready(function() {
                                 //     return productsTshirt[randomNumber][i].price;
                                 //     return productsTshirt[randomNumber][i].imageTitle;
                                 // }
-                // ***********this one worked
+                                // ***********this one worked
                                 // function iteratePricesAndImages() {
                                 //     for (let i = 0; i < productsTshirt.length; i++) {
                                 //         console.log(productsTshirt[3][i].price)
@@ -369,7 +440,7 @@ $( document ).ready(function() {
                         // bottom = pants or shorts
                         function changeClothesIconsBottom() {
                             if (maxTemperatureResult > 24) {
-                                clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-shorts.svg");
+                                clothesIconBottom.attr("src", "assets/images/clothes-icons/svg-icon-clothes-shorts.svg");
                                 clothesIconBottomText.text("Shorts");
 
                                 let fetchPrice1 = productsShorts[randomNumber][0].price;
@@ -389,7 +460,7 @@ $( document ).ready(function() {
                                 populateProducts(productsArray3);
 
                             } else {
-                                clothesIconBottom.attr("src","assets/images/clothes-icons/svg-icon-clothes-pants.svg");
+                                clothesIconBottom.attr("src", "assets/images/clothes-icons/svg-icon-clothes-pants.svg");
                                 clothesIconBottomText.text("Pants");
 
                                 let fetchPrice1 = productsPants[randomNumber][0].price;
@@ -414,7 +485,7 @@ $( document ).ready(function() {
                         // footwear = shoes or sandals
                         function changeClothesIconsFootwear() {
                             if (maxTemperatureResult > 26) {
-                                clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-sandal.svg");
+                                clothesIconFootwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-sandal.svg");
                                 clothesIconFootwearText.text("Sandals");
 
                                 let fetchPrice1 = productsSandals[randomNumber][0].price;
@@ -434,7 +505,7 @@ $( document ).ready(function() {
                                 populateProducts(productsArray3);
 
                             } else {
-                                clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-shoe.svg");
+                                clothesIconFootwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-shoe.svg");
                                 clothesIconFootwearText.text("Shoes");
 
                                 let fetchPrice1 = productsShoes[randomNumber][0].price;
@@ -459,7 +530,7 @@ $( document ).ready(function() {
                         // footwear = boots
                         function changeClothesIconsFootwearBoots() {
                             if ((iconNumber >= 19 && iconNumber <= 26) || (iconNumber === 29)) {
-                                clothesIconFootwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-boot.svg");
+                                clothesIconFootwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-boot.svg");
                                 clothesIconFootwearText.text("Boots");
 
                                 let fetchPrice1 = productsBoots[randomNumber][0].price;
@@ -484,7 +555,7 @@ $( document ).ready(function() {
                         // outerwear = jacket or blazer; summerhat
                         function changeClothesIconsOuterwear() {
                             if (maxTemperatureResult <= 17) {
-                                clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-jacket.svg");
+                                clothesIconOuterwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-jacket.svg");
                                 clothesIconOuterwearText.text("Jacket");
 
                                 let fetchPrice1 = productsJacket[randomNumber][0].price;
@@ -504,7 +575,7 @@ $( document ).ready(function() {
                                 populateProducts(productsArray3);
 
                             } else if (maxTemperatureResult > 28) {
-                                clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-hat.svg");
+                                clothesIconOuterwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-hat.svg");
                                 clothesIconOuterwearText.text("Summer hat");
 
                                 let fetchPrice1 = productsSummerhat[randomNumber][0].price;
@@ -524,7 +595,7 @@ $( document ).ready(function() {
                                 populateProducts(productsArray3);
 
                             } else {
-                                clothesIconOuterwear.attr("src","assets/images/clothes-icons/svg-icon-clothes-blazer.svg");
+                                clothesIconOuterwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-blazer.svg");
                                 clothesIconOuterwearText.text("Blazer");
 
                                 let fetchPrice1 = productsBlazer[randomNumber][0].price;
@@ -549,7 +620,7 @@ $( document ).ready(function() {
                         // additional = winter hat, sunglasses, socks
                         function changeClothesIconsAdditional() {
                             if (maxTemperatureResult < 15) {
-                                clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-winter-hat.svg");
+                                clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-winter-hat.svg");
                                 clothesIconAdditionalText.text("Winter hat");
 
                                 let fetchPrice1 = productsWinterhat[randomNumber][0].price;
@@ -569,7 +640,7 @@ $( document ).ready(function() {
                                 populateProducts(productsArray3);
 
                             } else if (maxTemperatureResult > 26) {
-                                clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-sunglasses.svg");
+                                clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-sunglasses.svg");
                                 clothesIconAdditionalText.text("Sunglasses");
 
                                 let fetchPrice1 = productsSunglasses[randomNumber][0].price;
@@ -589,7 +660,7 @@ $( document ).ready(function() {
                                 populateProducts(productsArray3);
 
                             } else {
-                                clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-socks.svg");
+                                clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-socks.svg");
                                 clothesIconAdditionalText.text("Socks");
 
                                 let fetchPrice1 = productsSocks[randomNumber][0].price;
@@ -616,7 +687,7 @@ $( document ).ready(function() {
                             // if 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23 (no 24)
                             // if 25, 26 and 29
                             if ((iconNumber >= 12 && iconNumber <= 23) || [25, 26, 29].includes(iconNumber)) {
-                                clothesIconAdditional.attr("src","assets/images/clothes-icons/svg-icon-clothes-umbrella.svg");
+                                clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-umbrella.svg");
                                 clothesIconAdditionalText.text("Umbrella");
 
                                 let fetchPrice1 = productsUmbrella[randomNumber][0].price;
@@ -641,54 +712,87 @@ $( document ).ready(function() {
                     changeClothesIcons();
 
                     // populate bags
-                        function populateBags() {
+                    function populateBags() {
 
-                            let fetchPrice1 = productsBag[randomNumber][0].price;
-                            let fetchPrice2 = productsBag[randomNumber][1].price;
-                            let fetchPrice3 = productsBag[randomNumber][2].price;
+                        let fetchPrice1 = productsBag[randomNumber][0].price;
+                        let fetchPrice2 = productsBag[randomNumber][1].price;
+                        let fetchPrice3 = productsBag[randomNumber][2].price;
 
-                            let fetchImage1 = productsBag[randomNumber][0].imageTitle;
-                            let fetchImage2 = productsBag[randomNumber][1].imageTitle;
-                            let fetchImage3 = productsBag[randomNumber][2].imageTitle;
+                        let fetchImage1 = productsBag[randomNumber][0].imageTitle;
+                        let fetchImage2 = productsBag[randomNumber][1].imageTitle;
+                        let fetchImage3 = productsBag[randomNumber][2].imageTitle;
 
-                            let productsArray1 = [price16, fetchPrice1, image16, fetchImage1, productName15];
-                            let productsArray2 = [price17, fetchPrice2, image17, fetchImage2, productName15];
-                            let productsArray3 = [price18, fetchPrice3, image18, fetchImage3, productName15];
+                        let productsArray1 = [price16, fetchPrice1, image16, fetchImage1, productName15];
+                        let productsArray2 = [price17, fetchPrice2, image17, fetchImage2, productName15];
+                        let productsArray3 = [price18, fetchPrice3, image18, fetchImage3, productName15];
 
+                        populateProducts(productsArray1);
+                        populateProducts(productsArray2);
+                        populateProducts(productsArray3);
+                    }
+                    populateBags();
+
+                    // populate accessories
+                    function populateAccessories() {
+
+                        let fetchPrice1 = productsAccessories[randomNumber][0].price;
+                        let fetchPrice2 = productsAccessories[randomNumber][1].price;
+                        let fetchPrice3 = productsAccessories[randomNumber][2].price;
+
+                        let fetchImage1 = productsAccessories[randomNumber][0].imageTitle;
+                        let fetchImage2 = productsAccessories[randomNumber][1].imageTitle;
+                        let fetchImage3 = productsAccessories[randomNumber][2].imageTitle;
+
+                        let productsArray1 = [price19, fetchPrice1, image19, fetchImage1, productName16];
+                        let productsArray2 = [price20, fetchPrice2, image20, fetchImage2, productName16];
+                        let productsArray3 = [price21, fetchPrice3, image21, fetchImage3, productName16];
+
+                        populateProducts(productsArray1);
+                        populateProducts(productsArray2);
+                        populateProducts(productsArray3);
+
+                        $(".refresh-square").click(function () {
+                            let randomNumber = refreshRandomNumber();
                             populateProducts(productsArray1);
                             populateProducts(productsArray2);
                             populateProducts(productsArray3);
-                            }
-                        populateBags();
+                        });
+                    }
+                    populateAccessories();
 
-                        // populate accessories
-                        function populateAccessories() {
 
-                            let fetchPrice1 = productsAccessories[randomNumber][0].price;
-                            let fetchPrice2 = productsAccessories[randomNumber][1].price;
-                            let fetchPrice3 = productsAccessories[randomNumber][2].price;
 
-                            let fetchImage1 = productsAccessories[randomNumber][0].imageTitle;
-                            let fetchImage2 = productsAccessories[randomNumber][1].imageTitle;
-                            let fetchImage3 = productsAccessories[randomNumber][2].imageTitle;
 
-                            let productsArray1 = [price19, fetchPrice1, image19, fetchImage1, productName16];
-                            let productsArray2 = [price20, fetchPrice2, image20, fetchImage2, productName16];
-                            let productsArray3 = [price21, fetchPrice3, image21, fetchImage3, productName16];
 
-                            populateProducts(productsArray1);
-                            populateProducts(productsArray2);
-                            populateProducts(productsArray3);
-                            }
-                        populateAccessories();
+                    // function refreshProducts() {
+                    //     $(".refresh-square").click(function(){
+                    //         // create a new random number
+                    //         function refreshProducts() {
+                    //             let refreshedRandomNumber = randomNumber + 1;
+                    //             if (refreshedRandomNumber === 5) {
+                    //                 refreshedRandomNumber === 0;
+                    //             }
+                    //             return refreshedRandomNumber;
+                    //         };
+                    //         let randomNumber = refreshProducts();
+                    //         populateProducts(productsArray1);
+                    //         populateProducts(productsArray2);
+                    //         populateProducts(productsArray3);
+
+                    //     });
+                    // }
+
+
+
+
 
 
                 })
                 .catch(err => {
-                // Error
+                    // Error
                 });
-            });
-        }
+        });
+    }
 
     fetchWeatherData();
 
