@@ -264,8 +264,10 @@ $(document).ready(function () {
                     let image20 = $("#image20");
                     let image21 = $("#image21");
 
+                    // create a random number
                     let randomNumber = randomZeroToFour();
 
+                    // refresh random number for refresh button
                     function refreshRandomNumber() {
                         function newRandomNumber() {
                             return randomNumber + 1;
@@ -283,59 +285,6 @@ $(document).ready(function () {
                         randomNumber = checkRandomNumber();
                         return randomNumber;
                     };
-
-
-                    // function refreshRandomNumber() {
-                    //     let refreshedRandomNumber = randomNumber + 1;
-                    //     if (refreshedRandomNumber === 5) {
-                    //         refreshedRandomNumber === 0;
-                    //     }
-                    //     return refreshedRandomNumber;
-                    // };
-
-                    // function refreshRandomNumber() {
-                    //     function newRandomNumber(){
-                    //         return randomNumber + 1;
-                    //     };
-                    //     randomNumber = newRandomNumber();
-                    //     if (randomNumber == 5) {
-                    //         randomNumber == 0;
-                    //     }
-                    //     return randomNumber;  
-                    // };
-                    // ----------------------------------
-                    // function newRandomNumber(){
-                    //     return randomNumber + 1;
-                    //  };
-
-                    //  function checkRandomNumber() {
-                    //         if (randomNumber > 4) {
-                    //             let randomNumber = 0;
-                    //             return randomNumber;
-                    //         } else {
-                    //             return randomNumber;
-                    //            };
-                    //     }
-                    // ---------------------------------
-
-                    //     function newRandomNumber(){
-                    //         return randomNumber + 1;
-                    //      };
-
-                    //     function refreshRandomNumber() {
-                    //         let randomNumber = newRandomNumber();
-
-                    //         function checkRandomNumber() {
-                    //             if (randomNumber > 5) {
-                    //                 let randomNumber = 0;
-                    //                 return randomNumber;
-                    //             } else {
-                    //                 return randomNumber;
-                    //                };
-                    //         }
-                    //         checkRandomNumber();
-                    //    }
-
 
                     let productName1 = "shirt";
                     let productName2 = "tshirt";
@@ -834,9 +783,7 @@ $(document).ready(function () {
                     populateAccessories();
 
                 })
-                .catch(err => {
-                    // Error
-                });
+                .catch(err => console.log(err));
         });
     }
 
