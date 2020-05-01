@@ -426,7 +426,7 @@ $(document).ready(function () {
                                 function addLinks() {
 
                                     let fetchLink1 = productsTshirt[randomNumber][0].link;
-                                    let fetchLink2 = productTshirt[randomNumber][1].link;
+                                    let fetchLink2 = productsTshirt[randomNumber][1].link;
                                     let fetchLink3 = productsTshirt[randomNumber][2].link;
 
                                     image1.off("click");
@@ -441,8 +441,8 @@ $(document).ready(function () {
                                     });
                                     image3.click(function () {
                                         linkOut(fetchLink3);
-                                    });
-                                };
+                                    })
+                                }
                                 addLinks();
 
                                 $("#refresh-square-1").click(function () {
