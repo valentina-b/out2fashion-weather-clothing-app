@@ -13,8 +13,8 @@ const products = {
                 "imageTitle": "umbrella-2"
             },
             {
-                "price": "22,99",
-                "link": "https://www.esprit.de/damenmode/accessoires/regenschirme/taschen-schirm-mit-nylon-bag-53205_1CO",
+                "price": "19,99",
+                "link": "https://www.esprit.de/damenmode/accessoires/regenschirme/mini-regenschirm-im-handtaschen-format-52182_1CO",
                 "imageTitle": "umbrella-3"
             }
         ],
@@ -48,7 +48,7 @@ const products = {
             },
             {
                 "price": "19,99",
-                "link": "https://www.esprit.de/damenmode/accessoires/regenschirme/mini-regenschirm-im-handtaschen-format-52182_1CO",
+                "link": "https://www.esprit.de/regenschirm-mit-logo-aus-glanzsteinen-50647_1CO",
                 "imageTitle": "umbrella-9"
             },
         ],
@@ -77,7 +77,7 @@ const products = {
             },
             {
                 "price": "22,99",
-                "link": "https://www.esprit.de/damenmode/accessoires/regenschirme/regenschirm-mit-logo-aus-glanzsteinen-50647_1CO",
+                "link": "https://www.esprit.de/damenmode/accessoires/regenschirme/taschen-schirm-mit-nylon-bag-53205_1CO",
                 "imageTitle": "umbrella-14"
             },
             {
