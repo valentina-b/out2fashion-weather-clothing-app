@@ -193,9 +193,15 @@ body {
     padding-bottom: 40px;
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
     #content-additional-text {
         margin-top: 60px;
+    }
+}
+
+@media (min-width: 1199px) {
+    #content-additional-text {
+        margin-top: 70px;
     }
 }
 
