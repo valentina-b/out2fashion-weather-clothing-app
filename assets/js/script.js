@@ -366,7 +366,11 @@ $(document).ready(function () {
                                     let fetchLink1 = productsShirt[randomNumber][0].link;
                                     let fetchLink2 = productsShirt[randomNumber][1].link;
                                     let fetchLink3 = productsShirt[randomNumber][2].link;
-
+                                    
+                                    image1.off("click");
+                                    image2.off("click");
+                                    image3.off("click");
+                                    
                                     image1.click(function () {
                                         linkOut(fetchLink1);
                                     });
