@@ -56,6 +56,12 @@ body {
     }
 }
 
+@media (max-width: 425px) {
+    .navbar-brand {
+        margin-left: 10px;
+    }
+}
+
 /* Navigation */
 
 
@@ -214,7 +220,7 @@ body {
 #content-additional-text p {
     font-weight: 300;
     font-size: 16px;
-    line-height: 140%;
+    /* line-height: 140%; */
     padding-left: 23px;
     padding-right: 23px;
 }
@@ -346,13 +352,7 @@ footer{
     width: fit-content;
     margin: 0 auto;
 }
-
-
 /* Footer */
-
-
-
-
 
 /* General styles and effects */
 
@@ -428,7 +428,7 @@ footer{
 .line-hp {
     display: block;
     position: relative;
-    top: -10px;
+    top: -13px;
 }
 
 .regular-weight {
@@ -445,8 +445,6 @@ footer{
     font-size: 14px;
 }
 /* General styles and effects */
-
-
 
 @media (max-width: 345px) {
     .square {
@@ -485,7 +483,7 @@ footer{
 
 
 
-/* Berlin */
+/* CITY */
 
 .content-forecast {
     width: 300px;
@@ -603,7 +601,7 @@ footer{
 .last-box{
     background: rgb(206,202,232);
     background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
-    width: 300px;
+    width: 285px;
     /* give some space on DSK */
     /* margin-top: 30%; */
 }
@@ -612,7 +610,7 @@ footer{
     width: 225px;
     margin: 0 auto;
     padding: 35px 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* .recommended-item-box {
@@ -683,4 +681,26 @@ footer{
     }
 }
 
-/* Berlin */
+/* CITY */
+
+.scroll-up-circle {
+    border-radius: 50%;
+    background-color: #FFF1EC;
+    width: 40px;
+    height: 40px;
+}
+
+.scroll-up {
+    display: block;
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+}
+
+.arrow-up {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 30%;
+    top: 15%;
+}

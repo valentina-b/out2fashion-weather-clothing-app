@@ -31,6 +31,10 @@ $(document).ready(function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
+    $(".scroll-up").click(function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
     function fetchWeatherData() {
         // 4 change city name in the city content
         $(".city-name-img").click(function () {
