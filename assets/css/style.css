@@ -193,11 +193,11 @@ body {
     padding-bottom: 40px;
 }
 
-/* #content-additional-text h2 {
-    text-transform: uppercase;
-    padding-left: 38px;
-    padding-right: 38px;
-} */
+@media (min-width: 991px) {
+    #content-additional-text {
+        margin-top: 60px;
+    }
+}
 
 .h2-heading {
     font-size: 20px;
