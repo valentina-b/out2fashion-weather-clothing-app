@@ -1,19 +1,18 @@
 $(document).ready(function () {
 
     // EFFECTS
-    $(".city-content img, .clothes-square img").mouseenter(function () {
-        $(this).addClass("square-hover");
-    });
-    $(".city-content img, .clothes-square img").mouseleave(function () {
-        $(this).removeClass("square-hover");
-    })
 
-    $(".refresh-square").mouseenter(function () {
-        $(this).addClass("shadow-hover");
+    $(".city-content img, .clothes-square img").hover(function () {
+        $(this).addClass("square-hover");
+    }, function () {
+        $(this).removeClass("square-hover");
     });
-    $(".refresh-square").mouseleave(function () {
+
+    $(".refresh-square").hover(function () {
+        $(this).addClass("shadow-hover");
+    }, function () {
         $(this).removeClass("shadow-hover");
-    })
+    });
 
     // Recalculate F to C --> T(°C) = (T(°F) - 32) / 1.8
     // transformToCelsius(68) ---> 20
@@ -209,6 +208,11 @@ $(document).ready(function () {
                     // result of a function from before - fetch the original temperature, transform into C, round it and save it into a variable
                     let maxTemperatureResult = Math.round(transformToCelsius(originalFeelMaxTemperature));
 
+                    // link out
+                    function linkOut(url) {
+                        window.open(url, "_blank");
+                    };
+
                     // create a random number 0-4 to access 1 out of 5 collections of the products object
                     function randomZeroToFour() {
                         return Math.floor(Math.random() * 5);
@@ -345,6 +349,25 @@ $(document).ready(function () {
                                 populateProducts(productsArray2);
                                 populateProducts(productsArray3);
 
+                                // $("#refresh-square-1").click(function () {
+                                //     let randomNumber = refreshRandomNumber();
+                                //     changeClothesIconsTop();
+                                // });
+
+                                let fetchLink1 = productsShirt[randomNumber][0].link;
+                                let fetchLink2 = productsShirt[randomNumber][1].link;
+                                let fetchLink3 = productsShirt[randomNumber][2].link;
+
+                                $("#image1").click(function () {
+                                    linkOut(fetchLink1);
+                                });
+                                $("#image2").click(function () {
+                                    linkOut(fetchLink2);
+                                });
+                                $("#image3").click(function () {
+                                    linkOut(fetchLink3);
+                                })
+
                                 $("#refresh-square-1").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     changeClothesIconsTop();
@@ -392,6 +415,20 @@ $(document).ready(function () {
                                     let randomNumber = refreshRandomNumber();
                                     changeClothesIconsTop();
                                 });
+
+                                // let fetchLink1 = productsTshirt[randomNumber][0].link;
+                                // let fetchLink2 = productTshirt[randomNumber][1].link;
+                                // let fetchLink3 = productsTshirt[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
                             }
                         }
                         changeClothesIconsTop();
@@ -423,6 +460,20 @@ $(document).ready(function () {
                                     changeClothesIconsBottom();
                                 });
 
+                                // let fetchLink1 = productsShorts[randomNumber][0].link;
+                                // let fetchLink2 = productsShorts[randomNumber][1].link;
+                                // let fetchLink3 = productsShorts[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
+
                             } else {
                                 clothesIconBottom.attr("src", "assets/images/clothes-icons/svg-icon-clothes-pants.svg");
                                 clothesIconBottomText.text("Pants");
@@ -447,6 +498,20 @@ $(document).ready(function () {
                                     let randomNumber = refreshRandomNumber();
                                     changeClothesIconsBottom();
                                 });
+
+                                // let fetchLink1 = productsPants[randomNumber][0].link;
+                                // let fetchLink2 = productsPants[randomNumber][1].link;
+                                // let fetchLink3 = productsPants[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
                             }
                         }
                         changeClothesIconsBottom();
@@ -478,6 +543,20 @@ $(document).ready(function () {
                                     changeClothesIconsFootwear();
                                 });
 
+                                // let fetchLink1 = productsSandals[randomNumber][0].link;
+                                // let fetchLink2 = productsSandals[randomNumber][1].link;
+                                // let fetchLink3 = productsSandals[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
+
                             } else {
                                 clothesIconFootwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-shoe.svg");
                                 clothesIconFootwearText.text("Shoes");
@@ -502,6 +581,20 @@ $(document).ready(function () {
                                     let randomNumber = refreshRandomNumber();
                                     changeClothesIconsFootwear();
                                 });
+
+                                // let fetchLink1 = productsShoes[randomNumber][0].link;
+                                // let fetchLink2 = productsShoes[randomNumber][1].link;
+                                // let fetchLink3 = productsShoes[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
                             }
                         }
                         changeClothesIconsFootwear();
@@ -532,6 +625,20 @@ $(document).ready(function () {
                                     let randomNumber = refreshRandomNumber();
                                     changeClothesIconsFootwearBoots();
                                 });
+
+                                // let fetchLink1 = productsBoots[randomNumber][0].link;
+                                // let fetchLink2 = productsBoots[randomNumber][1].link;
+                                // let fetchLink3 = productsBoots[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
                             }
                         }
                         changeClothesIconsFootwearBoots();
@@ -563,6 +670,20 @@ $(document).ready(function () {
                                     changeClothesIconsOuterwear();
                                 });
 
+                                // let fetchLink1 = productsJacket[randomNumber][0].link;
+                                // let fetchLink2 = productsJacket[randomNumber][1].link;
+                                // let fetchLink3 = productsJacket[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
+
                             } else if (maxTemperatureResult > 28) {
                                 clothesIconOuterwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-hat.svg");
                                 clothesIconOuterwearText.text("Summer hat");
@@ -588,6 +709,20 @@ $(document).ready(function () {
                                     changeClothesIconsOuterwear();
                                 });
 
+                                // let fetchLink1 = productsSummerhat[randomNumber][0].link;
+                                // let fetchLink2 = productsSummerhat[randomNumber][1].link;
+                                // let fetchLink3 = productsSummerhat[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
+
                             } else {
                                 clothesIconOuterwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-blazer.svg");
                                 clothesIconOuterwearText.text("Blazer");
@@ -612,6 +747,20 @@ $(document).ready(function () {
                                     let randomNumber = refreshRandomNumber();
                                     changeClothesIconsOuterwear();
                                 });
+
+                                // let fetchLink1 = productsBlazer[randomNumber][0].link;
+                                // let fetchLink2 = productsBlazer[randomNumber][1].link;
+                                // let fetchLink3 = productsBlazer[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
                             }
                         }
                         changeClothesIconsOuterwear();
@@ -643,6 +792,20 @@ $(document).ready(function () {
                                     changeClothesIconsAdditional();
                                 });
 
+                                let fetchLink1 = productsWinterhat[randomNumber][0].link;
+                                let fetchLink2 = productsWinterhat[randomNumber][1].link;
+                                let fetchLink3 = productsWinterhat[randomNumber][2].link;
+
+                                $(".clothes-square img").click(function () {
+                                    linkOut(fetchLink1);
+                                });
+                                $(".clothes-square img").click(function () {
+                                    linkOut(fetchLink2);
+                                });
+                                $(".clothes-square img").click(function () {
+                                    linkOut(fetchLink3);
+                                })
+
                             } else if (maxTemperatureResult > 26) {
                                 clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-sunglasses.svg");
                                 clothesIconAdditionalText.text("Sunglasses");
@@ -668,6 +831,20 @@ $(document).ready(function () {
                                     changeClothesIconsAdditional();
                                 });
 
+                                // let fetchLink1 = productsSunglasses[randomNumber][0].link;
+                                // let fetchLink2 = productsSunglasses[randomNumber][1].link;
+                                // let fetchLink3 = productsSunglasses[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
+
                             } else {
                                 clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-socks.svg");
                                 clothesIconAdditionalText.text("Socks");
@@ -692,6 +869,20 @@ $(document).ready(function () {
                                     let randomNumber = refreshRandomNumber();
                                     changeClothesIconsAdditional();
                                 });
+
+                                // let fetchLink1 = productsSocks[randomNumber][0].link;
+                                // let fetchLink2 = productsSocks[randomNumber][1].link;
+                                // let fetchLink3 = productsSocks[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
                             }
                         }
                         changeClothesIconsAdditional();
@@ -724,6 +915,20 @@ $(document).ready(function () {
                                     let randomNumber = refreshRandomNumber();
                                     changeClothesIconsAdditionalUmbrella();
                                 });
+
+                                // let fetchLink1 = productsUmbrella[randomNumber][0].link;
+                                // let fetchLink2 = productsUmbrella[randomNumber][1].link;
+                                // let fetchLink3 = productsUmbrella[randomNumber][2].link;
+
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink1);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink2);
+                                // });
+                                // $(".clothes-square img").click(function () {
+                                //     linkOut(fetchLink3);
+                                // })
                             }
                         }
                         changeClothesIconsAdditionalUmbrella();
@@ -753,6 +958,20 @@ $(document).ready(function () {
                             let randomNumber = refreshRandomNumber();
                             populateBags();
                         });
+
+                        // let fetchLink1 = productsBag[randomNumber][0].link;
+                        // let fetchLink2 = productsBag[randomNumber][1].link;
+                        // let fetchLink3 = productsBag[randomNumber][2].link;
+
+                        // $(".clothes-square img").click(function () {
+                        //     linkOut(fetchLink1);
+                        // });
+                        // $(".clothes-square img").click(function () {
+                        //     linkOut(fetchLink2);
+                        // });
+                        // $(".clothes-square img").click(function () {
+                        //     linkOut(fetchLink3);
+                        // })
                     }
                     populateBags();
 
@@ -779,6 +998,20 @@ $(document).ready(function () {
                             let randomNumber = refreshRandomNumber();
                             populateAccessories();
                         });
+
+                        // let fetchLink1 = productsAccessories[randomNumber][0].link;
+                        // let fetchLink2 = productsAccessories[randomNumber][1].link;
+                        // let fetchLink3 = productsAccessories[randomNumber][2].link;
+
+                        // $(".clothes-square img").click(function () {
+                        //     linkOut(fetchLink1);
+                        // });
+                        // $(".clothes-square img").click(function () {
+                        //     linkOut(fetchLink2);
+                        // });
+                        // $(".clothes-square img").click(function () {
+                        //     linkOut(fetchLink3);
+                        // })
                     }
                     populateAccessories();
 
