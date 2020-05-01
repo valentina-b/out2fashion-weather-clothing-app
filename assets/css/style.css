@@ -425,6 +425,12 @@ footer{
     background-color: #978FCD;
 }
 
+.line-hp {
+    display: block;
+    position: relative;
+    top: -10px;
+}
+
 .regular-weight {
     font-weight: 400;
 }
