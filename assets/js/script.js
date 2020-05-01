@@ -210,8 +210,7 @@ $(document).ready(function () {
 
                     // link out
                     function linkOut(url) {
-                        // window.open(url, "_blank");
-                        console.log(url);
+                        window.open(url, "_blank");
                     };
 
                     // create a random number 0-4 to access 1 out of 5 collections of the products object
@@ -355,22 +354,16 @@ $(document).ready(function () {
                                 };
                                 populateShirt();
 
-
-                                // link out
-                                // function linkOut(url) {
-                                //     window.open(url, "_blank");
-                                // };
-
                                 function addLinks() {
 
                                     let fetchLink1 = productsShirt[randomNumber][0].link;
                                     let fetchLink2 = productsShirt[randomNumber][1].link;
                                     let fetchLink3 = productsShirt[randomNumber][2].link;
-                                    
+
                                     image1.off("click");
                                     image2.off("click");
                                     image3.off("click");
-                                    
+
                                     image1.click(function () {
                                         linkOut(fetchLink1);
                                     });
@@ -430,24 +423,33 @@ $(document).ready(function () {
                                 }
                                 populateTshirt();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsTshirt[randomNumber][0].link;
+                                    let fetchLink2 = productTshirt[randomNumber][1].link;
+                                    let fetchLink3 = productsTshirt[randomNumber][2].link;
+
+                                    image1.off("click");
+                                    image2.off("click");
+                                    image3.off("click");
+
+                                    image1.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image2.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image3.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-1").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateTshirt();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsTshirt[randomNumber][0].link;
-                                // let fetchLink2 = productTshirt[randomNumber][1].link;
-                                // let fetchLink3 = productsTshirt[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
                             }
                         }
                         changeClothesIconsTop();
@@ -478,24 +480,33 @@ $(document).ready(function () {
                                 };
                                 populateShorts();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsShorts[randomNumber][0].link;
+                                    let fetchLink2 = productsShorts[randomNumber][1].link;
+                                    let fetchLink3 = productsShorts[randomNumber][2].link;
+
+                                    image4.off("click");
+                                    image5.off("click");
+                                    image6.off("click");
+
+                                    image4.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image5.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image6.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-2").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateShorts();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsShorts[randomNumber][0].link;
-                                // let fetchLink2 = productsShorts[randomNumber][1].link;
-                                // let fetchLink3 = productsShorts[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
 
                             } else {
                                 clothesIconBottom.attr("src", "assets/images/clothes-icons/svg-icon-clothes-pants.svg");
@@ -521,24 +532,33 @@ $(document).ready(function () {
                                 };
                                 populatePants();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsPants[randomNumber][0].link;
+                                    let fetchLink2 = productsPants[randomNumber][1].link;
+                                    let fetchLink3 = productsPants[randomNumber][2].link;
+
+                                    image4.off("click");
+                                    image5.off("click");
+                                    image6.off("click");
+
+                                    image4.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image5.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image6.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-2").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populatePants();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsPants[randomNumber][0].link;
-                                // let fetchLink2 = productsPants[randomNumber][1].link;
-                                // let fetchLink3 = productsPants[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
                             }
                         }
                         changeClothesIconsBottom();
@@ -569,24 +589,33 @@ $(document).ready(function () {
                                 };
                                 populateSandals();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsSandals[randomNumber][0].link;
+                                    let fetchLink2 = productsSandals[randomNumber][1].link;
+                                    let fetchLink3 = productsSandals[randomNumber][2].link;
+
+                                    image7.off("click");
+                                    image8.off("click");
+                                    image9.off("click");
+
+                                    image7.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image8.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image9.click(function () {
+                                        linkOut(fetchLink3);
+                                    })
+                                };
+                                addLinks();
+
                                 $("#refresh-square-3").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateSandals();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsSandals[randomNumber][0].link;
-                                // let fetchLink2 = productsSandals[randomNumber][1].link;
-                                // let fetchLink3 = productsSandals[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
 
                             } else {
                                 clothesIconFootwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-shoe.svg");
@@ -612,24 +641,33 @@ $(document).ready(function () {
                                 };
                                 populateShoes();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsShoes[randomNumber][0].link;
+                                    let fetchLink2 = productsShoes[randomNumber][1].link;
+                                    let fetchLink3 = productsShoes[randomNumber][2].link;
+
+                                    image7.off("click");
+                                    image8.off("click");
+                                    image9.off("click");
+
+                                    image7.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image8.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image9.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-3").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateShoes();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsShoes[randomNumber][0].link;
-                                // let fetchLink2 = productsShoes[randomNumber][1].link;
-                                // let fetchLink3 = productsShoes[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
                             }
                         }
                         changeClothesIconsFootwear();
@@ -660,24 +698,33 @@ $(document).ready(function () {
                                 };
                                 populateBoots();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsBoots[randomNumber][0].link;
+                                    let fetchLink2 = productsBoots[randomNumber][1].link;
+                                    let fetchLink3 = productsBoots[randomNumber][2].link;
+
+                                    image7.off("click");
+                                    image8.off("click");
+                                    image9.off("click");
+
+                                    image7.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image8.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image9.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-3").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateBoots();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsBoots[randomNumber][0].link;
-                                // let fetchLink2 = productsBoots[randomNumber][1].link;
-                                // let fetchLink3 = productsBoots[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
                             }
                         }
                         changeClothesIconsFootwearBoots();
@@ -708,24 +755,33 @@ $(document).ready(function () {
                                 };
                                 populateJacket();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsJacket[randomNumber][0].link;
+                                    let fetchLink2 = productsJacket[randomNumber][1].link;
+                                    let fetchLink3 = productsJacket[randomNumber][2].link;
+
+                                    image10.off("click");
+                                    image11.off("click");
+                                    image12.off("click");
+
+                                    image10.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image11.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image12.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-4").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateJacket();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsJacket[randomNumber][0].link;
-                                // let fetchLink2 = productsJacket[randomNumber][1].link;
-                                // let fetchLink3 = productsJacket[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
 
                             } else if (maxTemperatureResult > 28) {
                                 clothesIconOuterwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-hat.svg");
@@ -751,24 +807,33 @@ $(document).ready(function () {
                                 };
                                 populateSummerhat();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsSummerhat[randomNumber][0].link;
+                                    let fetchLink2 = productsSummerhat[randomNumber][1].link;
+                                    let fetchLink3 = productsSummerhat[randomNumber][2].link;
+
+                                    image10.off("click");
+                                    image11.off("click");
+                                    image12.off("click");
+
+                                    image10.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image11.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image12.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-4").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateSummerhat();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsSummerhat[randomNumber][0].link;
-                                // let fetchLink2 = productsSummerhat[randomNumber][1].link;
-                                // let fetchLink3 = productsSummerhat[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
 
                             } else {
                                 clothesIconOuterwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-blazer.svg");
@@ -794,24 +859,33 @@ $(document).ready(function () {
                                 };
                                 populateBlazer();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsBlazer[randomNumber][0].link;
+                                    let fetchLink2 = productsBlazer[randomNumber][1].link;
+                                    let fetchLink3 = productsBlazer[randomNumber][2].link;
+
+                                    image10.off("click");
+                                    image11.off("click");
+                                    image12.off("click");
+
+                                    image10.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image11.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image12.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-4").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateBlazer();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsBlazer[randomNumber][0].link;
-                                // let fetchLink2 = productsBlazer[randomNumber][1].link;
-                                // let fetchLink3 = productsBlazer[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
                             }
                         }
                         changeClothesIconsOuterwear();
@@ -842,24 +916,33 @@ $(document).ready(function () {
                                 };
                                 populateWinterhat();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsWinterhat[randomNumber][0].link;
+                                    let fetchLink2 = productsWinterhat[randomNumber][1].link;
+                                    let fetchLink3 = productsWinterhat[randomNumber][2].link;
+
+                                    image13.off("click");
+                                    image14.off("click");
+                                    image15.off("click");
+
+                                    image13.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image14.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image15.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-5").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateWinterhat();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsWinterhat[randomNumber][0].link;
-                                // let fetchLink2 = productsWinterhat[randomNumber][1].link;
-                                // let fetchLink3 = productsWinterhat[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
 
                             } else if (maxTemperatureResult > 26) {
                                 clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-sunglasses.svg");
@@ -885,24 +968,33 @@ $(document).ready(function () {
                                 };
                                 populateAccessories();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsSunglasses[randomNumber][0].link;
+                                    let fetchLink2 = productsSunglasses[randomNumber][1].link;
+                                    let fetchLink3 = productsSunglasses[randomNumber][2].link;
+
+                                    image13.off("click");
+                                    image14.off("click");
+                                    image15.off("click");
+
+                                    image13.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image14.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image15.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-5").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateAccessories();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsSunglasses[randomNumber][0].link;
-                                // let fetchLink2 = productsSunglasses[randomNumber][1].link;
-                                // let fetchLink3 = productsSunglasses[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
 
                             } else {
                                 clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-socks.svg");
@@ -928,24 +1020,33 @@ $(document).ready(function () {
                                 };
                                 populateSocks();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsSocks[randomNumber][0].link;
+                                    let fetchLink2 = productsSocks[randomNumber][1].link;
+                                    let fetchLink3 = productsSocks[randomNumber][2].link;
+
+                                    image13.off("click");
+                                    image14.off("click");
+                                    image15.off("click");
+
+                                    image13.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image14.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image15.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-5").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateSocks();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsSocks[randomNumber][0].link;
-                                // let fetchLink2 = productsSocks[randomNumber][1].link;
-                                // let fetchLink3 = productsSocks[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
                             }
                         }
                         changeClothesIconsAdditional();
@@ -978,24 +1079,33 @@ $(document).ready(function () {
                                 };
                                 populateUmbrella();
 
+                                function addLinks() {
+
+                                    let fetchLink1 = productsUmbrella[randomNumber][0].link;
+                                    let fetchLink2 = productsUmbrella[randomNumber][1].link;
+                                    let fetchLink3 = productsUmbrella[randomNumber][2].link;
+
+                                    image13.off("click");
+                                    image14.off("click");
+                                    image15.off("click");
+
+                                    image13.click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    image14.click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    image15.click(function () {
+                                        linkOut(fetchLink3);
+                                    });
+                                };
+                                addLinks();
+
                                 $("#refresh-square-5").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateUmbrella();
+                                    addLinks();
                                 });
-
-                                // let fetchLink1 = productsUmbrella[randomNumber][0].link;
-                                // let fetchLink2 = productsUmbrella[randomNumber][1].link;
-                                // let fetchLink3 = productsUmbrella[randomNumber][2].link;
-
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $(".clothes-square img").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
                             }
                         }
                         changeClothesIconsAdditionalUmbrella();
@@ -1025,24 +1135,33 @@ $(document).ready(function () {
                         };
                         populateBags();
 
+                        function addLinks() {
+
+                            let fetchLink1 = productsBag[randomNumber][0].link;
+                            let fetchLink2 = productsBag[randomNumber][1].link;
+                            let fetchLink3 = productsBag[randomNumber][2].link;
+
+                            image16.off("click");
+                            image17.off("click");
+                            image18.off("click");
+
+                            image16.click(function () {
+                                linkOut(fetchLink1);
+                            });
+                            image17.click(function () {
+                                linkOut(fetchLink2);
+                            });
+                            image18.click(function () {
+                                linkOut(fetchLink3);
+                            });
+                        };
+                        addLinks();
+
                         $("#refresh-square-6").click(function () {
                             let randomNumber = refreshRandomNumber();
                             populateBags();
+                            addLinks();
                         });
-
-                        // let fetchLink1 = productsBag[randomNumber][0].link;
-                        // let fetchLink2 = productsBag[randomNumber][1].link;
-                        // let fetchLink3 = productsBag[randomNumber][2].link;
-
-                        // $(".clothes-square img").click(function () {
-                        //     linkOut(fetchLink1);
-                        // });
-                        // $(".clothes-square img").click(function () {
-                        //     linkOut(fetchLink2);
-                        // });
-                        // $(".clothes-square img").click(function () {
-                        //     linkOut(fetchLink3);
-                        // })
                     }
                     changeBags();
 
@@ -1069,24 +1188,33 @@ $(document).ready(function () {
                         };
                         populateAccessories();
 
+                        function addLinks() {
+
+                            let fetchLink1 = productsAccessories[randomNumber][0].link;
+                            let fetchLink2 = productsAccessories[randomNumber][1].link;
+                            let fetchLink3 = productsAccessories[randomNumber][2].link;
+
+                            image19.off("click");
+                            image20.off("click");
+                            image21.off("click");
+
+                            image19.click(function () {
+                                linkOut(fetchLink1);
+                            });
+                            image20.click(function () {
+                                linkOut(fetchLink2);
+                            });
+                            image21.click(function () {
+                                linkOut(fetchLink3);
+                            });
+                        };
+                        addLinks();
+
                         $("#refresh-square-7").click(function () {
                             let randomNumber = refreshRandomNumber();
                             populateAccessories();
+                            addLinks();
                         });
-
-                        // let fetchLink1 = productsAccessories[randomNumber][0].link;
-                        // let fetchLink2 = productsAccessories[randomNumber][1].link;
-                        // let fetchLink3 = productsAccessories[randomNumber][2].link;
-
-                        // $(".clothes-square img").click(function () {
-                        //     linkOut(fetchLink1);
-                        // });
-                        // $(".clothes-square img").click(function () {
-                        //     linkOut(fetchLink2);
-                        // });
-                        // $(".clothes-square img").click(function () {
-                        //     linkOut(fetchLink3);
-                        // })
                     }
                     changeAccessories();
 
