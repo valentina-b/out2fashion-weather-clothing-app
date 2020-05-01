@@ -354,28 +354,34 @@ $(document).ready(function () {
                                 };
                                 populateShirt();
 
-                                // $("#refresh-square-1").click(function () {
-                                //     let randomNumber = refreshRandomNumber();
-                                //     changeClothesIconsTop();
-                                // });
 
-                                // let fetchLink1 = productsShirt[randomNumber][0].link;
-                                // let fetchLink2 = productsShirt[randomNumber][1].link;
-                                // let fetchLink3 = productsShirt[randomNumber][2].link;
+                                // link out
+                                // function linkOut(url) {
+                                //     window.open(url, "_blank");
+                                // };
 
-                                // $("#image1").click(function () {
-                                //     linkOut(fetchLink1);
-                                // });
-                                // $("#image2").click(function () {
-                                //     linkOut(fetchLink2);
-                                // });
-                                // $("#image3").click(function () {
-                                //     linkOut(fetchLink3);
-                                // })
+                                function addLinks() {
+
+                                    let fetchLink1 = productsShirt[randomNumber][0].link;
+                                    let fetchLink2 = productsShirt[randomNumber][1].link;
+                                    let fetchLink3 = productsShirt[randomNumber][2].link;
+
+                                    $("#image1").click(function () {
+                                        linkOut(fetchLink1);
+                                    });
+                                    $("#image2").click(function () {
+                                        linkOut(fetchLink2);
+                                    });
+                                    $("#image3").click(function () {
+                                        linkOut(fetchLink3);
+                                    })
+                                }
+                                addLinks();
 
                                 $("#refresh-square-1").click(function () {
                                     let randomNumber = refreshRandomNumber();
                                     populateShirt();
+                                    addLinks();
                                 });
 
                             } else {
@@ -581,23 +587,23 @@ $(document).ready(function () {
                                 clothesIconFootwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-shoe.svg");
                                 clothesIconFootwearText.text("Shoes");
 
-                                function populateShoes(){
+                                function populateShoes() {
 
-                                let fetchPrice1 = productsShoes[randomNumber][0].price;
-                                let fetchPrice2 = productsShoes[randomNumber][1].price;
-                                let fetchPrice3 = productsShoes[randomNumber][2].price;
+                                    let fetchPrice1 = productsShoes[randomNumber][0].price;
+                                    let fetchPrice2 = productsShoes[randomNumber][1].price;
+                                    let fetchPrice3 = productsShoes[randomNumber][2].price;
 
-                                let fetchImage1 = productsShoes[randomNumber][0].imageTitle;
-                                let fetchImage2 = productsShoes[randomNumber][1].imageTitle;
-                                let fetchImage3 = productsShoes[randomNumber][2].imageTitle;
+                                    let fetchImage1 = productsShoes[randomNumber][0].imageTitle;
+                                    let fetchImage2 = productsShoes[randomNumber][1].imageTitle;
+                                    let fetchImage3 = productsShoes[randomNumber][2].imageTitle;
 
-                                let productsArray1 = [price7, fetchPrice1, image7, fetchImage1, productName6];
-                                let productsArray2 = [price8, fetchPrice2, image8, fetchImage2, productName6];
-                                let productsArray3 = [price9, fetchPrice3, image9, fetchImage3, productName6];
+                                    let productsArray1 = [price7, fetchPrice1, image7, fetchImage1, productName6];
+                                    let productsArray2 = [price8, fetchPrice2, image8, fetchImage2, productName6];
+                                    let productsArray3 = [price9, fetchPrice3, image9, fetchImage3, productName6];
 
-                                populateProducts(productsArray1);
-                                populateProducts(productsArray2);
-                                populateProducts(productsArray3);
+                                    populateProducts(productsArray1);
+                                    populateProducts(productsArray2);
+                                    populateProducts(productsArray3);
                                 };
                                 populateShoes();
 
@@ -629,23 +635,23 @@ $(document).ready(function () {
                                 clothesIconFootwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-boot.svg");
                                 clothesIconFootwearText.text("Boots");
 
-                                function populateBoots(){
+                                function populateBoots() {
 
-                                let fetchPrice1 = productsBoots[randomNumber][0].price;
-                                let fetchPrice2 = productsBoots[randomNumber][1].price;
-                                let fetchPrice3 = productsBoots[randomNumber][2].price;
+                                    let fetchPrice1 = productsBoots[randomNumber][0].price;
+                                    let fetchPrice2 = productsBoots[randomNumber][1].price;
+                                    let fetchPrice3 = productsBoots[randomNumber][2].price;
 
-                                let fetchImage1 = productsBoots[randomNumber][0].imageTitle;
-                                let fetchImage2 = productsBoots[randomNumber][1].imageTitle;
-                                let fetchImage3 = productsBoots[randomNumber][2].imageTitle;
+                                    let fetchImage1 = productsBoots[randomNumber][0].imageTitle;
+                                    let fetchImage2 = productsBoots[randomNumber][1].imageTitle;
+                                    let fetchImage3 = productsBoots[randomNumber][2].imageTitle;
 
-                                let productsArray1 = [price7, fetchPrice1, image7, fetchImage1, productName7];
-                                let productsArray2 = [price8, fetchPrice2, image8, fetchImage2, productName7];
-                                let productsArray3 = [price9, fetchPrice3, image9, fetchImage3, productName7];
+                                    let productsArray1 = [price7, fetchPrice1, image7, fetchImage1, productName7];
+                                    let productsArray2 = [price8, fetchPrice2, image8, fetchImage2, productName7];
+                                    let productsArray3 = [price9, fetchPrice3, image9, fetchImage3, productName7];
 
-                                populateProducts(productsArray1);
-                                populateProducts(productsArray2);
-                                populateProducts(productsArray3);
+                                    populateProducts(productsArray1);
+                                    populateProducts(productsArray2);
+                                    populateProducts(productsArray3);
                                 };
                                 populateBoots();
 
@@ -677,23 +683,23 @@ $(document).ready(function () {
                                 clothesIconOuterwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-jacket.svg");
                                 clothesIconOuterwearText.text("Jacket");
 
-                                function populateJacket(){
+                                function populateJacket() {
 
-                                let fetchPrice1 = productsJacket[randomNumber][0].price;
-                                let fetchPrice2 = productsJacket[randomNumber][1].price;
-                                let fetchPrice3 = productsJacket[randomNumber][2].price;
+                                    let fetchPrice1 = productsJacket[randomNumber][0].price;
+                                    let fetchPrice2 = productsJacket[randomNumber][1].price;
+                                    let fetchPrice3 = productsJacket[randomNumber][2].price;
 
-                                let fetchImage1 = productsJacket[randomNumber][0].imageTitle;
-                                let fetchImage2 = productsJacket[randomNumber][1].imageTitle;
-                                let fetchImage3 = productsJacket[randomNumber][2].imageTitle;
+                                    let fetchImage1 = productsJacket[randomNumber][0].imageTitle;
+                                    let fetchImage2 = productsJacket[randomNumber][1].imageTitle;
+                                    let fetchImage3 = productsJacket[randomNumber][2].imageTitle;
 
-                                let productsArray1 = [price10, fetchPrice1, image10, fetchImage1, productName8];
-                                let productsArray2 = [price11, fetchPrice2, image11, fetchImage2, productName8];
-                                let productsArray3 = [price12, fetchPrice3, image12, fetchImage3, productName8];
+                                    let productsArray1 = [price10, fetchPrice1, image10, fetchImage1, productName8];
+                                    let productsArray2 = [price11, fetchPrice2, image11, fetchImage2, productName8];
+                                    let productsArray3 = [price12, fetchPrice3, image12, fetchImage3, productName8];
 
-                                populateProducts(productsArray1);
-                                populateProducts(productsArray2);
-                                populateProducts(productsArray3);
+                                    populateProducts(productsArray1);
+                                    populateProducts(productsArray2);
+                                    populateProducts(productsArray3);
                                 };
                                 populateJacket();
 
@@ -720,23 +726,23 @@ $(document).ready(function () {
                                 clothesIconOuterwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-hat.svg");
                                 clothesIconOuterwearText.text("Summer hat");
 
-                                function populateSummerhat(){
+                                function populateSummerhat() {
 
-                                let fetchPrice1 = productsSummerhat[randomNumber][0].price;
-                                let fetchPrice2 = productsSummerhat[randomNumber][1].price;
-                                let fetchPrice3 = productsSummerhat[randomNumber][2].price;
+                                    let fetchPrice1 = productsSummerhat[randomNumber][0].price;
+                                    let fetchPrice2 = productsSummerhat[randomNumber][1].price;
+                                    let fetchPrice3 = productsSummerhat[randomNumber][2].price;
 
-                                let fetchImage1 = productsSummerhat[randomNumber][0].imageTitle;
-                                let fetchImage2 = productsSummerhat[randomNumber][1].imageTitle;
-                                let fetchImage3 = productsSummerhat[randomNumber][2].imageTitle;
+                                    let fetchImage1 = productsSummerhat[randomNumber][0].imageTitle;
+                                    let fetchImage2 = productsSummerhat[randomNumber][1].imageTitle;
+                                    let fetchImage3 = productsSummerhat[randomNumber][2].imageTitle;
 
-                                let productsArray1 = [price10, fetchPrice1, image10, fetchImage1, productName9];
-                                let productsArray2 = [price11, fetchPrice2, image11, fetchImage2, productName9];
-                                let productsArray3 = [price12, fetchPrice3, image12, fetchImage3, productName9];
+                                    let productsArray1 = [price10, fetchPrice1, image10, fetchImage1, productName9];
+                                    let productsArray2 = [price11, fetchPrice2, image11, fetchImage2, productName9];
+                                    let productsArray3 = [price12, fetchPrice3, image12, fetchImage3, productName9];
 
-                                populateProducts(productsArray1);
-                                populateProducts(productsArray2);
-                                populateProducts(productsArray3);
+                                    populateProducts(productsArray1);
+                                    populateProducts(productsArray2);
+                                    populateProducts(productsArray3);
                                 };
                                 populateSummerhat();
 
@@ -763,23 +769,23 @@ $(document).ready(function () {
                                 clothesIconOuterwear.attr("src", "assets/images/clothes-icons/svg-icon-clothes-blazer.svg");
                                 clothesIconOuterwearText.text("Blazer");
 
-                                function populateBlazer(){
+                                function populateBlazer() {
 
-                                let fetchPrice1 = productsBlazer[randomNumber][0].price;
-                                let fetchPrice2 = productsBlazer[randomNumber][1].price;
-                                let fetchPrice3 = productsBlazer[randomNumber][2].price;
+                                    let fetchPrice1 = productsBlazer[randomNumber][0].price;
+                                    let fetchPrice2 = productsBlazer[randomNumber][1].price;
+                                    let fetchPrice3 = productsBlazer[randomNumber][2].price;
 
-                                let fetchImage1 = productsBlazer[randomNumber][0].imageTitle;
-                                let fetchImage2 = productsBlazer[randomNumber][1].imageTitle;
-                                let fetchImage3 = productsBlazer[randomNumber][2].imageTitle;
+                                    let fetchImage1 = productsBlazer[randomNumber][0].imageTitle;
+                                    let fetchImage2 = productsBlazer[randomNumber][1].imageTitle;
+                                    let fetchImage3 = productsBlazer[randomNumber][2].imageTitle;
 
-                                let productsArray1 = [price10, fetchPrice1, image10, fetchImage1, productName10];
-                                let productsArray2 = [price11, fetchPrice2, image11, fetchImage2, productName10];
-                                let productsArray3 = [price12, fetchPrice3, image12, fetchImage3, productName10];
+                                    let productsArray1 = [price10, fetchPrice1, image10, fetchImage1, productName10];
+                                    let productsArray2 = [price11, fetchPrice2, image11, fetchImage2, productName10];
+                                    let productsArray3 = [price12, fetchPrice3, image12, fetchImage3, productName10];
 
-                                populateProducts(productsArray1);
-                                populateProducts(productsArray2);
-                                populateProducts(productsArray3);
+                                    populateProducts(productsArray1);
+                                    populateProducts(productsArray2);
+                                    populateProducts(productsArray3);
                                 };
                                 populateBlazer();
 
@@ -811,23 +817,23 @@ $(document).ready(function () {
                                 clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-winter-hat.svg");
                                 clothesIconAdditionalText.text("Winter hat");
 
-                                function populateWinterhat(){
+                                function populateWinterhat() {
 
-                                let fetchPrice1 = productsWinterhat[randomNumber][0].price;
-                                let fetchPrice2 = productsWinterhat[randomNumber][1].price;
-                                let fetchPrice3 = productsWinterhat[randomNumber][2].price;
+                                    let fetchPrice1 = productsWinterhat[randomNumber][0].price;
+                                    let fetchPrice2 = productsWinterhat[randomNumber][1].price;
+                                    let fetchPrice3 = productsWinterhat[randomNumber][2].price;
 
-                                let fetchImage1 = productsWinterhat[randomNumber][0].imageTitle;
-                                let fetchImage2 = productsWinterhat[randomNumber][1].imageTitle;
-                                let fetchImage3 = productsWinterhat[randomNumber][2].imageTitle;
+                                    let fetchImage1 = productsWinterhat[randomNumber][0].imageTitle;
+                                    let fetchImage2 = productsWinterhat[randomNumber][1].imageTitle;
+                                    let fetchImage3 = productsWinterhat[randomNumber][2].imageTitle;
 
-                                let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName11];
-                                let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName11];
-                                let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName11];
+                                    let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName11];
+                                    let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName11];
+                                    let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName11];
 
-                                populateProducts(productsArray1);
-                                populateProducts(productsArray2);
-                                populateProducts(productsArray3);
+                                    populateProducts(productsArray1);
+                                    populateProducts(productsArray2);
+                                    populateProducts(productsArray3);
                                 };
                                 populateWinterhat();
 
@@ -854,23 +860,23 @@ $(document).ready(function () {
                                 clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-sunglasses.svg");
                                 clothesIconAdditionalText.text("Sunglasses");
 
-                                function populateAccessories(){
+                                function populateAccessories() {
 
-                                let fetchPrice1 = productsSunglasses[randomNumber][0].price;
-                                let fetchPrice2 = productsSunglasses[randomNumber][1].price;
-                                let fetchPrice3 = productsSunglasses[randomNumber][2].price;
+                                    let fetchPrice1 = productsSunglasses[randomNumber][0].price;
+                                    let fetchPrice2 = productsSunglasses[randomNumber][1].price;
+                                    let fetchPrice3 = productsSunglasses[randomNumber][2].price;
 
-                                let fetchImage1 = productsSunglasses[randomNumber][0].imageTitle;
-                                let fetchImage2 = productsSunglasses[randomNumber][1].imageTitle;
-                                let fetchImage3 = productsSunglasses[randomNumber][2].imageTitle;
+                                    let fetchImage1 = productsSunglasses[randomNumber][0].imageTitle;
+                                    let fetchImage2 = productsSunglasses[randomNumber][1].imageTitle;
+                                    let fetchImage3 = productsSunglasses[randomNumber][2].imageTitle;
 
-                                let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName12];
-                                let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName12];
-                                let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName12];
+                                    let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName12];
+                                    let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName12];
+                                    let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName12];
 
-                                populateProducts(productsArray1);
-                                populateProducts(productsArray2);
-                                populateProducts(productsArray3);
+                                    populateProducts(productsArray1);
+                                    populateProducts(productsArray2);
+                                    populateProducts(productsArray3);
                                 };
                                 populateAccessories();
 
@@ -897,23 +903,23 @@ $(document).ready(function () {
                                 clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-socks.svg");
                                 clothesIconAdditionalText.text("Socks");
 
-                                function populateSocks(){
+                                function populateSocks() {
 
-                                let fetchPrice1 = productsSocks[randomNumber][0].price;
-                                let fetchPrice2 = productsSocks[randomNumber][1].price;
-                                let fetchPrice3 = productsSocks[randomNumber][2].price;
+                                    let fetchPrice1 = productsSocks[randomNumber][0].price;
+                                    let fetchPrice2 = productsSocks[randomNumber][1].price;
+                                    let fetchPrice3 = productsSocks[randomNumber][2].price;
 
-                                let fetchImage1 = productsSocks[randomNumber][0].imageTitle;
-                                let fetchImage2 = productsSocks[randomNumber][1].imageTitle;
-                                let fetchImage3 = productsSocks[randomNumber][2].imageTitle;
+                                    let fetchImage1 = productsSocks[randomNumber][0].imageTitle;
+                                    let fetchImage2 = productsSocks[randomNumber][1].imageTitle;
+                                    let fetchImage3 = productsSocks[randomNumber][2].imageTitle;
 
-                                let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName13];
-                                let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName13];
-                                let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName13];
+                                    let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName13];
+                                    let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName13];
+                                    let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName13];
 
-                                populateProducts(productsArray1);
-                                populateProducts(productsArray2);
-                                populateProducts(productsArray3);
+                                    populateProducts(productsArray1);
+                                    populateProducts(productsArray2);
+                                    populateProducts(productsArray3);
                                 };
                                 populateSocks();
 
@@ -947,23 +953,23 @@ $(document).ready(function () {
                                 clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-umbrella.svg");
                                 clothesIconAdditionalText.text("Umbrella");
 
-                                function populateUmbrella(){
+                                function populateUmbrella() {
 
-                                let fetchPrice1 = productsUmbrella[randomNumber][0].price;
-                                let fetchPrice2 = productsUmbrella[randomNumber][1].price;
-                                let fetchPrice3 = productsUmbrella[randomNumber][2].price;
+                                    let fetchPrice1 = productsUmbrella[randomNumber][0].price;
+                                    let fetchPrice2 = productsUmbrella[randomNumber][1].price;
+                                    let fetchPrice3 = productsUmbrella[randomNumber][2].price;
 
-                                let fetchImage1 = productsUmbrella[randomNumber][0].imageTitle;
-                                let fetchImage2 = productsUmbrella[randomNumber][1].imageTitle;
-                                let fetchImage3 = productsUmbrella[randomNumber][2].imageTitle;
+                                    let fetchImage1 = productsUmbrella[randomNumber][0].imageTitle;
+                                    let fetchImage2 = productsUmbrella[randomNumber][1].imageTitle;
+                                    let fetchImage3 = productsUmbrella[randomNumber][2].imageTitle;
 
-                                let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName14];
-                                let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName14];
-                                let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName14];
+                                    let productsArray1 = [price13, fetchPrice1, image13, fetchImage1, productName14];
+                                    let productsArray2 = [price14, fetchPrice2, image14, fetchImage2, productName14];
+                                    let productsArray3 = [price15, fetchPrice3, image15, fetchImage3, productName14];
 
-                                populateProducts(productsArray1);
-                                populateProducts(productsArray2);
-                                populateProducts(productsArray3);
+                                    populateProducts(productsArray1);
+                                    populateProducts(productsArray2);
+                                    populateProducts(productsArray3);
                                 };
                                 populateUmbrella();
 
@@ -994,23 +1000,23 @@ $(document).ready(function () {
                     // populate bags
                     function changeBags() {
 
-                        function populateBags(){
+                        function populateBags() {
 
-                        let fetchPrice1 = productsBag[randomNumber][0].price;
-                        let fetchPrice2 = productsBag[randomNumber][1].price;
-                        let fetchPrice3 = productsBag[randomNumber][2].price;
+                            let fetchPrice1 = productsBag[randomNumber][0].price;
+                            let fetchPrice2 = productsBag[randomNumber][1].price;
+                            let fetchPrice3 = productsBag[randomNumber][2].price;
 
-                        let fetchImage1 = productsBag[randomNumber][0].imageTitle;
-                        let fetchImage2 = productsBag[randomNumber][1].imageTitle;
-                        let fetchImage3 = productsBag[randomNumber][2].imageTitle;
+                            let fetchImage1 = productsBag[randomNumber][0].imageTitle;
+                            let fetchImage2 = productsBag[randomNumber][1].imageTitle;
+                            let fetchImage3 = productsBag[randomNumber][2].imageTitle;
 
-                        let productsArray1 = [price16, fetchPrice1, image16, fetchImage1, productName15];
-                        let productsArray2 = [price17, fetchPrice2, image17, fetchImage2, productName15];
-                        let productsArray3 = [price18, fetchPrice3, image18, fetchImage3, productName15];
+                            let productsArray1 = [price16, fetchPrice1, image16, fetchImage1, productName15];
+                            let productsArray2 = [price17, fetchPrice2, image17, fetchImage2, productName15];
+                            let productsArray3 = [price18, fetchPrice3, image18, fetchImage3, productName15];
 
-                        populateProducts(productsArray1);
-                        populateProducts(productsArray2);
-                        populateProducts(productsArray3);
+                            populateProducts(productsArray1);
+                            populateProducts(productsArray2);
+                            populateProducts(productsArray3);
                         };
                         populateBags();
 
@@ -1038,23 +1044,23 @@ $(document).ready(function () {
                     // populate accessories
                     function changeAccessories() {
 
-                        function populateAccessories(){
+                        function populateAccessories() {
 
-                        let fetchPrice1 = productsAccessories[randomNumber][0].price;
-                        let fetchPrice2 = productsAccessories[randomNumber][1].price;
-                        let fetchPrice3 = productsAccessories[randomNumber][2].price;
+                            let fetchPrice1 = productsAccessories[randomNumber][0].price;
+                            let fetchPrice2 = productsAccessories[randomNumber][1].price;
+                            let fetchPrice3 = productsAccessories[randomNumber][2].price;
 
-                        let fetchImage1 = productsAccessories[randomNumber][0].imageTitle;
-                        let fetchImage2 = productsAccessories[randomNumber][1].imageTitle;
-                        let fetchImage3 = productsAccessories[randomNumber][2].imageTitle;
+                            let fetchImage1 = productsAccessories[randomNumber][0].imageTitle;
+                            let fetchImage2 = productsAccessories[randomNumber][1].imageTitle;
+                            let fetchImage3 = productsAccessories[randomNumber][2].imageTitle;
 
-                        let productsArray1 = [price19, fetchPrice1, image19, fetchImage1, productName16];
-                        let productsArray2 = [price20, fetchPrice2, image20, fetchImage2, productName16];
-                        let productsArray3 = [price21, fetchPrice3, image21, fetchImage3, productName16];
+                            let productsArray1 = [price19, fetchPrice1, image19, fetchImage1, productName16];
+                            let productsArray2 = [price20, fetchPrice2, image20, fetchImage2, productName16];
+                            let productsArray3 = [price21, fetchPrice3, image21, fetchImage3, productName16];
 
-                        populateProducts(productsArray1);
-                        populateProducts(productsArray2);
-                        populateProducts(productsArray3);
+                            populateProducts(productsArray1);
+                            populateProducts(productsArray2);
+                            populateProducts(productsArray3);
                         };
                         populateAccessories();
 
