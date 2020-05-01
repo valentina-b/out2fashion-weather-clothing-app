@@ -210,7 +210,8 @@ $(document).ready(function () {
 
                     // link out
                     function linkOut(url) {
-                        window.open(url, "_blank");
+                        // window.open(url, "_blank");
+                        console.log(url);
                     };
 
                     // create a random number 0-4 to access 1 out of 5 collections of the products object
@@ -366,13 +367,13 @@ $(document).ready(function () {
                                     let fetchLink2 = productsShirt[randomNumber][1].link;
                                     let fetchLink3 = productsShirt[randomNumber][2].link;
 
-                                    $("#image1").click(function () {
+                                    image1.click(function () {
                                         linkOut(fetchLink1);
                                     });
-                                    $("#image2").click(function () {
+                                    image2.click(function () {
                                         linkOut(fetchLink2);
                                     });
-                                    $("#image3").click(function () {
+                                    image3.click(function () {
                                         linkOut(fetchLink3);
                                     })
                                 }
