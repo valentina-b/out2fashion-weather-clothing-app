@@ -711,14 +711,14 @@ footer{
 
 .city-gallery p {
     color: #FFFCFB;
-    font-size: 16px;
+    font-size: 14px;
     width: fit-content;
     margin: 0 auto;
 }
 
 .city-gallery-content {
     height: 72px;
-    max-width: 250px;
+    max-width: 290px;
     margin: 0 auto;
     overflow-x: auto;
     white-space: nowrap;
@@ -732,8 +732,8 @@ footer{
 
 
 .city-gallery-content .city-name-img {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     /* display: inline; */
     margin-left: 20px;
 }
@@ -749,11 +749,14 @@ footer{
     bottom: 3px;
 }
 
-/* #city-header-title {
+#city-header-title {
     font-family: "Quicksand", sans-serif;
-    font-size: 20px;
+    font-size: 23px;
     color: #FFFCFB;
     font-weight: 300;
-    width: 290px;
+    width: fit-content;
     margin: 0 auto;
-} */
+    letter-spacing: 9px;
+    padding-bottom: 35px;
+    padding-top: 10px;
+}
