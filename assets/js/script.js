@@ -25,7 +25,14 @@ $(document).ready(function () {
     // 2 show city content
     function changeContent() {
         $("#main-content").addClass("d-none");
+        $("#header-title").addClass("d-none");
+        $("#main-header-line").addClass("d-none");
+        $(".header-paragraph").addClass("d-none");
+
         $("#city-content").removeClass("d-none");
+        $(".city-gallery").removeClass("d-none");
+        $("#city-header-line").removeClass("d-none");
+
         // 3 bring the user to the top of the page
         // credits: https://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript
         window.scrollTo({ top: 0, behavior: 'smooth' });
