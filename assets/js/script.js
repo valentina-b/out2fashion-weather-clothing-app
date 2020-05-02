@@ -25,7 +25,7 @@ $(document).ready(function () {
     // 2 show city content
     function changeContent() {
         $("#main-content").addClass("d-none");
-        $("#header-title").addClass("d-none");
+        // $("#header-title").addClass("d-none");
         $("#main-header-line").addClass("d-none");
         $(".header-paragraph").addClass("d-none");
 
@@ -72,8 +72,8 @@ $(document).ready(function () {
                     cityKey: 22889
                 },
                 {
-                    city: "Hong Kong",
-                    cityKey: 1123655
+                    city: "Shanghai",
+                    cityKey: 106577
                 },
                 {
                     city: "Seoul",
