@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     // EFFECTS
 
-    $(".city-content img, .clothes-square img").hover(function () {
+    $(".city-content img, .city-gallery-content img, .clothes-square img").hover(function () {
         $(this).addClass("square-hover");
     }, function () {
         $(this).removeClass("square-hover");

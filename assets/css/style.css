@@ -412,8 +412,8 @@ footer{
 
 .line {
     width: 45px;
-    height: 1px;
-    border-radius: 3px;
+    height: 2px;
+    border-radius: 30%;
     margin: 25px auto;
 }
 
@@ -703,4 +703,31 @@ footer{
     position: relative;
     left: 30%;
     top: 20%;
+}
+
+.city-gallery {
+    margin-bottom: 25px;
+    height: 72px;
+}
+
+.city-gallery p {
+    color: #FFFCFB;
+    font-size: 12px;
+}
+
+.city-gallery-content {
+    /* height: 72px; */
+    max-width: 270px;
+    /* background-color: black; */
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.city-gallery-content .city-name-img {
+    height: 60px;
+    width: 60px;
+    margin-top: 5px;
+    display: inline;
+    margin-left: 10px;
 }
