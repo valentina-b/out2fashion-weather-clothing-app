@@ -172,6 +172,11 @@ footer{
     margin-right: 40px;
 }
 
+.social-icons a:hover {
+    text-decoration: none;
+    color: transparent;
+}
+
 .social-icons {
     width: fit-content;
     float: left;
