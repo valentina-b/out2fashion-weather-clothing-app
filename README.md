@@ -6,7 +6,7 @@ OUT2FASHION is a mobile-first one-page web application that helps women stay sty
 
 The overall goal of the app is to turn a simple daily repetitive act of checking weather forecast to plan out the outfit of the day into a fun experience. Besides the weather forecast, the app informs the users about the new clothing products on the market which are only 1 click away.
 
-![App Showcase](readme-files/images-readme/img-showcase.png)
+![App Showcase](readme-files/img-showcase.png)
 
 ## UX
 
@@ -87,15 +87,35 @@ Then I grouped them into Information and Features category. The Information cate
 
 2. **Pick your gender before entering the app** - I would love this app to be able to reach broader audience and not be focused only on women. Example taken from [Esprit](https://www.esprit.com/index.php?country_code=GB&lang=en).
 
-3. **Weather forecast for more than 1 day** - at the moment one of the main goals of the app is to be used every day so that the chances of buying something and being constantly exposed to products is maximised. The user is 'forced' to return to the app every day in order to check the weather. In the long run, I would implement a weekly forecast so that the users can plan their shopping activities better. Moreover, it would be helpful if they could get a predicted likelyhood of some kind for the saved items. For example, a saved umbrella item or umbrella in the shopping basket could have a small note like - _You will need this item 5 days out of the following 7 days!_
+![Gender selection](readme-files/images-readme/img-additional-gender-selection.png)
 
-![Gender selection](readme-files/images-readme/img-)
+3. **Weather forecast for more than 1 day** - at the moment one of the main goals of the app is to be used every day so that the chances of buying something and being constantly exposed to products is maximised. The user is 'forced' to return to the app every day in order to check the weather. In the long run, I would implement a weekly forecast so that the users can plan their shopping activities better. Moreover, it would be helpful if they could get a predicted likelyhood of some kind for the saved items. For example, a saved umbrella item or umbrella in the shopping basket could have a small note like - _You might need this item 5 days out of the following 7 days!_
+
+![Forecasts selection](readme-files/images-readme/img-additional-forecasts.png)
 
 4. **Shopping through the UI** - instead of link outs, the app would be ideally connected to the online store (in case the products are only from one brand) or multiple web shops (in case the products from different brands). This way the user could put everything in a basket of OUT2FASHION and check out directly from the app. The app would then order the products from original shops. Additionally, the user could also create an account where they could save products for later.
 
 ![Account at and Shopping through O2F](readme-files/images-readme/img-additional-basket-account.png)
 
 ### Wireframes
+
+As I was planning to implement the search function originally, the following low-fidelity wireframes are a bit different than what I have built. Eventually I had to remove the search box and add text in the header, as well as the visual navigation gallery. The homepage had additional content giving the sneak-peak into the product's feature but that was removed in order to make space for more cities as a backup plan due to the search box removal.
+
+The wireframes are available at the following links:
+
+Desktop:
+* [Desktop homepage wireframe]()
+* [Desktop city wireframe]()
+
+Tablet:
+* [Tablet homepage wireframe]()
+* [Tablet city wireframe]()
+
+Mobile:
+* [Mobile homepage wireframe]()
+* [Mobile city wireframe]()
+
+
 
 
 
