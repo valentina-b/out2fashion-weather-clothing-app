@@ -140,20 +140,34 @@ Once the font, colour palette and source of imagery was selected, I've focused o
 
 The lines between the content sections are there to create short breaks while being exposed to so many product images.
 
+## Technologies Used
 
+This project greatly focuses on the following technologies:
 
+1. [HTML](https://en.wikipedia.org/wiki/HTML) - for creating the layout and the structure of the website
+1. [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - for styling the website’s HTML code
+1. [Bootstrap](https://getbootstrap.com/) - for additional styling and adding responsiveness to the website
+1. [JavaScript](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - for adding functionalities behind the elements, fetching API data and general logic of the app
+1. [jQuery](https://jquery.com/) - for faster coding and practising when I felt comfortable, mostly for DOM and class manipulation
+1. [Git](https://git-scm.com/) - for version control
 
+Technology used that is connected to [Bootstrap](https://getbootstrap.com/) for some components to function properly:
 
+1. [jQuery](https://jquery.com/)
+1. [Popper.js](https://popper.js.org/)
+1. [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 
+Additionally, I have also used the following platforms to help me shape the website and the brand:
 
-
-
-
-
-
-
-
-
+1. [Gitpod](https://gitpod.io/) - for writing, editing and live previewing the code during the creation process
+1. [GitHub](https://github.com/) - for hosting the project's repository and creating a preview link on GitHug pages
+1. [TinyPNG](https://tinypng.com/) - for compressing the images so that the website can load faster
+1. [Google Fonts](https://fonts.google.com/) - for selecting the fonts and implementing them into the HTML code
+1. [Figma](https://www.figma.com/) - for creating wireframes and designs
+1. [CSS Gradient](https://cssgradient.io/) - for the help with creating the css code for gradient colours
+1. [JSON Formatter](https://jsonformatter.curiousconcept.com/) - for the help with turning messy API code into readable and structured objects
+1. [AccuWeather API](https://developer.accuweather.com/) - for getting the weather forecast data
+1. []()
 
 
 
@@ -167,15 +181,12 @@ The lines between the content sections are there to create short breaks while be
 
 
 Credits:
-- https://loading.io/ - loader
 - https://unsplash.com/ - images
 - https://www.esprit.de/damenmode - products
-- https://cssgradient.io/ - css code for gradient colours
 - https://stackoverflow.com/questions/39884260/is-it-possible-to-set-horizontal-gradient-to-text-via-css-left-letter-one-colo - gradient left to right css code
 - https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/ - helped me understand API connection better
 - http://ami.responsivedesign.is/ - for the showcase photos and responsiveness look and feel
 - https://esprima.org/demo/validate.html - for the help with small, often overlooked, JS syntax errors
 - https://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript - for the js code for scrolling to the top
-- https://jsonformatter.curiousconcept.com/ - for the help with turning messy API code into readable and structure objects
 - https://stackoverflow.com/questions/5265202/do-you-need-text-javascript-specified-in-your-script-tags - for an interesting read about why there's no need for type="text/javascript"
 - http://jsfiddle.net/wSfJd/ - for help with creating horizontal scrolling menu in the city content header
