@@ -81,6 +81,20 @@ Then I grouped them into Information and Features category. The Information cate
 
 ### Features Left to Implement
 
+1. **Search function** - even though it was originally planned and the [API documentation of AccuWeather](https://apidev.accuweather.com/developers/auto-complete) supports it, I couldn't make the search function for the locations work even after trying several times and had to leave this feature out in order to build and improve the other ones due to lack of time.
+
+![Search box](readme-files/images-readme/img-additional-search.png)
+
+2. **Pick your gender before entering the app** - I would love this app to be able to reach broader audience and not be focused only on women. Example taken from [Esprit](https://www.esprit.com/index.php?country_code=GB&lang=en).
+
+![Gender selection](readme-files/images-readme/img-additional-gender-selection.png)
+
+3. **Shopping through the UI** - instead of link outs, the app would be ideally connected to the online store (in case the products are only from one brand) or multiple web shops (in case the products from different brands). This way the user could put everything in a basket of OUT2FASHION and check out directly from the app. The app would then order the products from original shops. Additionally, the user could also create an account where they could save products for later.
+
+![Account at and Shopping through O2F](readme-files/images-readme/img-additional-basket-account.png)
+
+### Wireframes
+
 
 
 
