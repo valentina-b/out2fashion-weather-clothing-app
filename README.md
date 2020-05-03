@@ -104,16 +104,16 @@ As I was planning to implement the search function originally, the following low
 The wireframes are available at the following links:
 
 Desktop:
-* [Desktop homepage wireframe]()
-* [Desktop city wireframe]()
+* [Desktop homepage wireframe](https://github.com/valentina-b/out2fashion-weather-clothing-app/blob/master/readme-files/wireframes/img-wireframe-dsk-hp.png?raw=true)
+* [Desktop city wireframe](https://github.com/valentina-b/out2fashion-weather-clothing-app/blob/master/readme-files/wireframes/img-wireframe-dsk-city.png?raw=true)
 
 Tablet:
-* [Tablet homepage wireframe]()
-* [Tablet city wireframe]()
+* [Tablet homepage wireframe](https://github.com/valentina-b/out2fashion-weather-clothing-app/blob/master/readme-files/wireframes/img-wireframe-tab-hp.png?raw=true)
+* [Tablet city wireframe](https://github.com/valentina-b/out2fashion-weather-clothing-app/blob/master/readme-files/wireframes/img-wireframe-tab-city.png?raw=true)
 
 Mobile:
-* [Mobile homepage wireframe]()
-* [Mobile city wireframe]()
+* [Mobile homepage wireframe](https://github.com/valentina-b/out2fashion-weather-clothing-app/blob/master/readme-files/wireframes/img-wireframe-mob-hp.png?raw=true)
+* [Mobile city wireframe](https://github.com/valentina-b/out2fashion-weather-clothing-app/blob/master/readme-files/wireframes/img-wireframe-mob-city.png?raw=true)
 
 
 
