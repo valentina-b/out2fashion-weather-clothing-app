@@ -117,7 +117,7 @@ Mobile:
 
 ## Graphic Design and Brand Elements
 
-OUT2FASHION is not imagined to be a random fashion marketplace. It is a mobile web app combining a daily activity of checking the weather forecast and apparel industry. It strives to be a unique, informative and fun weather app but it also gives a meaningful purpose to buying clothes. It's vision is to function well both for the users and brand owners.
+OUT2FASHION is not imagined to be a random fashion marketplace. It is a mobile web app combining a daily activity of checking the weather forecast and apparel industry. It strives to be a unique, informative and fun weather app but it also gives a meaningful purpose to buying clothes. It's vision is to function well both for the users and brand owners. At the same time, the MVP is currently only for women, targeting late twenties and early thirties age groups. My goal was to create a pleasant, feminine look that would also fit the imagery of the clothiing brand I've previously selected based on my personal affinity, [Esprit](https://www.esprit.com/).
 
 Therefore, I wanted to focus on modern app designs which are fashion and/or weather related - not online clothing shops, high-fashion brands or weather sites. My biggest source of inspiration was [Dribbble](https://dribbble.com/) where I went through designs of people who had a similar product idea like mine. My goal was also to achieve modern app look which I'll explain more in the next sections.
 
@@ -133,6 +133,13 @@ I have come across [Quicksand](https://fonts.google.com/specimen/Quicksand) by b
 ### Colours
 
 My colour selection consists of light colours for the background of the content and icons. The font is in the darker shade of gray to make the reading more pleasant to the eyes. As gradient colours are quite popular among apps, I've decided to create one for OUT2FASHION as well, in order to stay up to date with the look-and feel. Lastly, I've taken both end shades of the gradient spectrum to use them for any other elements that might need some accent, like lines and hover effects.
+
+### Visual Style
+
+Once the font, colour palette and source of imagery was selected, I've focused on the design of the elements. The elements of the app tend to follow standard modern app look which is based on shadows and round edges.
+
+The lines between the content sections are there to create short breaks while being exposed to so many product images.
+
 
 
 
