@@ -2,9 +2,11 @@
 
 Code Institute - Milestone Project 2 - Interactive Frontend Development
 
-OUT2FASHION is a mobile-first one-page web application that helps women stay stylish every day based on the clothing items they might need according to the weather forecast. The primary purpose of this web app is to inform the users about the daily weather forecasts in a fun and interactive way and to serve as a guidance in combining relevant clothing items for their outfit of the day. The secondary purpose is to give fashion brands an additional chance to market their products and to potentially increase the sales by using third-party data in order to provide relevant shopping suggestions the users will love.
+OUT2FASHION is a mobile-first one-page web application that helps women stay stylish every day based on the clothing items they might need according to the weather forecast. The primary purpose of this web app is to inform the users about the daily weather forecasts in a fun and interactive way and to serve as a guidance for shopping relevant clothing items for their outfit of the day - buy what you like but also what you need! The secondary purpose is to give fashion brands an additional chance to market their products by every-day brand exposure in hope of increasing the sales.
 
-![Website Showcase](link)
+The overall goal of the app is to turn a simple daily repetitive act of checking weather forecast to plan out the outfit of the day into a fun experience. Besides the weather forecast, the app informs the users about the new clothing products on the market which are only 1 click away.
+
+![App Showcase](readme-files/images-readme/img-showcase.png)
 
 ## UX
 
@@ -14,11 +16,13 @@ Recent research shows that [1 out of 5 buyers](https://www.oliverwyman.com/conte
 
 In addition, according to another research, [online apparel retail customers](https://www.retailcustomerexperience.com/blogs/examining-the-online-apparel-retail-customer-experience/) spend 30 minutes to an hour browsing. Those who spend more time doing so are likely to result in a purchase in order to avoid wasted efforts. I found this very insightful and it reminded me of the sunk cost fallacy, a key concept in behavioral economics. It made me wonder if this is also the reason why, as Shopify states, [the average return rate in e-commerce is 20%](https://www.shopify.com/enterprise/ecommerce-returns) causing the return reasons such as "changed my mind" in apparel industry.
 
-Due to the fact that the higher basket value reduces or eliminates the shipping costs, I wasn't very surprised to read that [on average, apparel shoppers purchase up to three apparel items in one sitting](https://www.retailcustomerexperience.com/blogs/examining-the-online-apparel-retail-customer-experience/). However, it did make me realise the importance of a wide selection of products, product categories and price ranges to encourage the full-basket checkouts.
+Due to the fact that the higher basket value reduces or eliminates the shipping costs, I wasn't very surprised to read that [on average, apparel shoppers purchase up to three items in one sitting](https://www.retailcustomerexperience.com/blogs/examining-the-online-apparel-retail-customer-experience/). However, it did make me realise the importance of a wide selection of products, product categories and price ranges to encourage the full-basket checkouts.
 
-The last super interesting information I've come across in two different reports is the fact that up to 90% of apparel shoppers are repeat buyers (accordiing to [Oliver Wyman](https://www.oliverwyman.com/our-expertise/insights/2018/jan/understanding-the-2017-apparel-shopper-journey.html) and [Stitch Fix](https://www.wired.com/story/stitch-fix-shop-your-looks/)). While Stitch Fix decided to benefit from this behaviour by personalised recommendations of 1000+ brands, I see this as an opportunity for individual brands or a few brands with similar style to increase their sales. It's not uncommon for people to identify their style with an already existing brand. Mine would be in that case brands like [Esprit](https://www.esprit.com/) and [Tom Tailor](https://www.tom-tailor.com/).
+The last super interesting information I've come across in two different reports is the fact that up to 90% of apparel shoppers are repeat buyers (accordiing to [Oliver Wyman](https://www.oliverwyman.com/our-expertise/insights/2018/jan/understanding-the-2017-apparel-shopper-journey.html) and [Stitch Fix](https://www.wired.com/story/stitch-fix-shop-your-looks/)). While Stitch Fix decided to benefit from this behaviour by personalising recommendations of 1000+ brands, I see this as an opportunity for individual brands or a few brands with similar style to increase their sales. It's not uncommon for people to identify their style with an already existing brand. Mine would be in that case brands like [Esprit](https://www.esprit.com/) and [Tom Tailor](https://www.tom-tailor.com/).
 
-Having these (and many other) facts in mind that I've found, I've decided to build a mobile web app that gives a purpose to fashion and apparel shopping. OUT2FASHION helps you pick out of your closet clothes that you really need for this particular day based on the weather forecast but also gives you inspirational, shoppable suggestions of what is currently new on the market so that you can stay trendy all year long.
+### Conclusion of the Research
+
+Having abovementioned (and many other) facts in mind that I've found, I've decided to build a mobile web app that gives a meaningful purpose to fashion and apparel shopping. OUT2FASHION helps you pick out of your closet clothes that you really need for this particular day based on the weather forecast but it also gives you inspirational, shoppable suggestions of what is currently new on the market so that you can stay trendy all year long.
 
 ### Business Goals
 
@@ -46,15 +50,30 @@ As a customer...
 
 ## Features and App Sections
 
-As a first step, I've put together all the goals mentioned above and checked where they overlap:
+As a first step, I've put together all the goals mentioned above and checked where they overlap.
 
 ![Goals Overview](readme-files/images-readme/img-goals-overview.png)
 
-Then I grouped them into Information and Features categories. The Information category is a group of goals that can be easily solved by simply including the relevant information in the app. The Features are goals that I've decided to solve in a more fun and interesting way:
+Then I grouped them into Information and Features category. The Information category is a group of goals that can be easily solved by simply including the relevant information in the app. The Features are goals that I've decided to solve in a more fun and interesting way. This process helped me create the concept and the MVP of the OUT2FASHION mobile web app.
 
 ![Information and Features Overview](readme-files/images-readme/img-information-features-overview.png)
 
-This process helped me create the concept and the MVP of the OUT2FASHION mobile web app.
+### App Sections
+
+1. **Top navigation bar** - fixed on the top so that the users are able to navigate themselves back to the homepage anytime.
+1. **Header** - introduction to the website. Once the user clicks on a city below the header, the header content changes to horizontal scrolling menu so that the users can access other cities' weather data once the homepage city shortcuts are gone.
+1. **Main section - Homepage** - provides 8 cities for the users to choose from and an additional information on how the app works.
+1. **City section** - gives the user information about the weather forecast for the selected city, which clothing items they will need based on the weather and temperature as well as contributes with the suggestions of the shoppable products from the product category.
+1. **Footer** - gives users the option to stay up to date with the app via links to social media profiles.
+
+### Features
+
+
+
+
+
+
+
 
 
 
