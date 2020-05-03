@@ -13,5 +13,4 @@ Credits:
 - https://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript - for the js code for scrolling to the top
 - https://jsonformatter.curiousconcept.com/ - for the help with turning messy API code into readable and structure objects
 - https://stackoverflow.com/questions/5265202/do-you-need-text-javascript-specified-in-your-script-tags - for an interesting read about why there's no need for type="text/javascript"
-- http://jsfiddle.net/wSfJd/ - for help with creating the scrollable navbar in the city content header
- 
+- http://jsfiddle.net/wSfJd/ - for help with creating horizontal scrolling menu in the city content header

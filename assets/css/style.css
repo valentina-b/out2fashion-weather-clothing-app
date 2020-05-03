@@ -541,6 +541,7 @@ footer{
 
 .city-gallery {
     margin-bottom: 25px;
+    margin-top: 15px;
 }
 
 .city-gallery p {
@@ -569,7 +570,7 @@ footer{
     height: 60px;
     width: 60px;
     margin-left: 20px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 
 .city-gallery-content .first-city {
