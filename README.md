@@ -1,5 +1,31 @@
-# out2fashion-weather-clothing-app
-OUT2FASHION - Clothing App Using Weather Data
+# OUT2FASHION - Clothing App Using Weather API Data
+
+Code Institute - Milestone Project 2 - Interactive Frontend Development
+
+OUT2FASHION is a mobile-first one-page web application that helps women stay stylish every day based on the clothing items they might need according to the weather forecast. The primary purpose of this web app is to inform the users about the daily weather forecasts in a fun and interactive way and to serve as a guidance in combining relevant clothing items for their outfit of the day. The secondary purpose is to give fashion brands an additional chance to market their products and to potentially increase the sales by using third-party data in order to provide relevant shopping suggestions the users will love.
+
+![Website Showcase](link)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Credits:
 - https://loading.io/ - loader
