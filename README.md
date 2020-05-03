@@ -95,7 +95,7 @@ Then I grouped them into Information and Features category. The Information cate
 
 4. **Shopping through the UI** - instead of link outs, the app would be ideally connected to the online store (in case the products are only from one brand) or multiple web shops (in case the products from different brands). This way the user could put everything in a basket of OUT2FASHION and check out directly from the app. The app would then order the products from original shops. Additionally, the user could also create an account where they could save products for later.
 
-![Account at and Shopping through O2F](readme-files/images-readme/img-additional-basket-account.png)
+![Account at and shopping through O2F](readme-files/images-readme/img-additional-basket-account.png)
 
 ### Wireframes
 
@@ -114,6 +114,28 @@ Tablet:
 Mobile:
 * [Mobile homepage wireframe](https://github.com/valentina-b/out2fashion-weather-clothing-app/blob/master/readme-files/wireframes/img-wireframe-mob-hp.png?raw=true)
 * [Mobile city wireframe](https://github.com/valentina-b/out2fashion-weather-clothing-app/blob/master/readme-files/wireframes/img-wireframe-mob-city.png?raw=true)
+
+## Graphic Design and Brand Elements
+
+OUT2FASHION is not imagined to be a random fashion marketplace. It is a mobile web app combining a daily activity of checking the weather forecast and apparel industry. It strives to be a unique, informative and fun weather app but it also gives a meaningful purpose to buying clothes. It's vision is to function well both for the users and brand owners.
+
+Therefore, I wanted to focus on modern app designs which are fashion and/or weather related - not online clothing shops, high-fashion brands or weather sites. My biggest source of inspiration was [Dribbble](https://dribbble.com/) where I went through designs of people who had a similar product idea like mine. My goal was also to achieve modern app look which I'll explain more in the next sections.
+
+The following designes had the biggest impact on my design decisions:
+![Dribble examples](readme-files/images-readme/img-design-inspiration.png)
+
+### Fonts
+
+I have come across [Quicksand](https://fonts.google.com/specimen/Quicksand) by browsing through Google fonts. I was looking for fonts that are similar to Roboto, Raleway and Montserrat as I personally consider them modern and easy to read - which is exactly what I wanted to achieve with my font selection as well. I've noticed that Quicksand is often paired with all of these three fonts and decided to keep it.
+
+![Colour palette](readme-files/images-readme/img-colour-palette.png)
+
+### Colours
+
+My colour selection consists of light colours for the background of the content and icons. The font is in the darker shade of gray to make the reading more pleasant to the eyes. As gradient colours are quite popular among apps, I've decided to create one for OUT2FASHION as well, in order to stay up to date with the look-and feel. Lastly, I've taken both end shades of the gradient spectrum to use them for any other elements that might need some accent, like lines and hover effects.
+
+
+
 
 
 
