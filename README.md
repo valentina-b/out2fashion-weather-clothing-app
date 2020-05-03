@@ -87,9 +87,11 @@ Then I grouped them into Information and Features category. The Information cate
 
 2. **Pick your gender before entering the app** - I would love this app to be able to reach broader audience and not be focused only on women. Example taken from [Esprit](https://www.esprit.com/index.php?country_code=GB&lang=en).
 
-![Gender selection](readme-files/images-readme/img-additional-gender-selection.png)
+3. **Weather forecast for more than 1 day** - at the moment one of the main goals of the app is to be used every day so that the chances of buying something and being constantly exposed to products is maximised. The user is 'forced' to return to the app every day in order to check the weather. In the long run, I would implement a weekly forecast so that the users can plan their shopping activities better. Moreover, it would be helpful if they could get a predicted likelyhood of some kind for the saved items. For example, a saved umbrella item or umbrella in the shopping basket could have a small note like - _You will need this item 5 days out of the following 7 days!_
 
-3. **Shopping through the UI** - instead of link outs, the app would be ideally connected to the online store (in case the products are only from one brand) or multiple web shops (in case the products from different brands). This way the user could put everything in a basket of OUT2FASHION and check out directly from the app. The app would then order the products from original shops. Additionally, the user could also create an account where they could save products for later.
+![Gender selection](readme-files/images-readme/img-)
+
+4. **Shopping through the UI** - instead of link outs, the app would be ideally connected to the online store (in case the products are only from one brand) or multiple web shops (in case the products from different brands). This way the user could put everything in a basket of OUT2FASHION and check out directly from the app. The app would then order the products from original shops. Additionally, the user could also create an account where they could save products for later.
 
 ![Account at and Shopping through O2F](readme-files/images-readme/img-additional-basket-account.png)
 
