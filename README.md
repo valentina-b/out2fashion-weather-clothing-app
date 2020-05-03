@@ -18,24 +18,41 @@ Due to the fact that the higher basket value reduces or eliminates the shipping 
 
 The last super interesting information I've come across in two different reports is the fact that up to 90% of apparel shoppers are repeat buyers (accordiing to [Oliver Wyman](https://www.oliverwyman.com/our-expertise/insights/2018/jan/understanding-the-2017-apparel-shopper-journey.html) and [Stitch Fix](https://www.wired.com/story/stitch-fix-shop-your-looks/)). While Stitch Fix decided to benefit from this behaviour by personalised recommendations of 1000+ brands, I see this as an opportunity for individual brands or a few brands with similar style to increase their sales. It's not uncommon for people to identify their style with an already existing brand. Mine would be in that case brands like [Esprit](https://www.esprit.com/) and [Tom Tailor](https://www.tom-tailor.com/).
 
-Having these (and many other) facts in mind that I've found, I've decided to build a mobile web app that 
+Having these (and many other) facts in mind that I've found, I've decided to build a mobile web app that gives a purpose to fashion and apparel shopping. OUT2FASHION helps you pick out of your closet clothes that you really need for this particular day based on the weather forecast but also gives you inspirational, shoppable suggestions of what is currently new on the market so that you can stay trendy all year long.
+
+### Business Goals
+
+As an online apparel brand owner...
+
+* I want my brand to be exposed to the users every day, not only when they need to shop for something so that I have more chances for selling
+* I want my customers to make better shopping decisions so that the return rate gets reduced because shipping costs me
+* I want to offer a shopping journey to my customers that is fun and adds value to their daily life so that my brand is associated with 
+* I want the customers to have an interface they will love so that they will want to come back
+* I want the interface to be intuitive to use because the users don’t have time to learn the tool
 
 
 
+* I want customers to know I’m unique on the market so that they can easily differentiate me from competitors
+* I want customers to make online reservations so that my service staff saves time and efforts answering phone calls
+* I want customers to get updates about my restaurant so that they stay informed about the latest news and events
+
+### Customer Goals
+
+As a customer...
 
 
+I want help with dressing up for the current weather because I don’t have time to pick clothes in the morning
+I want help with selecting clothes for the upcoming days so I can save time in advance
+I want to stay trendy and stylish so that I can feel my best
+I want to have a choice when deciding what to wear so that I’m sure the selected outfit fits my style
 
 
-
-
-
-
-
-
-
-
-
-
+* I want to read the menu so that I can see if the food fits my diet and lifestyle
+* I want to know the prices so that I can see if the restaurant's offer fits my budget
+* I want to see ratings and reviews of the restaurant so that I can see what other customers think about the restaurant
+* I want to make online reservations so that I can save time by not calling the restaurant or going there in person
+* I want to contact the restaurant easily so that I can ask if I have additional questions or give my feedback
+* I want to know when the restaurant is open and where is it so that I can make plans for a visit in advance
 
 
 
