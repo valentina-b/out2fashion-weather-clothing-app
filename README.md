@@ -26,34 +26,35 @@ As an online apparel brand owner...
 
 * I want my brand to be exposed to the users every day, not only when they need to shop for something so that I have more chances for selling
 * I want my customers to make better shopping decisions so that the return rate gets reduced because shipping costs me
-* I want to offer a shopping journey to my customers that is fun and adds value to their daily life so that my brand is associated with 
-* I want the customers to have an interface they will love so that they will want to come back
-* I want the interface to be intuitive to use because the users don’t have time to learn the tool
-
-
-
-* I want customers to know I’m unique on the market so that they can easily differentiate me from competitors
-* I want customers to make online reservations so that my service staff saves time and efforts answering phone calls
-* I want customers to get updates about my restaurant so that they stay informed about the latest news and events
+* I want the users to have a choice in products so that they can fill their baskets and I save on shipping costs
+* I want that my digital product adds value to the daily life of my customers so that my brand is associated with more than just clothes
+* I want to offer a shopping journey to my customers that is fun and informative so that they have great user experience
+* I want the customers to have an interface they love so that they will want to come back
+* I want my customer to shop online so that I can save money on having less staff in my physical stores
 
 ### Customer Goals
 
 As a customer...
 
+* I want help with dressing up for the current weather forecast so that I can save time in the morning
+* I want to stay trendy and stylish so that I can feel my best
+* I want to have a choice when deciding what to buy so that I’m sure the selected products fit my style
+* I want to know the prices so that I can see if the clothing items fit my budget
+* I want to make online purchase so that I can save time by not having to go out to the store whenever I like something
+* I want to know that my purchase is an informed decision so that I can feel my money has been spent well
+* I want to feel good during the shopping journey and checkout so that I have fun while buying clothes
 
-I want help with dressing up for the current weather because I don’t have time to pick clothes in the morning
-I want help with selecting clothes for the upcoming days so I can save time in advance
-I want to stay trendy and stylish so that I can feel my best
-I want to have a choice when deciding what to wear so that I’m sure the selected outfit fits my style
+## Features and App Sections
 
+As a first step, I've put together all the goals mentioned above and checked where they overlap:
 
-* I want to read the menu so that I can see if the food fits my diet and lifestyle
-* I want to know the prices so that I can see if the restaurant's offer fits my budget
-* I want to see ratings and reviews of the restaurant so that I can see what other customers think about the restaurant
-* I want to make online reservations so that I can save time by not calling the restaurant or going there in person
-* I want to contact the restaurant easily so that I can ask if I have additional questions or give my feedback
-* I want to know when the restaurant is open and where is it so that I can make plans for a visit in advance
+![Goals Overview](readme-files/images-readme/img-goals-overview.png)
 
+Then I grouped them into Information and Features categories. The Information category is a group of goals that can be easily solved by simply including the relevant information in the app. The Features are goals that I've decided to solve in a more fun and interesting way:
+
+![Information and Features Overview](readme-files/images-readme/img-information-features-overview.png)
+
+This process helped me create the concept and the MVP of the OUT2FASHION mobile web app.
 
 
 
