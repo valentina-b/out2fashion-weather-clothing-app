@@ -68,6 +68,21 @@ Then I grouped them into Information and Features category. The Information cate
 
 ### Features
 
+1. **City selection** - a feature that generates new content based on the city of the user's choice. There are 8 cities to choose from.
+1. **Weather forecast summary** - a visual and textual presentation of the weather forecast based on the API weather information fetched from [AccuWeather](https://www.accuweather.com/).
+1. **Product categories** - based on the forecast, the app generates 7 clothing items the user should keep in mind while choosing the outfit for the day.
+1. **Display products** - each clothing item has a preview of 3 suggested products from that category that the user can buy if they want.
+1. **Refresh products** - if the user is particularly interested in seeing more products from a certain product category, they can click the refresh button at the top of the product category icon to load more products.
+1. **Scroll to the top** - a button on mobile devices that brings the user back to the top of the page. This is easpecially handy when the user is already reading one city weather suggestion but want to switch to another one.
+1. **Interactive navigation in the header** - once the user is in the city section, they can access other cities from an interactive, horizontal scrollable gallery in the header.
+1. **New information everyday** - the app refreshes the weather data every day which as a consequence generates new product selection for the users.
+1. **Link outs to the web shops** - serves as a quick solution for the users that want to check out in detail or buy some of the products.
+1. **Social media profiles' links** - allow users to stay up to date with the latest news about the app.
+
+### Features Left to Implement
+
+
+
 
 
 
