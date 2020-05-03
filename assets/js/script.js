@@ -66,8 +66,7 @@ $(document).ready(function () {
                 },
                 {
                     city: "Moscow",
-                    // UPDATE THE LOCATION ID
-                    cityKey: 349727
+                    cityKey: 294021
                 },
                 {
                     city: "Sydney",
