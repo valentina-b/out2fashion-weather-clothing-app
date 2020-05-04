@@ -81,7 +81,7 @@ Then I grouped them into Information and Features category. The Information cate
 
 ### Features Left to Implement
 
-1. **Search function** - even though it was originally planned and the [API documentation of AccuWeather](https://apidev.accuweather.com/developers/auto-complete) supports it, I couldn't make the search function for the locations work even after trying several times and had to leave this feature out in order to build and improve the other ones due to lack of time.
+1. **Search function** - even though it was originally planned and the [API documentation of AccuWeather](https://apidev.accuweather.com/developers/auto-complete) supports it (check the wireframes and first commits), I couldn't make the search function for the locations work even after trying several times and had to leave this feature out in order to build and improve the other ones due to lack of time.
 
 ![Search box](readme-files/images-readme/img-additional-search.png)
 
@@ -98,6 +98,8 @@ Then I grouped them into Information and Features category. The Information cate
 ![Account at and shopping through O2F](readme-files/images-readme/img-additional-basket-account.png)
 
 5. **Better content transition and more animations** - ideally I would like to implement a better content trasition from the homepage to the API generated content. At the moment it seems that when the user clicks on a city, there's a new page loaded - which is not the case. The homepage content could for example slide down and the generated content could slide up. Additionally, I was also planning to make the refresh button turn 360 degrees before the product selection gets refreshed as well as make the products shake a little before they change.
+
+6. **Fashion API connection** - currently, the user can refresh the product category only 5 times before they start seeing the same products again. I've been searching for a free fashion/apparel API that would fit the requirements of the project but I haven't been successful at it. In case this project wouldn't be for one brand only, my plan for the future of the product would be to register as an affiliate publisher, connect to fashion brands APIs and earn from the commisions.
 
 ### Wireframes
 
@@ -290,6 +292,8 @@ Discovered bugs:
 Other important remarks:
 
 * this project has 50 free API calls per day. The number is refreshed around 2.30 pm CET time. This might cause the visitor to be left out of API calls and the app won't be able to fully complete it's purpose. If that happens, please check OUT2FASHION the next day afternoon again.
+* the products on the page are a result of my manual work. I manually had to download each product image (all 240 of them) and write down the price in the product.js file, along with the copied link. I've already caught some of the mistakes and corrected them - hopefully there are none anymore. However - it is very likely to happen in the next weeks or even days that the products will be out of stock or completely removed from the offer due to season change. If you link out and the link is broken, it's probably for that reason because I did do an extensive link check for each product category.
+* as a result of having a mini hard-coded "product API", the user can refresh the products only 5 times before they start seeing the same products within the category again.
 * during my mentoring session, I expressed my concerns about having lots of repetitive javascript code. I am aware that some functions could have been written in a shorter way and would definitely approach the project differently the next time. As for now, my mentor was glad to hear I've been able to notice the areas of improvement and kindly explained me that the duplication is mostly coming from lack of knowledge about data structures and that some things could have been differently done. He also gave me advices on how to get that knowledge and how to reach the point of understanding the topic better. Nevertheless, at this point I'm very happy with my progress so far and look forward to expanding my knowledge even further!
 
 ## Deployment
@@ -320,22 +324,29 @@ To create a local copy of a repository, follow these steps:
 
 For more information please visit [here.](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
+## Credits
 
+### Content
 
+* Besides the textual content coming from the [AccuWeather](https://www.accuweather.com/), the content for this web app is completely original, written by me.
 
+### Media
 
+* The city photos on the website are taken from [Unsplash](https://unsplash.com/).
+* The products and the prices are taken from [Esprit](https://www.esprit.com/) - they completely own the rights for them. I did my best to make sure the prices and the links to the products are correctly matched.
+* Icons are downloaded from [Flaticon](https://www.flaticon.com/). They were made by [Pixel perfect](https://www.flaticon.com/authors/pixel-perfect), [Freepik](https://www.flaticon.com/authors/freepik), [Lyolya](https://www.flaticon.com/authors/lyolya), [Becris](https://www.flaticon.com/authors/becris) and [Vitaly Gorbachev](https://www.flaticon.com/authors/vitaly-gorbachev).
+* The product showcase image was taken with the help of [Ami.ResponsiveDesign](http://ami.responsivedesign.is/).
 
+### Coding Sources
 
+* Helped me understand and use [Horizontal gradient text effect](https://stackoverflow.com/questions/39884260/is-it-possible-to-set-horizontal-gradient-to-text-via-css-left-letter-one-colo).
+* Helped me understand [API connection](https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/) better.
+* Helped create the [Scroll to the top button](https://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript).
+* Helped me understand [Why there's no need for type="text/javascript in html code"](https://stackoverflow.com/questions/5265202/do-you-need-text-javascript-specified-in-your-script-tags).
+* Helped me create [The horizontal scrolling menu](http://jsfiddle.net/wSfJd/).
 
+### Acknowledgements
 
+* A huge and warm thank you to my mentor [Dick Vlaanderen](https://github.com/dickvla) who was an enormous source of encouragement, helpful advices and guidance throughout this project - your kind words meant so much more than you can imagine!
+* Thank you [CodeInstitute's](https://codeinstitute.net/) Slack community for being there for annoying little bug questions!
 
-
-Credits:
-- https://unsplash.com/ - images
-- https://www.esprit.de/damenmode - products
-- https://stackoverflow.com/questions/39884260/is-it-possible-to-set-horizontal-gradient-to-text-via-css-left-letter-one-colo - gradient left to right css code
-- https://www.taniarascia.com/how-to-connect-to-an-api-with-javascript/ - helped me understand API connection better
-- http://ami.responsivedesign.is/ - for the showcase photos and responsiveness look and feel
-- https://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript - for the js code for scrolling to the top
-- https://stackoverflow.com/questions/5265202/do-you-need-text-javascript-specified-in-your-script-tags - for an interesting read about why there's no need for type="text/javascript"
-- http://jsfiddle.net/wSfJd/ - for help with creating horizontal scrolling menu in the city content header
