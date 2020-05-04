@@ -74,7 +74,7 @@ Then I grouped them into Information and Features category. The Information cate
 1. **Display products** - each clothing item has a preview of 3 suggested products from that category that the user can buy if they want.
 1. **Refresh products** - if the user is particularly interested in seeing more products from a certain product category, they can click the refresh button at the top of the product category icon to load more products.
 1. **Scroll to the top** - a button on mobile devices that brings the user back to the top of the page. This is easpecially handy when the user is already reading one city weather suggestion but want to switch to another one.
-1. **Interactive navigation in the header** - once the user is in the city section, they can access other cities from an interactive, horizontal scrollable gallery in the header.
+1. **Interactive navigation in the header** - once the user is in the city section, they can access other cities from an interactive, horizontal scrollable gallery in the header. As this is a one page web app, the return button will not work so this feature is quite handy in this sense.
 1. **New information everyday** - the app refreshes the weather data every day which as a consequence generates new product selection for the users.
 1. **Link outs to the web shops** - serves as a quick solution for the users that want to check out in detail or buy some of the products.
 1. **Social media profiles' links** - allow users to stay up to date with the latest news about the app.
@@ -283,13 +283,44 @@ Discovered cross-browser issues:
 Discovered bugs:
 
 * Scroll to the top and City selection features don't work in Internet Explorer, not even the hover effects work - which basically means the user can only access the homepage. I am suspecting there might be incompatibilities between the browser and jQuery.
-* when the user clicks on one of the cities, it might take some time to load the data and all the images. The app first loads the html with it's placeholder icons and images and then changes them. I could have removed the placeholders but I've decided to keep them because the API key has only 50 free calls per day. I wanted the app to still be populated with content if the limit has been reached.
-* when the user clicks on the refresh button, it sometimes might happen the products don't load on the first click. I'm not completely sure why is that and it happens more often on the mobile devices than on desktop. If the user clicks the second time, then iit often happens the product selection refreshes twice very quickly.
+* when the user clicks on one of the cities, it might take some time to load the data and all the images. The app first loads the html with it's placeholder icons and images and then changes them. The user might notice this content change. I could have removed the placeholders but I've decided to keep them because the API key has only 50 free calls per day. I wanted the app to still be populated with content if the limit has been reached.
+* when the user clicks on the refresh button, it sometimes might happen the products don't load on the first click. I'm not completely sure why is that and it happens more often on the mobile devices than on desktop. If the user clicks the second time, then it often happens the product selection refreshes twice very quickly. However, it also appears that the more the app is used, the less likely this is to happen.
 * the hover effects placed on the refresh button and cities stay on mobile devices after the user clicks on them. They disappear once the user clicks on some other element on the page. I've tried to solve this by [.off() jQuery method](https://api.jquery.com/off/) because I was suspecting it should help but I wasn't successful.
 
-Other remarks:
+Other important remarks:
 
-* 
+* this project has 50 free API calls per day. The number is refreshed around 2.30 pm CET time. This might cause the visitor to be left out of API calls and the app won't be able to fully complete it's purpose. If that happens, please check OUT2FASHION the next day afternoon again.
+* during my mentoring session, I expressed my concerns about having lots of repetitive javascript code. I am aware that some functions could have been written in a shorter way and would definitely approach the project differently the next time. As for now, my mentor was glad to hear I've been able to notice the areas of improvement and kindly explained me that the duplication is mostly coming from lack of knowledge about data structures and that some things could have been differently done. He also gave me advices on how to get that knowledge and how to reach the point of understanding the topic better. Nevertheless, at this point I'm very happy with my progress so far and look forward to expanding my knowledge even further!
+
+## Deployment
+
+### GitHub Pages
+
+To deploy a website on GitHub Pages, follow these steps:
+
+1. Go to the repository page
+1. Click on settings icon in the top of the page
+1. Find "GitHub Pages" section
+1. Click on the "Source" dropdown menu
+1. Select "master branch" option
+1. A green success message should appear in the "GitHub Pages" section with the link to the live preview of the project.
+
+For more information please visit [here.](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
+### Local Deployment
+
+To create a local copy of a repository, follow these steps:
+
+1. Go to the repository page
+1. Click on the "Clone or download" button in the top of the page
+1. Click the check list icon on the right of the newly opened window to clone the repository using HTTPS
+1. Open Terminal
+1. Change the current working directory to the location where you want the cloned directory to be made
+1. Type "git clone" and paste the URL you copied in step 3 and run the command
+
+For more information please visit [here.](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+
 
 
 
