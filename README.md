@@ -97,7 +97,7 @@ Then I grouped them into Information and Features category. The Information cate
 
 ![Account at and shopping through O2F](readme-files/images-readme/img-additional-basket-account.png)
 
-5. **Better content transition** - ideally I would like to implement a better content trasition from the homepage to the API generated content. At the moment it seems that when the user clicks on a city, there's a new page loaded - which is not the case. The homepage content could for example slide down and the generated content could slide up.
+5. **Better content transition and more animations** - ideally I would like to implement a better content trasition from the homepage to the API generated content. At the moment it seems that when the user clicks on a city, there's a new page loaded - which is not the case. The homepage content could for example slide down and the generated content could slide up. Additionally, I was also planning to make the refresh button turn 360 degrees before the product selection gets refreshed as well as make the products shake a little before they change.
 
 ### Wireframes
 
@@ -175,7 +175,7 @@ Additionally, I have also used the following platforms to help me shape the webs
 The project's code was frequently validated through:
 * [W3 HTML validator](https://validator.w3.org/nu/)
 * [W3 CSS validator](http://www.css-validator.org/)
-* [Esprima JS calidator](https://esprima.org/demo/validate.html)
+* [Esprima JS validator](https://esprima.org/demo/validate.html)
 
 The web app was tested on the devices and browsers listed below. I loaded the page on each of the device and browser combination and looked for any visual and functional errors. I've also tried to resize browsers on desktop to look for hidden irregularities. More about the errors I've encountered can be found under the 'Bugs and Problems'.
 
@@ -267,8 +267,29 @@ Mobile:
   1. Click on one of the icons
   1. The feature works if a new tab opened linked to that social media platform
 
+### Bugs and Problems
 
+[W3 HTML validator](https://validator.w3.org/nu/) helped me discover duplications in `id` attributes which happened due to lot's of copy/pasting the code while [W3 CSS validator](http://www.css-validator.org/) came back with successful results. A huge help was the [Esprima JS validator](https://esprima.org/demo/validate.html) which I've used often throughout the project. It helped me discover early on missed or additional brackets.
 
+The following cross-browser issues and other bugs **haven't been fixed yet** due to lack of knowledge or lack of time.
+
+Discovered cross-browser issues:
+
+* smooth scrolling (`window.scrollTo({ top: 0, behavior: 'smooth' });`) doesn't work in Internet Explorer and Safari
+* footer elements are left-aligned instead of being centered in responsive forms in Internet Explorer and Firefox
+* tablet responsivenes of the homepage in Firefox and Internet Explorer is not working, it just stocks city images on top of each other
+* tablet responsivenes of the city content in Firefox and Internet Explorer pushes almost all content to the left
+
+Discovered bugs:
+
+* Scroll to the top and City selection features don't work in Internet Explorer, not even the hover effects work - which basically means the user can only access the homepage. I am suspecting there might be incompatibilities between the browser and jQuery.
+* when the user clicks on one of the cities, it might take some time to load the data and all the images. The app first loads the html with it's placeholder icons and images and then changes them. I could have removed the placeholders but I've decided to keep them because the API key has only 50 free calls per day. I wanted the app to still be populated with content if the limit has been reached.
+* when the user clicks on the refresh button, it sometimes might happen the products don't load on the first click. I'm not completely sure why is that and it happens more often on the mobile devices than on desktop. If the user clicks the second time, then iit often happens the product selection refreshes twice very quickly.
+* the hover effects placed on the refresh button and cities stay on mobile devices after the user clicks on them. They disappear once the user clicks on some other element on the page. I've tried to solve this by [.off() jQuery method](https://api.jquery.com/off/) because I was suspecting it should help but I wasn't successful.
+
+Other remarks:
+
+* 
 
 
 
