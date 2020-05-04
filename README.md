@@ -97,6 +97,8 @@ Then I grouped them into Information and Features category. The Information cate
 
 ![Account at and shopping through O2F](readme-files/images-readme/img-additional-basket-account.png)
 
+5. **Better content transition** - ideally I would like to implement a better content trasition from the homepage to the API generated content. At the moment it seems that when the user clicks on a city, there's a new page loaded - which is not the case. The homepage content could for example slide down and the generated content could slide up.
+
 ### Wireframes
 
 As I was planning to implement the search function originally, the following low-fidelity wireframes are a bit different than what I have built. Eventually I had to remove the search box and add text in the header, as well as the visual navigation gallery. The homepage had additional content giving the sneak-peak into the product's feature but that was removed in order to make space for more cities as a backup plan due to the search box removal.
@@ -175,19 +177,19 @@ The project's code was frequently validated through:
 * [W3 CSS validator](http://www.css-validator.org/)
 * [Esprima JS calidator](https://esprima.org/demo/validate.html)
 
-Similar to my previous project, the web app was tested on the devices and browsers listed below. I loaded the page on each of the device and browser combination and looked for any visual and functional errors. I've also tried to resize browsers on desktop to look for hidden irregularities.
+The web app was tested on the devices and browsers listed below. I loaded the page on each of the device and browser combination and looked for any visual and functional errors. I've also tried to resize browsers on desktop to look for hidden irregularities. More about the errors I've encountered can be found under the 'Bugs and Problems'.
 
 Desktop:
 
 1. Acer
   * Google Chrome
   * Internet Explorer
-  * Mozilla
+  * Firefox
 2. MacBook
   * Google Chrome
   * Safari
   * Opera
-  * Mozilla
+  * Firefox
 
 Mobile:
 
@@ -195,6 +197,75 @@ Mobile:
   * Safari
 2. HTC
   * Google Chrome
+
+### Testing the Features
+
+* City selection
+  1. Load the homepage
+  1. Click on one out of eight city images
+  1. The feature works if you have now reached the page which displayed weather data and product offer
+
+* Weather forecast summary
+  1. Load the homepage
+  1. Click on one out of eight city images
+  1. Check if the weather section populated with weather icons, temperatures and additional phrases
+  1. Check if the text below the weather section loaded as well
+  1. In case something went wrong, you will see smiley faces instead of the icons and 0 degrees for temperatures
+
+* Product categories
+  1. Load the homepage
+  1. Click on one out of eight city images
+  1. Check if the seven product categories loaded
+  1. In case something went wrong, you will see smiley faces instead of product icons
+
+* Display products
+  1. Load the homepage
+  1. Click on one out of eight city images
+  1. Check if the seven product categories loaded
+  1. Check if the product offer loaded and matches the product category
+  1. In case something went wrong, you will see a placeholder product photo instead of product images
+
+* Refresh products
+  1. Load the homepage
+  1. Click on one out of eight city images
+  1. Check if the seven product categories loaded
+  1. Check if the product offer loaded and matches the product category
+  1. Click the refresh button (round arrow) in the top right corner of one of the seven product categories
+  1. The feature works if the product offer loaded 3 new products from that product category
+
+* Scroll to the top
+  1. Load the web app on a mobile device with a width smaller than 768px
+  1. Stay on the homepage or click on a city
+  1. Scroll further down the page and click on the scroll up button placed in the bottom right corner of the screen
+  1. The feature works if you have reached the top of the page
+
+* Interactive navigation in the header
+  1. Load the homepage
+  1. Click on one out of eight city images
+  1. Notice the navigation gallery in the header and place your cursor or finger on it
+  1. Scroll or swipe left and right
+  1. Click on one of the cities
+  1. The feature works if you were able to scroll or swipe left and right and there was new content generated for the city you've clicked on
+
+* New information everyday
+  1. Load the homepage the next day
+  1. Click on one out of eight city images
+  1. The feature works if you can see new weather data and product categories based on that weather information
+
+* Link outs to the web shops
+  1. Load the homepage
+  1. Click on one out of eight city images
+  1. Check if the seven product categories loaded
+  1. Check if the product offer loaded and matches the product category
+  1. Click on one of the products
+  1. If a new tab linked to that product opened, the feature works as planned
+
+* Social media profiles' links
+  1. Load the homepage and click on one out of eight city images if you want
+  1. Scroll to the footer
+  1. Look for the social media icons (Facebook, Instagram and Pinterest)
+  1. Click on one of the icons
+  1. The feature works if a new tab opened linked to that social media platform
 
 
 
