@@ -324,6 +324,14 @@ To create a local copy of a repository, follow these steps:
 
 For more information please visit [here.](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
+## Lessons Learned
+
+Looking back at the project from the beginning till the finish line I've noticed big improvements in knowledge and just generally being a lot more comfortable with different concepts:
+* Bootstrap is so much more than just columns and rows! I've dived deeper into text, display and float classes like `text-uppercase`, `text-center`, `d-none`, `d-md-none`, `float-left` etc. This encouraged me to try creating my own classes for general handy purpose like `class-mt-15` and `class-mb-15` for being consistent with margins.
+* Using a design tool like [Figma](https://www.figma.com/) can be a great source of code summary! Whenever you design something in the tool, you can switch to the 'code' tab where the tool will summarise some important lines of css code. For example a text box will be summaries as information about `width`, `height`, `font-family`, `font-weight`, `font-size`, `line-height`, `text-align`, `color` etc.
+* Do check your project in different browsers regularly! I could have fixed the Firefox tablet misalignment so much quicker had I done it earlier in the process.
+* There is so much more to learn about JavaScript! I'm very grateful my mentor has pointed out code that could be improved throughout the project and gave advices on how to do that. My next step is to get to know more about data structure in JavaScript.
+
 ## Credits
 
 ### Content
