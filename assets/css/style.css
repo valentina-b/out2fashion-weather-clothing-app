@@ -51,8 +51,6 @@ body {
 }
 /* Navigation */
 
-
-
 /* Header */
 .header-content {
     margin-top: 13vh;
@@ -149,7 +147,6 @@ body {
 #content-additional-text p {
     font-weight: 300;
     font-size: 16px;
-    /* line-height: 140%; */
     padding-left: 23px;
     padding-right: 23px;
 }
@@ -208,7 +205,6 @@ footer{
 
 #footer-content {
     padding-top: 22.5px;
-    /* padding-bottom: 22.5px; */
     width: fit-content;
     margin: 0 auto;
 }
@@ -412,7 +408,7 @@ footer{
 }
 
 .icon-active {
-    /* based on .weather-clothes-icon */
+/* based on .weather-clothes-icon */
     left: -10px;
 }
 
@@ -570,7 +566,6 @@ footer{
     height: 60px;
     width: 60px;
     margin-left: 20px;
-    /* border-radius: 50%; */
 }
 
 .city-gallery-content .first-city {
