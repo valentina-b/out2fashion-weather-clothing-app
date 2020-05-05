@@ -6,6 +6,8 @@ OUT2FASHION is a mobile-first one-page web application that helps women stay sty
 
 The overall goal of the app is to turn a simple daily repetitive act of checking weather forecast to plan out the outfit of the day into a fun experience. Besides the weather forecast, the app informs the users about the new clothing products on the market which are only 1 click away.
 
+**IMPORTANT: This project is limited to 50 free API calls per day. The number is refreshed around 2.30 pm CET. If you click on a city and the app doesn't seem to display the content well, please check OUT2FASHION the next day again or after 2.30 pm CET.**
+
 ![App Showcase](readme-files/img-showcase.png)
 
 ## UX
@@ -275,23 +277,23 @@ Mobile:
 
 The following cross-browser issues and other bugs **haven't been fixed yet** due to lack of knowledge or lack of time.
 
-Discovered cross-browser issues:
+**Discovered cross-browser issues:**
 
 * smooth scrolling (`window.scrollTo({ top: 0, behavior: 'smooth' });`) doesn't work in Internet Explorer and Safari
 * footer elements are left-aligned instead of being centered in responsive forms in Internet Explorer and Firefox
 * tablet responsiveness of the homepage in Firefox and Internet Explorer is not working, it just stocks city images on top of each other
 * tablet responsiveness of the city content in Firefox and Internet Explorer pushes almost all content to the left
 
-Discovered bugs:
+**Discovered bugs:**
 
 * Scroll to the top and City selection features don't work in Internet Explorer, not even the hover effects work - which basically means the user can only access the homepage. I am suspecting there might be incompatibilities between the browser and jQuery.
 * when the user clicks on one of the cities, it might take some time to load the data and all the images. The app first loads the html with its placeholder icons and images and then changes them. The user might notice this content change. I could have removed the placeholders but I've decided to keep them because the API key has only 50 free calls per day. I wanted the app to still be populated with content if the limit has been reached.
 * when the user clicks on the refresh button, it sometimes might happen the products don't load on the first click. I'm not completely sure why is that and it happens more often on the mobile devices than on desktop. If the user clicks the second time, then it sometimes happens the product selection refreshes twice very quickly. However, it also appears that the more the app is used, the less likely this is to happen.
 * the hover effects placed on the refresh button and cities stay on mobile devices after the user clicks on them. They disappear once the user clicks on some other element on the page. I've tried to solve this by [.off() jQuery method](https://api.jquery.com/off/) because I was suspecting it should help but I wasn't successful.
 
-Other important remarks:
+**Other important remarks:**
 
-* this project has 50 free API calls per day. The number is refreshed around 2.30 pm CET time. This might cause the visitor to be left out of API calls and the app won't be able to fully complete its purpose. If that happens, please check OUT2FASHION the next day afternoon again.
+* this project has 50 free API calls per day. The number is refreshed around 2.30 pm CET time. This might cause the visitor to be left out of API calls and the app won't be able to fully complete its purpose. If that happens, please check OUT2FASHION the next day again.
 * the products on the page are a result of my manual work. I manually had to download each product image (all 240 of them) and write down the price in the product.js file, along with the copied link. I've already caught some of the mistakes and corrected them - hopefully there are none anymore. However - it is very likely to happen in the next weeks or even days that the products will be out of stock or completely removed from the offer due to season change. If you link out and the link is broken, it's probably for that reason because I did do an extensive link check for each product category.
 * as a result of having a mini hard-coded "product API", the user can refresh the products only 5 times before they start seeing the same products within the category again.
 * during my mentoring session, I expressed my concerns about having lots of repetitive JavaScript code. I am aware that some functions could have been written in a shorter way and would definitely approach the project differently the next time. As for now, my mentor was glad to hear I've been able to notice the areas of improvement and kindly explained to me that the duplication is mostly coming from lack of knowledge about data structure and that some things could have been differently done. He also gave me advices on how to get that knowledge and how to reach the point of understanding the topic better. Nevertheless, at this point I'm very happy with my progress so far and look forward to expanding my knowledge even further!
