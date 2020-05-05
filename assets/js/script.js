@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
     // EFFECTS
-
     $(".city-content img, .city-gallery-content img, .clothes-square img").hover(function () {
         $(this).addClass("square-hover");
     }, function () {
@@ -14,15 +13,13 @@ $(document).ready(function () {
         $(this).removeClass("shadow-hover");
     });
 
-    // Recalculate F to C --> T(°C) = (T(°F) - 32) / 1.8
-    // transformToCelsius(68) ---> 20
+    // recalculate F to C --> T(°C) = (T(°F) - 32) / 1.8
     function transformToCelsius(tempF) {
         return (tempF - 32) / 1.8
     }
 
-    // when a user clicks on a city
-    // 1 hide main content
-    // 2 show city content
+
+    // hide main content and show city content and the header menu
     function changeContent() {
         $("#main-content").addClass("d-none");
         $("#header-title").addClass("d-none");
@@ -34,23 +31,22 @@ $(document).ready(function () {
         $(".city-gallery").removeClass("d-none");
         $("#city-header-line").removeClass("d-none");
 
-        // 3 bring the user to the top of the page
-        // credits: https://stackoverflow.com/questions/1144805/scroll-to-the-top-of-the-page-using-javascript
+        // bring the user to the top of the page
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
+    // bring the user to the top of the page when they click on scroll up button
     $(".scroll-up").click(function() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
+    // change city name in the city content and fetch weather data
     function fetchWeatherData() {
-        // 4 change city name in the city content
         $(".city-name-img").click(function () {
             changeContent();
             let cityAttributeText = $(this).attr("alt");
             $("#city-name-populated").text(cityAttributeText);
 
-            // 5 fetch city data
             let locationKey = [
                 {
                     city: "Berlin",
@@ -86,6 +82,7 @@ $(document).ready(function () {
                 }
             ];
 
+            // match clicked city with its location key
             function findAPIurl() {
                 for (let i = 0; i < locationKey.length; i++) {
                     if (locationKey[i].city === cityAttributeText) {
@@ -93,11 +90,12 @@ $(document).ready(function () {
                     }
                 }
             }
-
+            // create API url for the clicked city
             let cityLocationID = findAPIurl();
             let apiKey = "cUKU5seD8FYw3kzd4humiPZ5JAu8Aep3";
             let apiURL = `https://dataservice.accuweather.com/forecasts/v1/daily/1day/${cityLocationID}?apikey=${apiKey}&language=en-us&details=true`;
 
+            // fetch API data and make changes to the page accordingly
             fetch(apiURL)
                 .then(response => {
                     return response.json()
@@ -217,10 +215,10 @@ $(document).ready(function () {
                     let clothesIconBagText = $("#item-name-bag");
                     let clothesIconAccessoriesText = $("#item-name-accessories");
 
-                    // result of a function from before - fetch the original temperature, transform into C, round it and save it into a variable
+                    // fetch the original temperature, transform into C, round it and save it into a variable
                     let maxTemperatureResult = Math.round(transformToCelsius(originalFeelMaxTemperature));
 
-                    // link out
+                    // link out to a new tab
                     function linkOut(url) {
                         window.open(url, "_blank");
                     };
@@ -337,7 +335,7 @@ $(document).ready(function () {
                     let productsBag = products.bag;
                     let productsAccessories = products.accessories;
 
-
+                    // import product category icons based on the following logic
                     function changeClothesIcons() {
                         // top = shirt or tshirt
                         function changeClothesIconsTop() {
@@ -398,7 +396,6 @@ $(document).ready(function () {
                                 clothesIconTop.attr("src", "assets/images/clothes-icons/svg-icon-clothes-tshirt.svg");
                                 clothesIconTopText.text("T-shirt");
 
-                                // ************* create products.tshirt variable and then iterate on it 
                                 function populateTshirt() {
 
                                     let fetchPrice1 = productsTshirt[randomNumber][0].price;
@@ -409,22 +406,6 @@ $(document).ready(function () {
                                     let fetchImage2 = productsTshirt[randomNumber][1].imageTitle;
                                     let fetchImage3 = productsTshirt[randomNumber][2].imageTitle;
 
-                                    // ************* iterate through prices and save in a variable? As a string and then transform into an array?
-                                    // function iteratePricesAndImages() {
-                                    //     for (let i = 0; i < productsTshirt.length; i++) {
-                                    //         productsTshirt[randomNumber][i].price;
-                                    //         productsTshirt[randomNumber][i].imageTitle;
-                                    //     }
-                                    //     return productsTshirt[randomNumber][i].price;
-                                    //     return productsTshirt[randomNumber][i].imageTitle;
-                                    // }
-                                    // ***********this one worked
-                                    // function iteratePricesAndImages() {
-                                    //     for (let i = 0; i < productsTshirt.length; i++) {
-                                    //         console.log(productsTshirt[3][i].price)
-                                    //         console.log(productsTshirt[3][i].imageTitle)
-                                    //     }
-                                    // }
                                     let productsArray1 = [price1, fetchPrice1, image1, fetchImage1, productName2];
                                     let productsArray2 = [price2, fetchPrice2, image2, fetchImage2, productName2];
                                     let productsArray3 = [price3, fetchPrice3, image3, fetchImage3, productName2];
@@ -1065,8 +1046,6 @@ $(document).ready(function () {
 
                         // additional = umbrella
                         function changeClothesIconsAdditionalUmbrella() {
-                            // if 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23 (no 24)
-                            // if 25, 26 and 29
                             if ((iconNumber >= 12 && iconNumber <= 23) || [25, 26, 29].includes(iconNumber)) {
                                 clothesIconAdditional.attr("src", "assets/images/clothes-icons/svg-icon-clothes-umbrella.svg");
                                 clothesIconAdditionalText.text("Umbrella");
@@ -1124,7 +1103,7 @@ $(document).ready(function () {
                     }
                     changeClothesIcons();
 
-                    // populate bags
+                    // populate bag products
                     function changeBags() {
 
                         function populateBags() {
