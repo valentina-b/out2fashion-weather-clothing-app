@@ -2,7 +2,7 @@
 
 Code Institute - Milestone Project 2 - Interactive Frontend Development
 
-OUT2FASHION is a mobile-first one-page web application that helps women stay stylish every day based on the clothing items they might need according to the weather forecast. The primary purpose of this web app is to inform the users about the daily weather forecasts in a fun and interactive way and to serve as a guidance for shopping relevant clothing items for their outfit of the day - buy what you like but also what you need! The secondary purpose is to give fashion brands an additional chance to market their products by every-day brand exposure in hope of increasing the sales.
+OUT2FASHION is a mobile-first one-page web application that helps women stay stylish every day based on the clothing items they might need according to the weather forecast. The primary purpose of this web app is to inform the users about the daily weather forecast in a fun and interactive way and to serve as a guidance for shopping relevant clothing items for their outfit of the day - buy what you like but also what you need! The secondary purpose is to give fashion brands an additional chance to market their products by every-day brand exposure in hope of increasing the sales.
 
 The overall goal of the app is to turn a simple daily repetitive act of checking weather forecast to plan out the outfit of the day into a fun experience. Besides the weather forecast, the app informs the users about the new clothing products on the market which are only 1 click away.
 
@@ -18,11 +18,11 @@ In addition, according to another research, [online apparel retail customers](ht
 
 Due to the fact that the higher basket value reduces or eliminates the shipping costs, I wasn't very surprised to read that [on average, apparel shoppers purchase up to three items in one sitting](https://www.retailcustomerexperience.com/blogs/examining-the-online-apparel-retail-customer-experience/). However, it did make me realise the importance of a wide selection of products, product categories and price ranges to encourage the full-basket checkouts.
 
-The last fascinating information I've come across in two different reports is the fact that up to 90% of apparel shoppers are repeat buyers (according to [Oliver Wyman](https://www.oliverwyman.com/our-expertise/insights/2018/jan/understanding-the-2017-apparel-shopper-journey.html) and [Stitch Fix](https://www.wired.com/story/stitch-fix-shop-your-looks/)). While Stitch Fix decided to benefit from this behaviour by personalising recommendations of 1000+ brands, I see this as an opportunity for individual brands or a few brands with similar style to increase their sales. It's not uncommon for people to identify their style with an already existing brand. Mine would be in that case brands like [Esprit](https://www.esprit.com/) and [Tom Tailor](https://www.tom-tailor.com/).
+The last fascinating information I've come across in two different reports is the fact that up to 90% of apparel shoppers are repeat buyers (according to [Oliver Wyman](https://www.oliverwyman.com/our-expertise/insights/2018/jan/understanding-the-2017-apparel-shopper-journey.html) and [Stitch Fix](https://www.wired.com/story/stitch-fix-shop-your-looks/)). While Stitch Fix decided to benefit from this behaviour by personalising recommendations of 1000+ brands, I see this as an opportunity for individual brands or a few brands with similar style to increase their sales. It's not uncommon for people to identify their style with an already existing brand. Mine would be, in that case, brands like [Esprit](https://www.esprit.com/) and [Tom Tailor](https://www.tom-tailor.com/).
 
 ### Conclusion of the Research
 
-Having above mentioned (and many other) facts in mind that I've found, I've decided to build a mobile web app that gives a meaningful purpose to fashion and apparel shopping. OUT2FASHION helps you pick out of your closet clothes that you really need for this particular day based on the weather forecast but it also gives you inspirational, shoppable suggestions of what is currently new on the market so that you can stay trendy all year long.
+Having above mentioned (and many other) facts in mind that I've found, I've decided to build a mobile web app that gives a meaningful purpose to fashion and apparel shopping. OUT2FASHION first and foremost helps you pick out of your closet clothes that you really need for this particular day based on the weather forecast but it also gives you inspirational, shoppable suggestions of what is currently new on the market so that you can stay trendy all year long. The app is visually adjusted to younger audience as the majority of online shoppersare in their late twenties or early thirties and offers wider selection of product categories and products in order to ensure full chekcout baskets.
 
 ### Business Goals
 
@@ -30,7 +30,7 @@ As an online apparel brand owner...
 
 * I want my brand to be exposed to the users every day, not only when they need to shop for something so that I have more chances for selling
 * I want my customers to make better shopping decisions so that the return rate gets reduced because shipping costs me
-* I want the users to have a choice in products so that they can fill their baskets and I save on shipping costs
+* I want the users to have a choice in products so that they can fill their baskets and I can save on shipping costs
 * I want that my digital product adds value to the daily life of my customers so that my brand is associated with more than just clothes
 * I want to offer a shopping journey to my customers that is fun and informative so that they have great user experience
 * I want the customers to have an interface they love so that they will want to come back
@@ -73,11 +73,11 @@ Then I grouped them into Information and Features category. The Information cate
 1. **Product categories** - based on the forecast, the app generates 7 clothing items the user should keep in mind while choosing the outfit for the day.
 1. **Display products** - each clothing item has a preview of 3 suggested products from that category that the user can buy if they want.
 1. **Refresh products** - if the user is particularly interested in seeing more products from a certain product category, they can click the refresh button at the top of the product category icon to load more products.
-1. **Scroll to the top** - a button on mobile devices that brings the user back to the top of the page. This is especially handy when the user is already reading one city weather suggestion but want to switch to another one.
-1. **Interactive navigation in the header** - once the user is in the city section, they can access other cities from an interactive, horizontal scrollable gallery in the header. As this is a one-page web app, the return button will not work so this feature is quite handy in this sense.
-1. **New information everyday** - the app refreshes the weather data every day which as a consequence generates new product selection for the users.
+1. **Scroll to the top** - a button on mobile devices that brings the user back to the top of the page. This is especially handy when the user is already reading one city weather suggestion but wants to switch to another one.
+1. **Interactive navigation in the header** - once the user is in the city section, they can access other cities from an interactive, horizontal scrollable gallery in the header. As this is a one-page web app, the return button will not work so this feature is quite handy in this context. A workaround would be to click on the logo to go back to the homepage content and select another city.
+1. **New information everyday** - the app refreshes the weather data every day which as a result generates new product selection for the users as well.
 1. **Link outs to the web shops** - serves as a quick solution for the users that want to check out in detail or buy some of the products.
-1. **Social media profiles' links** - allow users to stay up to date with the latest news about the app.
+1. **Social media profiles' links** - allows users to stay up to date with the latest news about the app.
 
 ### Features Left to Implement
 
@@ -89,13 +89,13 @@ Then I grouped them into Information and Features category. The Information cate
 
 ![Gender selection](readme-files/images-readme/img-additional-gender-selection.png)
 
-3. **Weather forecast for more than 1 day** - at the moment one of the main goals of the app is to be used every day so that the chances of buying something and being constantly exposed to products is maximised. The user is 'forced' to return to the app every day in order to check the weather. In the long run, I would implement a weekly forecast so that the users can plan their shopping activities better. Moreover, it would be helpful if they could get a predicted likelihood of some kind for the saved items. For example, a saved umbrella item or umbrella in the shopping basket could have a small note like - _You might need this item 5 days out of the following 7 days!_
-
-![Forecasts selection](readme-files/images-readme/img-additional-forecasts.png)
-
-4. **Shopping through the UI** - instead of link outs, the app would be ideally connected to the online store (in case the products are only from one brand) or multiple web shops (in case the products from different brands). This way the user could put everything in a basket of OUT2FASHION and check out directly from the app. The app would then order the products from original shops. Additionally, the user could also create an account where they could save products for later.
+3. **Shopping through the UI** - instead of link outs, the app would be ideally connected to the online store (in case the products are only from one brand) or multiple web shops (in case the products from different brands). This way the user could put everything in a basket of OUT2FASHION and check out directly from the app. The app would then order the products from original shops. Additionally, the user could also create an account where they could save products for later.
 
 ![Account at and shopping through O2F](readme-files/images-readme/img-additional-basket-account.png)
+
+4. **Weather forecast for more than 1 day** - at the moment one of the main goals of the app is to be used every day so that the chances of buying something and being constantly exposed to products is maximised. The user is 'forced' to return to the app every day in order to check the weather. In the long run, I would implement a weekly forecast so that the users can plan their shopping activities better. Moreover, it would be helpful if they could get a predicted likelihood of some kind for the saved items. For example, a saved umbrella item or umbrella in the shopping basket could have a small note like - _You might need this item 5 days out of the following 7 days!_
+
+![Forecasts selection](readme-files/images-readme/img-additional-forecasts.png)
 
 5. **Better content transition and more animations** - ideally I would like to implement a better content transition from the homepage to the API generated content. At the moment it seems that when the user clicks on a city, there's a new page loaded - which is not the case. The homepage content could for example slide down and the generated content could slide up. Additionally, I was also planning to make the refresh button turn 360 degrees before the product selection gets refreshed as well as make the products shake a little before they change.
 
@@ -121,9 +121,9 @@ Mobile:
 
 ## Graphic Design and Brand Elements
 
-OUT2FASHION is not imagined as a random fashion marketplace. It is a mobile web app combining a daily activity of checking the weather forecast and apparel industry. It strives to be a unique, informative and fun weather app but it also gives a meaningful purpose to buying clothes. Its vision is to function well both for the users and brand owners. At the same time, the MVP is currently only for women, targeting late twenties and early thirties age groups. My goal was to create a pleasant, feminine look that would also fit the imagery of the clothing brand I've previously selected based on my personal affinity, [Esprit](https://www.esprit.com/).
+OUT2FASHION is not imagined as a random fashion marketplace. It is a mobile web app combining a daily activity of checking the weather forecast and apparel industry. It strives to be a unique, informative and fun weather app but it also gives a meaningful purpose to buying clothes. Its vision is to function well both for the users and brand owners. The MVP is currently only for women, targeting late twenties and early thirties age groups. My goal was to create a pleasant, feminine look that would also fit the imagery of the clothing brand I've previously selected based on my personal affinity, [Esprit](https://www.esprit.com/).
 
-Therefore, I wanted to focus on modern app designs which are fashion and/or weather related - not online clothing shops, high-fashion brands or weather sites. My biggest source of inspiration was [Dribbble](https://dribbble.com/) where I went through designs of people who had a similar product idea like mine. My goal was also to achieve modern app look which I'll explain more in the next sections.
+Therefore, I wanted to focus on modern app designs which are fashion and/or weather related - not online clothing shops, high-fashion brands or weather sites. My biggest source of inspiration was [Dribbble](https://dribbble.com/) where I went through designs of people who had a similar product idea like mine. My goal was also to achieve a modern app look which I'll explain more in the next sections.
 
 The following design ideas had the biggest impact on my design decisions:
 ![Dribbble examples](readme-files/images-readme/img-design-inspiration.png)
@@ -132,11 +132,11 @@ The following design ideas had the biggest impact on my design decisions:
 
 I have come across [Quicksand](https://fonts.google.com/specimen/Quicksand) by browsing through Google fonts. I was looking for fonts that are similar to Roboto, Raleway and Montserrat as I personally consider them modern and easy to read - which is exactly what I wanted to achieve with my font selection as well. I've noticed that Quicksand is often paired with all of these three fonts and decided to keep it.
 
-![Colour palette](readme-files/images-readme/img-colour-palette.png)
-
 ### Colours
 
 My colour selection consists of light colours for the background of the content and icons. The font is in the darker shade of gray to make the reading more pleasant to the eyes. As gradient colours are quite popular among apps, I've decided to create one for OUT2FASHION as well, in order to stay up to date with the look-and feel. Lastly, I've taken both end shades of the gradient spectrum to use them for any other elements that might need some accent, like lines and hover effects.
+
+![Colour palette](readme-files/images-readme/img-colour-palette.png)
 
 ### Visual Style
 
@@ -159,7 +159,7 @@ Technology used that is connected to [Bootstrap](https://getbootstrap.com/) for 
 
 1. [jQuery](https://jquery.com/)
 1. [Popper.js](https://popper.js.org/)
-1. [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+1. [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 Additionally, I have also used the following platforms to help me shape the website and the brand:
 
@@ -286,7 +286,7 @@ Discovered bugs:
 
 * Scroll to the top and City selection features don't work in Internet Explorer, not even the hover effects work - which basically means the user can only access the homepage. I am suspecting there might be incompatibilities between the browser and jQuery.
 * when the user clicks on one of the cities, it might take some time to load the data and all the images. The app first loads the html with its placeholder icons and images and then changes them. The user might notice this content change. I could have removed the placeholders but I've decided to keep them because the API key has only 50 free calls per day. I wanted the app to still be populated with content if the limit has been reached.
-* when the user clicks on the refresh button, it sometimes might happen the products don't load on the first click. I'm not completely sure why is that and it happens more often on the mobile devices than on desktop. If the user clicks the second time, then it often happens the product selection refreshes twice very quickly. However, it also appears that the more the app is used, the less likely this is to happen.
+* when the user clicks on the refresh button, it sometimes might happen the products don't load on the first click. I'm not completely sure why is that and it happens more often on the mobile devices than on desktop. If the user clicks the second time, then it sometimes happens the product selection refreshes twice very quickly. However, it also appears that the more the app is used, the less likely this is to happen.
 * the hover effects placed on the refresh button and cities stay on mobile devices after the user clicks on them. They disappear once the user clicks on some other element on the page. I've tried to solve this by [.off() jQuery method](https://api.jquery.com/off/) because I was suspecting it should help but I wasn't successful.
 
 Other important remarks:
@@ -294,7 +294,7 @@ Other important remarks:
 * this project has 50 free API calls per day. The number is refreshed around 2.30 pm CET time. This might cause the visitor to be left out of API calls and the app won't be able to fully complete its purpose. If that happens, please check OUT2FASHION the next day afternoon again.
 * the products on the page are a result of my manual work. I manually had to download each product image (all 240 of them) and write down the price in the product.js file, along with the copied link. I've already caught some of the mistakes and corrected them - hopefully there are none anymore. However - it is very likely to happen in the next weeks or even days that the products will be out of stock or completely removed from the offer due to season change. If you link out and the link is broken, it's probably for that reason because I did do an extensive link check for each product category.
 * as a result of having a mini hard-coded "product API", the user can refresh the products only 5 times before they start seeing the same products within the category again.
-* during my mentoring session, I expressed my concerns about having lots of repetitive javascript code. I am aware that some functions could have been written in a shorter way and would definitely approach the project differently the next time. As for now, my mentor was glad to hear I've been able to notice the areas of improvement and kindly explained to me that the duplication is mostly coming from lack of knowledge about data structures and that some things could have been differently done. He also gave me advices on how to get that knowledge and how to reach the point of understanding the topic better. Nevertheless, at this point I'm very happy with my progress so far and look forward to expanding my knowledge even further!
+* during my mentoring session, I expressed my concerns about having lots of repetitive JavaScript code. I am aware that some functions could have been written in a shorter way and would definitely approach the project differently the next time. As for now, my mentor was glad to hear I've been able to notice the areas of improvement and kindly explained to me that the duplication is mostly coming from lack of knowledge about data structure and that some things could have been differently done. He also gave me advices on how to get that knowledge and how to reach the point of understanding the topic better. Nevertheless, at this point I'm very happy with my progress so far and look forward to expanding my knowledge even further!
 
 ## Deployment
 
@@ -326,7 +326,7 @@ For more information please visit [here.](https://help.github.com/en/github/crea
 
 ## Lessons Learned
 
-Looking back at the project from the beginning till the finish line I've noticed big improvements in knowledge and just generally being a lot more comfortable with different concepts:
+Looking back at the project from the beginning till the finish line I've noticed big improvements in knowledge and just generally being a lot more comfortable with different concepts. Here are some points I wanted to highlight:
 * Bootstrap is so much more than just columns and rows! I've dived deeper into text, display and float classes like `text-uppercase`, `text-center`, `d-none`, `d-md-none`, `float-left` etc. This encouraged me to try creating my own classes for general handy purpose like `class-mt-15` and `class-mb-15` for being consistent with margins.
 * Using a design tool like [Figma](https://www.figma.com/) can be a great source of code summary! Whenever you design something in the tool, you can switch to the 'code' tab where the tool will summarise some important lines of css code. For example a text box will be summaries as information about `width`, `height`, `font-family`, `font-weight`, `font-size`, `line-height`, `text-align`, `color` etc.
 * Do check your project in different browsers regularly! I could have fixed the Firefox tablet misalignment so much quicker had I done it earlier in the process.
