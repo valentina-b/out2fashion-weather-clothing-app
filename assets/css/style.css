@@ -115,13 +115,13 @@ body {
         display: none;
     }
     .disclaimer-bottom {
-        max-width: 700px;
+        max-width: 750px;
     }
 }
 
 @media (max-width: 992px) {
     .disclaimer-top {
-        max-width: 350px;
+        max-width: 320px;
     }
     .disclaimer-bottom {
         display: none;
