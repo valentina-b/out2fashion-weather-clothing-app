@@ -104,6 +104,30 @@ body {
     margin-top: 15px;
 }
 
+.disclaimer {
+    color: #978FCD;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+@media (min-width: 992px) {
+    .disclaimer-top {
+        display: none;
+    }
+    .disclaimer-bottom {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 992px) {
+    .disclaimer-top {
+        max-width: 350px;
+    }
+    .disclaimer-bottom {
+        display: none;
+    }
+}
+
 
 /* Shortcuts */
 .city-content {
@@ -120,7 +144,7 @@ body {
 /* Additional content */
 #content-additional-text {
     background: rgb(206,202,232);
-    background: linear-gradient(90deg, rgba(206,202,232,1) 0%, rgba(236,206,228,1) 100%);
+    background: linear-gradient(90deg, rgb(206, 202, 232) 0%, rgba(236,206,228,1) 100%);
     border-radius: 10px;
     padding-top: 30px;
     padding-bottom: 40px;
